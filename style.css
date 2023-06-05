@@ -760,6 +760,26 @@ p a:hover{
     border: 1px solid #f0f0f0;
 }
 
+.occu4 {
+    background-color: #FAFAFA;
+    color: #4D4D4D;
+    padding: 5px;
+    width: 120px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #BEBEBE;
+    font-size: 12px;
+    transition: 0.4s;
+    font-weight: 500;
+}
+
+.active, .occu4:hover {
+  /*background-color: #da2f68;*/
+  /*color: #4D4D4D;*/
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid #f0f0f0;
+}
+
 .prop {
     background-color: #FAFAFA;
     color: #4D4D4D;
@@ -841,6 +861,12 @@ p a:hover{
         font-size: 9px;
         font-weight: 500;
     }
+    .occu4{
+        padding: 3px;
+        width: 90px;
+        font-size: 9px;
+        font-weight: 500;
+    }
     .btnox ul li{
         padding-right: 5px;
     }
@@ -904,7 +930,7 @@ p a:hover{
         font-size: 10px;
         font-weight: 600;
         padding-bottom: 6px;
-        padding-left: 17px;
+        padding-left: 25px;
         line-height: 0;
     }
     .desco .descover{
