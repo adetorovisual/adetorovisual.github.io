@@ -241,8 +241,8 @@ nav .hero-btn3:hover{
 
 iframe{
     display: block;
-    width: 800px;
-    height: 520px;
+    width: 1000px;
+    height: 530px;
     border-radius: 10px;
 }
 
@@ -907,6 +907,14 @@ p a:hover{
         padding-left: 17px;
         line-height: 0;
     }
+    .desco .descover{
+        font-size: 10px;
+        font-weight: 600;
+        padding-bottom: 6px;
+        padding-left: 25px;
+        line-height: 0;
+    }
+    
 }
 
     
@@ -920,6 +928,26 @@ p a:hover{
     border-bottom: 1px solid #4D4D4D;
     padding-left: 0px;
     text-align: left;
+}
+
+.desco{
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-top: 30px;
+    padding-bottom: 4px;
+    
+    padding-left: 0px;
+    text-align: left;
+}
+
+.descover{
+    border-radius: 10px 10px 0px 0px;
+    background: #4D4D4D;
+    padding: 5px 25px 5px 25px;
+    color: #fff;
+    cursor: default;
 }
 
 
@@ -3016,4 +3044,31 @@ p a:hover{
 .popup___close:active{
     color: #555;
 }
+}
+
+
+.rampz{
+    width: 945px;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+.ramp1{
+    background-color: rgba(250,250,250,0.9);
+    border-radius: 1px 10px 10px 10px;
+    border: 1px solid #4D4D4D;
+    padding: 50px 122px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+@media (max-width:800px){
+    .rampz{
+        width:300px;
+        height: auto;
+    }
+    .ramp1{
+        padding: 10px 0px;
+    }
 }
