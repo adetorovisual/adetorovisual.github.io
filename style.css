@@ -3074,27 +3074,73 @@ p a:hover{
 
 
 .rampz{
+    display: block;
     width: 945px;
     height: auto;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     
 }
-
 .ramp1{
     background-color: rgba(250,250,250,0.9);
     border-radius: 1px 10px 10px 10px;
     border: 1px solid #4D4D4D;
+    display: flex;
     padding: 50px 122px;
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
 }
-@media (max-width:800px){
-    .rampz{
-        width:300px;
+.ramp1 img{
+    background-color: rgba(250,250,250,0.9);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.ramp1 iframe{
+    display: block;
+    width: 945px;
+    height: 600px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+
+@media (max-width:1700px){
+    
+    .ramp1 img{
+        width: 700px;
         height: auto;
     }
-    .ramp1{
-        padding: 10px 0px;
+    
+    .ramp1 iframe{
+        width: 700px;
+        height: 450px;
+    }
+}
+
+@media (max-width:1350px){
+    
+    .ramp1 img{
+        width:500px;
+        height: auto;
+    }
+    
+    .ramp1 iframe{
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width:800px){
+    
+    .ramp1 img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .ramp1 iframe{
+        width: 300px;
+        height: 200px;
     }
 }
