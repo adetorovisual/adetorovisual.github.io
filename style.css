@@ -12,6 +12,180 @@
     position: relative;
 }
 
+/*SCROLLBAR*/
+
+    ::-webkit-scrollbar{
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track{
+        background: #FAFAFA;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: #4D4D4D;
+    }
+
+/*SCROLLBAR*/
+
+/*PAGE LOADER*/
+    .loading-screen{
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        background-color: #FAFAFA;
+        width: 0%;
+        height: 100%;
+    }
+
+    .load-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: 2500;
+        pointer-events: none;
+    }
+/*PAGE LOADER*/
+
+/*PRELOADER*/
+    
+    #preloader{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 1999;
+        background-color: #FAFAFA;
+        flex-direction: column;
+        height: 100vh;
+        border-bottom: 5px solid #4D4D4D;
+    }
+    
+    #percent{
+        color: #4D4D4D;
+        font-size: 14px;
+        
+    }
+    
+    #perbar{
+        width: 10%;
+        margin-top: 20px;
+        border: 1px solid #BEBEBE;
+    }
+    
+    #barconfirm{
+        width: 1%;
+        padding: 3px 0px;
+        background-color: #4D4D4D;
+    }
+
+    .word{
+        transform: translateY(50px);
+        transition: transform .5s;
+    }
+    
+/*PRELOADER*/
+
+/*PAGE BREAK*/
+        .english .btntrans1{
+            text-decoration: none;
+            color: #FAFAFA;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid #4D4D4D;
+            padding: 0 10px 0 10px;
+            font-size: 13px;
+            font-weight: 550;
+            background: #4D4D4D;
+            cursor: default;
+            transition: 0.7s;
+        }
+        .english .btntrans1:hover{
+            color: #FAFAFA;
+            border: 1px solid #4D4D4D;
+            border-radius: 5px 0px 0px 5px;
+            background: #4D4D4D;
+
+        }
+
+        .english .btntrans2{
+            text-decoration: none;
+            color: #4D4D4D;
+            border-radius: 0px 5px 5px 0px;
+            border: 1px solid #FAFAFA;
+            padding: 0 10px 0 10px;
+            font-size: 13px;
+            font-weight: 550;
+            background: #FAFAFA;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+        .english .btntrans2:hover{
+            color: #FAFAFA;
+            border: 1px solid #BEBEBE;
+            border-radius: 0px 5px 5px 0px;
+            background: #BEBEBE;
+
+        }
+.inload{
+    position: fixed;
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 100vh;
+    z-index: 3600;
+    left: -100%;
+    transition: 0.5s;
+}
+        .bahasa{
+            display: none;
+        }
+        .bahasa .btntrans1{
+            text-decoration: none;
+            color: #4D4D4D;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid #FAFAFA;
+            padding: 0 10px 0 10px;
+            font-size: 13px;
+            font-weight: 550;
+            background: #FAFAFA;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+        .bahasa .btntrans1:hover{
+            color: #FAFAFA;
+            border: 1px solid #BEBEBE;
+            border-radius: 5px 0px 0px 5px;
+            background: #BEBEBE;
+
+        }
+
+        .bahasa .btntrans2{
+            text-decoration: none;
+            color: #FAFAFA;
+            border-radius: 0px 5px 5px 0px;
+             border: 1px solid #4D4D4D;
+            padding: 0 10px 0 10px;
+            font-size: 13px;
+            font-weight: 550;
+            background: #4D4D4D;
+            cursor: default;
+            transition: 0.7s;
+        }
+        .bahasa .btntrans2:hover{
+            color: #FAFAFA;
+            border: 1px solid #4D4D4D;
+            border-radius: 0px 5px 5px 0px;
+            background: #4D4D4D;
+
+        }
+
+/*PAGE BREAK*/
+
+
 ::selection{
     background-color: #4D4D4D;
     color: #FAFAFA;
@@ -217,6 +391,660 @@ nav .hero-btn3:hover{
     transition: 1.5s;
 }
 
+/*--3D PAGE--*/
+    .contentdoctrid{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1f 1fr 1fr;
+        grid-template-areas: 
+            "yearconttrid roleconttrid roleconttrid"
+            "emptyspacetrid projecttxttrid projectocctrid"
+            "trid1 trid1 trid1"
+            "mographtitletrid mographtxttrid mographtxttrid"
+            "trid2 trid2 trid2"
+            "mographtitletrid2 mographtxttrid2 mographtxttrid2"
+            "trid3 trid3 trid3"
+            "mographtitletrid3 mographtxttrid3 mographtxttrid3"
+            "compose1 compose1 compose1-title"
+            "render1 render1 render1"
+            "mographtitletrid4 mographtxttrid4 mographtxttrid4"
+            "render2 render2 render2";
+        grid-gap: 30px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    #emptyspacetrid{
+        grid-area: emptyspacetrid;
+        background: transparent;
+    }
+
+    #yearconttrid{
+        background: transparent;
+        grid-area: yearconttrid;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    #roleconttrid{
+        background: transparent;
+        grid-area: roleconttrid;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    #projecttxttrid{
+        background: transparent;
+        grid-area: projecttxttrid;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        padding-right: 70px;
+        transition: all 0.3s;
+    }
+
+    #projectocctrid{
+        background: transparent;
+        grid-area: projectocctrid;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    #trid1{
+        background: transparent;
+        grid-area: trid1;
+        margin-top: 70px;
+    }
+    
+    .img3d-contentdoc{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1f 1fr;
+        grid-template-areas: 
+            "mod1 mod2";
+        grid-gap: 30px;
+        text-align: left;
+
+    }
+
+    #mod1{
+        grid-area: mod1;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        transition: all 0.3s;
+        background: #4D4D4D;
+        border: 1px solid #BEBEBE;
+        border-radius: 10px;
+    }
+
+    #mod2{
+        grid-area: mod2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        background: #4D4D4D;
+        border: 1px solid #BEBEBE;
+        border-radius: 10px;
+    }
+
+    .gmb3d{
+        display: block;
+        width: 500px;
+        height: 500px;
+        background: transparent;
+        transition: all 0.3s;
+    }
+    
+    #mographtitletrid{
+        background: transparent;
+        grid-area: mographtitletrid;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+
+    #mographtxttrid{
+        background: transparent;
+        grid-area: mographtxttrid;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    #trid2{
+        background: transparent;
+        grid-area: trid2;
+        margin-top: 190px;
+    }
+    
+    .img3d-contentdoc2{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1f 1fr;
+        grid-template-areas: 
+            "mod3 mod4";
+        grid-gap: 30px;
+        text-align: left;
+
+    }
+
+    #mod3{
+        grid-area: mod3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        background: #4D4D4D;
+        border: 1px solid #BEBEBE;
+        border-radius: 10px;
+    }
+
+    #mod4{
+        grid-area: mod4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        background: #4D4D4D;
+        border: 1px solid #BEBEBE;
+        border-radius: 10px;
+    }
+    
+    #mographtitletrid2{
+        background: transparent;
+        grid-area: mographtitletrid2;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+
+    #mographtxttrid2{
+        background: transparent;
+        grid-area: mographtxttrid2;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    #trid3{
+        background: transparent;
+        grid-area: trid3;
+        margin-top: 190px;
+    }
+    
+    .img3d-contentdoc3{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1f 1fr;
+        grid-template-areas: 
+            "mod5 mod6";
+        grid-gap: 30px;
+        text-align: left;
+
+    }
+
+    #mod5{
+        grid-area: mod5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        background: #4D4D4D;
+        border: 1px solid #BEBEBE;
+        border-radius: 10px;
+    }
+
+    #mod6{
+        grid-area: mod6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        background: #4D4D4D;
+        border: 1px solid #BEBEBE;
+        border-radius: 10px;
+    }
+    
+    #mographtitletrid3{
+        background: transparent;
+        grid-area: mographtitletrid3;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+
+    #mographtxttrid3{
+        background: transparent;
+        grid-area: mographtxttrid3;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    
+    #compose1{
+        background: transparent;
+        grid-area: compose1;
+        margin-top: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #compose1-title{
+        background: transparent;
+        grid-area: compose1-title;
+        position: relative;
+        margin-top: 210px;
+    }
+
+    #compose1-title .vidtt{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px; 
+    }
+
+    #compose1-title .viddsc{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    .gmb3d2{
+        display: block;
+        width: 837px;
+        height: auto;
+        border-radius: 10px;
+        transition: all 0.3s;
+
+    }
+    
+    
+    #render1{
+        background: transparent;
+        grid-area: render1;
+        margin-top: 240px;
+    }
+    
+    .img3d-contentdoc4{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1f 1fr;
+        grid-template-areas: 
+            "mod7 mod7 mod8";
+        grid-gap: 30px;
+        text-align: left;
+
+    }
+
+    #mod7{
+        grid-area: mod7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    #mod8{
+        grid-area: mod8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+    
+    
+    .gmb3dX1{
+        display: block;
+        height: 420px;
+        width: 999px;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    
+    .gmb3dX2{
+        display: block;
+        height: 420px;
+        width: 420px;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    
+    #mographtitletrid4{
+        background: transparent;
+        grid-area: mographtitletrid4;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+
+    #mographtxttrid4{
+        background: transparent;
+        grid-area: mographtxttrid4;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+    
+    
+    #render2{
+        background: transparent;
+        grid-area: render2;
+        margin-top: 240px;
+    }
+    
+    .img3d-contentdoc5{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.57fr;
+        grid-template-areas: 
+            "mod9 mod10 mod10"
+            "mod9 render-title render-title";
+        grid-gap: 30px;
+        text-align: left;
+
+    }
+
+    #mod9{
+        grid-area: mod9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    #mod10{
+        grid-area: mod10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+    
+    
+    .gmb3dX3{
+        display: block;
+        height: 735px;
+        width: 375px;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    
+    .gmb3dX4{
+        display: block;
+        height: 445px;
+        width: 999px;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    
+    #render-title{
+        background: transparent;
+        grid-area: render-title;
+        position: relative;
+    }
+
+    #render-title .vidtt2{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        padding-top: 100px;
+    }
+
+    #render-title .viddsc{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.3s;
+    }
+@media only screen and (max-width: 1700px){
+    .gmb3d2{
+        width: 730px;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .contentdoctrid{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1f 1fr 1fr;
+        grid-template-areas: 
+            "yearconttrid roleconttrid roleconttrid"
+            "emptyspacetrid projecttxttrid projectocctrid"
+            "trid1 trid1 trid1"
+            "mographtitletrid mographtxttrid mographtxttrid"
+            "trid2 trid2 trid2"
+            "mographtitletrid2 mographtxttrid2 mographtxttrid2"
+            "trid3 trid3 trid3"
+            "mographtitletrid3 mographtxttrid3 mographtxttrid3"
+            "compose1 compose1 compose1-title"
+            "render1 render1 render1"
+            "mographtitletrid4 mographtxttrid4 mographtxttrid4"
+            "render2 render2 render2";
+        grid-gap: 15px;
+    }
+     #yearconttrid{
+        font-size: 12px;
+    }
+    
+    #projecttxttrid{
+        font-size: 12px;
+    }
+
+    #projectocctrid{
+        font-size: 12px;
+    }
+    .gmb3d{
+        width: 300px;
+        height: 300px;
+    }
+    .gmb3d2{
+        width: 530px;
+    }
+    #mographtxttrid{
+        font-size: 12px;
+    }
+    #mographtxttrid2{
+        font-size: 12px;
+    }
+    #mographtxttrid3{
+        font-size: 12px;
+    }
+    #compose1-title .viddsc{
+        font-size: 12px;
+    }
+    .gmb3dX1{
+        width: 530px;
+        height: 250px;
+    }
+    .gmb3dX2{
+        width: 250px;
+        height: 250px;
+    }
+    #mographtxttrid4{
+        font-size: 12px;
+    }
+    .gmb3dX3{
+        width: 250px;
+        height: 500px;
+    }
+    .gmb3dX4{
+        width: 530px;
+        height: 300px;
+    }
+    #render-title .viddsc{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #projecttxttrid{
+        padding-right: 0px;
+    }
+    .contentdoctrid{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+            "yearconttrid"
+            "roleconttrid"
+            "projecttxttrid"
+            "projectocctrid"
+            "emptyspacetrid"
+            "trid1"
+            "mographtitletrid"
+            "mographtxttrid"
+            "trid2"
+            "mographtitletrid2"
+            "mographtxttrid2"
+            "trid3"
+            "mographtitletrid3" 
+            "mographtxttrid3"
+            "compose1"
+            "compose1-title"
+            "render1"
+            "mographtitletrid4" 
+            "mographtxttrid4"
+            "render2";
+        grid-gap: 15px;
+    }
+    .img3d-contentdoc{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr;
+        grid-template-areas: 
+            "mod1"
+            "mod2";
+    }
+    .img3d-contentdoc2{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr;
+        grid-template-areas: 
+            "mod3"
+            "mod4";
+    }
+    .img3d-contentdoc3{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr;
+        grid-template-areas: 
+            "mod5"
+            "mod6";
+    }
+    #compose1-title{
+        position: relative;
+        margin-top: 0px;
+    }
+
+    #compose1-title .vidtt{
+        padding-bottom: 15px;
+    }
+
+    #compose1-title .viddsc{
+        position: relative;
+    }
+    
+    .gmb3d2{
+        width: 333px;
+        height: auto;
+    }
+    
+    .img3d-contentdoc4{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr;
+        grid-template-areas: 
+            "mod7"
+            "mod8";
+        grid-gap: 30px;
+        text-align: left;
+    }
+    
+    .gmb3dX1{
+        height: 190px;
+        width: 333px;
+    }
+    
+    .gmb3dX2{
+        height: 333px;
+        width: 333px;
+    }
+    
+    .img3d-contentdoc5{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "mod9"
+            "mod10"
+            "render-title";
+        grid-gap: 30px;
+        text-align: left;
+
+    }
+    
+    .gmb3dX3{
+        height: 600px;
+        width: 333px;
+    }
+    
+    .gmb3dX4{
+        height: 190px;
+        width: 333px;
+    }
+    
+    #render-title{
+        position: relative;
+        padding-top: 0px;
+    }
+
+    #render-title .vidtt2{
+        padding-bottom: 15px;
+        padding-top: 0;
+    }
+
+    #render-title .viddsc{
+        position: relative;
+    }
+}
+
+
+/*--3D PAGE--*/
 
 
 /*-------- landing ------------*/
@@ -263,7 +1091,6 @@ iframe{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 140px;
-    transition: 1s ease;
 }
 .landing-col{
     flex-basis: 27%;
@@ -397,9 +1224,10 @@ p a:hover{
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 5px;
+    padding-right: 25px;
     text-align: left;
 }
 
@@ -411,6 +1239,12 @@ p a:hover{
 }
 .descp{
     border-bottom: 1px solid #4D4D4D;
+    
+    margin-top: 0px;
+}
+
+.descp .fa{
+    padding-right: 13px;
 }
 
 /*-------- footer ------------*/
@@ -485,19 +1319,31 @@ p a:hover{
     text-align: left;
     padding-top: 30px;
 }
+.col-footer .fa{
+    color: #BEBEBE;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: left;
+
+}
 
 .col-footer2 .iconsx .fa{
-    color: #BEBEBE;
-    padding-top: 10px;
-    padding-right: 10px;
-    font-size: 22px;
+    color: #FAFAFA;
+    padding-top: 8.5px;
+    padding-right: 8.5px;
+    padding-left: 8.5px;
+    padding-bottom: 8.5px;
+    font-size: 17px;
     cursor: pointer;
     text-align: left;
     transition: 0.5s;
+    background-color: #BEBEBE;
+    border-radius: 5px;
 }
 
 .col-footer2 .iconsx .fa:hover{
-    color: #7f7f7f;
+    background-color: #7f7f7f;
 }
 
 @media (max-width:800px){
@@ -505,7 +1351,8 @@ p a:hover{
         width: 100%;
     }
     .col-footer2 .iconsx .fa{
-        font-size: 17px;
+        font-size: 12px;
+        padding: 6px;
     }
 }
 
@@ -518,11 +1365,11 @@ p a:hover{
     padding: 7px;
     padding-left: 25px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: left;
     border: 1px solid #BEBEBE;
-    font-size: 15px;
-    transition: 0.4s;
+    font-size: 13px;
+    transition: 0.5s;
     font-weight: 600;
 }
 
@@ -533,11 +1380,10 @@ p a:hover{
     border: 1px solid #f0f0f0;
 }
 
-
 .accordion:after {
   content: '\002B';
   color: #777;
-  font-weight: bold;
+  font-weight:550;
   float: right;
   padding-right: 25px;
 }
@@ -554,7 +1400,7 @@ p a:hover{
   color:white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 .panelx {
@@ -563,7 +1409,7 @@ p a:hover{
   color:white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 .panelx p{
@@ -659,14 +1505,17 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .hero-btn5:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
+}
+.hero-btn5 .fa{
+    padding-left: 10px;
 }
 
 .btn-card{
@@ -696,6 +1545,12 @@ p a:hover{
         object-fit: cover;
         object-position: center;
     }
+    .nameset{
+        position: absolute;
+        left: 0;
+        padding-left: 20px;
+        display: inline-block;
+    }
 }
 
 
@@ -704,7 +1559,7 @@ p a:hover{
     background-color: #FAFAFA;
     color: #4D4D4D;
     padding: 5px;
-    width: 190px;
+    width: 200px;
     border-radius: 20px;
     text-align: center;
     border: 1px solid #BEBEBE;
@@ -724,7 +1579,7 @@ p a:hover{
     background-color: #FAFAFA;
     color: #4D4D4D;
     padding: 5px;
-    width: 110px;
+    width: 120px;
     border-radius: 20px;
     text-align: center;
     border: 1px solid #BEBEBE;
@@ -764,7 +1619,7 @@ p a:hover{
     background-color: #FAFAFA;
     color: #4D4D4D;
     padding: 5px;
-    width: 120px;
+    width: 130px;
     border-radius: 20px;
     text-align: center;
     border: 1px solid #BEBEBE;
@@ -778,6 +1633,22 @@ p a:hover{
   /*color: #4D4D4D;*/
   box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
     border: 1px solid #f0f0f0;
+}
+
+.occu .fa{
+    font-size: 10px;
+    padding-right: 7px;
+    color: #BEBEBE;
+}
+.occu2 .fa{
+    font-size: 10px;
+    padding-right: 7px;
+    color: #BEBEBE;
+}
+.occu4 .fa{
+    font-size: 10px;
+    padding-right: 7px;
+    color: #BEBEBE;
 }
 
 .prop {
@@ -851,7 +1722,7 @@ p a:hover{
     }
     .occu2{
         padding: 3px;
-        width: 80px;
+        width: 90px;
         font-size: 9px;
         font-weight: 500;
     }
@@ -927,10 +1798,10 @@ p a:hover{
     font-size: 12px;
 }
     .btntit .titleacc{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
         padding-bottom: 6px;
-        padding-left: 25px;
+        padding-left: 0px;
         line-height: 0;
     }
     .desco .descover{
@@ -948,19 +1819,34 @@ p a:hover{
         line-height: 0;
     }
     
+    .occu .fa{
+        font-size: 7px;
+        padding-right: 7px;
+    }
+    .occu2 .fa{
+        font-size: 7px;
+        padding-right: 7px;
+
+    }
+    .occu4 .fa{
+        font-size: 7px;
+        padding-right: 7px;
+    }
+    
 }
 
     
 .btntit{
     color: #4D4D4D;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 22px;
-    padding-top: 30px;
+    line-height: 10px;
+    padding-top: 35px;
     padding-bottom: 4px;
     border-bottom: 1px solid #4D4D4D;
     padding-left: 0px;
     text-align: left;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .desco{
@@ -1155,14 +2041,14 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .btn:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -1254,14 +2140,14 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .btn2:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -1352,14 +2238,14 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .btn3:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -1449,14 +2335,14 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .btn4:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -1546,14 +2432,14 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .btn5:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -1645,14 +2531,14 @@ p a:hover{
     cursor: pointer;
     bottom: 0;
     transform: translateX(-50%);
-    left: 50%
+    left: 50%;
+    transition: 0.5s;
 }
 .btn6:hover{
     color: #FAFAFA;
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -1710,8 +2596,17 @@ p a:hover{
 }
 
 #bar{
-    background: transparent;
+    background: #FAFAFA;
     grid-area: bar;
+    border-radius: var(--main-radius);
+    padding-left: var(--main-padding);
+    border: 1px solid #BEBEBE;
+    align-items: center;
+    display:inline-flex;
+}
+#bar p{
+    padding: 20px 0px 20px 0;
+    
 }
 
 #videopl{
@@ -2048,6 +2943,7 @@ p a:hover{
     font-size: 13px;
     background: transparent;
     cursor: pointer;
+    transition: 0.5s;
     
 }
 .hero-btnvv:hover{
@@ -2055,7 +2951,6 @@ p a:hover{
     border: 1px solid #4D4D4D;
     border-radius: 20px;
     background: #4D4D4D;
-    transition: 1.5s;
 }
 
 
@@ -2078,7 +2973,15 @@ p a:hover{
 #barx01{
     background: transparent;
     grid-area: barx01;
-    padding-bottom: 1em;
+    border-radius: var(--main-radius);
+    padding-left: var(--main-padding);
+    border: 1px solid #BEBEBE;
+    align-items: center;
+    display:inline-flex;
+}
+#barx01 p{
+    padding: 25px 0px 25px 0;
+    
 }
 
 #cardx01{
@@ -2225,6 +3128,9 @@ p a:hover{
     .btno ul li{
         padding-bottom: 0;
     }
+    .descp{
+        margin-top: 10px;
+    }
 }
 
 .quote-text {
@@ -2289,18 +3195,20 @@ p a:hover{
     font-size: 13px;
     background: transparent;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
     padding-left: 0px;
     
 }
 .btn01:hover{
-    box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    background-color: #4D4D4D;
+  color: #FAFAFA;
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
     border: 1px solid #f0f0f0;
 }
 
 .playvideo{
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     color: #4D4D4D;
     align-items: center;
     background: transparent;
@@ -2397,12 +3305,14 @@ p a:hover{
     font-size: 13px;
     background: transparent;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
     padding-left: 0px;
     
 }
 .btn02:hover{
-    box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    background-color: #4D4D4D;
+  color: #FAFAFA;
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
     border: 1px solid #f0f0f0;
 }
 
@@ -2488,12 +3398,14 @@ p a:hover{
     font-size: 13px;
     background: transparent;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
     padding-left: 0px;
     
 }
 .btn03:hover{
-    box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    background-color: #4D4D4D;
+  color: #FAFAFA;
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
     border: 1px solid #f0f0f0;
 }
 
@@ -2579,12 +3491,14 @@ p a:hover{
     font-size: 13px;
     background: transparent;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
     padding-left: 0px;
     
 }
 .btn04:hover{
-    box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    background-color: #4D4D4D;
+  color: #FAFAFA;
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
     border: 1px solid #f0f0f0;
 }
 
@@ -2670,12 +3584,14 @@ p a:hover{
     font-size: 13px;
     background: transparent;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
     padding-left: 0px;
     
 }
 .btn05:hover{
-    box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    background-color: #4D4D4D;
+  color: #FAFAFA;
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
     border: 1px solid #f0f0f0;
 }
 
@@ -2797,10 +3713,38 @@ p a:hover{
 .titleacc{
     
     border-radius: 10px 10px 0px 0px;
-    background: #4D4D4D;
-    padding: 5px 25px 5px 25px;
-    color: #fff;
+    /*background: #FAFAFA;*/
+    padding: 5px 25px 5px 0px;
+    color: #4D4D4D;
     cursor: default;
+    /*border: 1px solid #4D4D4D;*/
+    
+}
+
+.titleacc .fa{
+    padding-right: 13px;
+    background: linear-gradient(120deg, #4D4D4D, #4D4D4D, #BEBEBE, #4D4D4D, #4D4D4D);
+    background-size: 250% 250%;
+    animation: grad1 7s infinite;
+    transition: 0.5s;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    display: none;
+}
+@-webkit-animation grad1 {
+	0%{background-position:0% 50%}
+    50%{background-position:50% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-animation grad1 {
+	0%{background-position:0% 50%}
+    50%{background-position:50% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes grad1 {
+	0%{background-position:0% 50%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 50%}
 }
 
 /*popup*/
@@ -2990,6 +3934,116 @@ p a:hover{
 }
 
 #popup11:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup12:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup12:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup13:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup13:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup14:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup14:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup15:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup15:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup16:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup16:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup17:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup17:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup18:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup18:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup19:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup19:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup20:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup20:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup21:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup21:target .popup___content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup22:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup22:target .popup___content{
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -3244,3 +4298,926 @@ p a:hover{
         height: 200px;
     }
 }
+
+
+
+
+.transBTN{
+    padding-left: 30px;
+}
+
+.tbtn{
+    border-radius: 6px;
+     border: 1px solid #4D4D4D;
+    background-color: #4D4D4D;
+}
+
+.transBTN ul li{
+    list-style: none;
+    display:inline-flex;
+}
+
+.seriescard ul li{
+    list-style: none;
+    display:inline-flex;
+}
+
+.seriescard{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+    display:inline-flex;
+    
+}
+
+.faplay .fa{
+    padding: 10px 5px 10px 5px;
+    display:block;
+    font-size: 25px;
+
+}
+.episodic{
+    display: flex;
+    padding: 10px 0px 10px 10px;
+    position:relative;
+    display:block;
+    font-size: 15px;
+    font-weight: 550;
+}
+.eptitle{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+@media (max-width:800px){
+    .transBTN{
+        display:inline-block;
+        position:absolute;
+        top: 15px;
+        right: 70px;
+    }
+}
+
+
+
+/*DOCUMENTATION*/
+.condocs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "docs1 docs2";
+    grid-gap: 30px;
+}
+
+.docsbtn{
+    background-color: #FAFAFA;
+    color: #4D4D4D;
+    cursor: pointer;
+    padding: 7px;
+    padding-left: 25px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: left;
+    border: 1px solid #BEBEBE;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+#docs1{
+    grid-area: docs1;
+}
+
+#docs2{
+    grid-area: docs2;
+}
+
+@media (max-width:800px){
+    .docsbtn{
+        font-size: 10px;
+        padding-left: 17px;
+    }
+    .condocs{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "docs1"
+            "docs2";
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width:1450px){
+    .condocs{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "docs1"
+            "docs2";
+        grid-gap: 15px;
+    }
+}
+
+
+
+.docsbtn:hover {
+  background-color: #4D4D4D;
+  color: #fff;
+  box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid #f0f0f0;
+}
+
+.docs-content {
+    padding: 0px;
+    width: 100%;
+}
+
+.doc-btn{
+    padding: 0px;
+}
+
+#docs1 .doc-btn .docs-content .fa{
+    float:right;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 13px;
+}
+
+#docs1 .doc-btn .docs-content span{
+    float: left;
+    padding: 7px;
+    padding-left: 15px;
+}
+
+#docs2 .doc-btn .docs-content .fa{
+    float:right;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 13px;
+}
+
+#docs2 .doc-btn .docs-content span{
+    float: left;
+    padding: 7px;
+    padding-left: 15px;
+}
+
+.hero-btndoc{
+    display: flex;
+    text-decoration: none;
+    color: #4D4D4D;
+    border-radius: 10px;
+    border: 1px solid #BEBEBE;
+    background: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.5s;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.hero-btndoc:hover{
+    background-color: #4D4D4D;
+    color: #fff;
+    box-shadow: 6px 6px 10px -1px rgba(77,77,77,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid #f0f0f0;
+}
+
+@media (max-width: 800px){
+    .hero-btndoc{
+        font-size: 10px;
+    }
+    #docs1 .doc-btn .docs-content span{
+    padding: 7px;
+    padding-left: 7px;
+    }
+    #docs2 .doc-btn .docs-content span{
+    padding: 7px;
+    padding-left: 7px;
+    }
+    #docs1 .doc-btn .docs-content .fa{
+    padding: 10px;
+    padding-right: 15px;
+    font-size: 10px;
+    }
+    #docs2 .doc-btn .docs-content .fa{
+    padding: 10px;
+    padding-right: 15px;
+    font-size: 10px;
+    }
+}
+
+
+.landing-row{
+    border-bottom: 1px solid #BEBEBE;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+/*@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #4D4D4D;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    to{
+        transform: rotate(360deg);
+    }
+}*/
+
+.accyear{
+    padding-right: 83px;
+}
+
+.accyear2{
+    padding-right: 40px;
+}
+
+
+.yearacc{
+    padding-left: 100px;
+}
+
+
+.accordion ul li{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    align-items:flex-start;
+}
+
+@media (max-width: 800px){
+    .yearacc{
+        padding-left: 70px;
+    }
+    
+    .descp p{
+        font-size: 10px;
+    }
+    
+    
+}
+
+
+nav .nameset a{
+    text-decoration: none;
+    color: #4D4D4D;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+
+.head-cont{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 0.63fr;
+    grid-template-rows: 0.1fr;
+    grid-template-areas:
+        "titlepage titlesubs getin";
+    grid-gap: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+
+#titlepage{
+    
+    grid-area: titlepage;
+}
+
+#titlesubs{
+    
+    grid-area: titlesubs;
+}
+
+#getin{
+    
+    grid-area: getin;
+}
+
+
+.desctitle p{
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-align:left;
+    cursor: default;
+}
+
+
+.descptitle{
+    border: 1px solid #4D4D4D;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0px;
+}
+
+#titlepage h1{
+    padding-left: 0px;
+    cursor: default;
+}
+
+#titlepage h1 .occu3{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+#titlepage h1 .occu2{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+
+p .portdesc{
+    color: transparent;
+    transition: 0.5s ease;
+    cursor: default;
+}
+
+p:hover .portdesc{
+    color: #4D4D4D;
+}
+
+
+@media only screen and (max-width: 1500px){
+    .head-cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas:
+            "titlepage"
+            "titlesubs"
+            "getin";
+    }
+    .desctitle p{
+        
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 10px;
+        
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .desctitle p{
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    #titlepage h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+/*MOGRAPH PAGE CONTENT*/
+
+.projecttype{
+    float: right;
+    font-size: 16px;
+}
+
+.contentdoc{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1f 1fr 1fr;
+    grid-template-areas: 
+        "yearcont rolecont rolecont"
+        "emptyspace projecttxt projectocc"
+        "mograph1 mograph1 mograph1"
+        "mographtitle mographtxt mographtxt"
+        "vidtor1 vidtor1 vidtor1-title"
+        "vidtor2-title vidtor2 vidtor2"
+        "vidtor3 vidtor3 vidtor3"
+        "vidtor3-title vidtor3txt vidtor3txt"
+        "theresult theresult theresult";
+    grid-gap: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+#yearcont{
+    background: transparent;
+    grid-area: yearcont;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+#rolecont{
+    background: transparent;
+    grid-area: rolecont;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+#emptyspace{
+    grid-area: emptyspace;
+    background: transparent;
+}
+#projecttxt{
+    background: transparent;
+    grid-area: projecttxt;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-right: 70px;
+    transition: all 0.3s;
+}
+#projectocc{
+    background: transparent;
+    grid-area: projectocc;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+
+#mograph1{
+    background: transparent;
+    grid-area: mograph1;
+    margin-top: 70px;
+}
+.img-contentdoc{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1fr;
+    grid-template-areas: 
+        "mg1 mg2";
+    grid-gap: 30px;
+    text-align: left;
+}
+#mg1{
+    grid-area: mg1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+#mg2{
+    grid-area: mg2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.gmb{
+    display: block;
+    width: 580px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#mographtitle{
+    background: transparent;
+    grid-area: mographtitle;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+#mographtxt{
+    background: transparent;
+    grid-area: mographtxt;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+
+
+#vidtor1{
+    background: transparent;
+    grid-area: vidtor1;
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.gmb2{
+    display: block;
+    width: 837px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#vidtor1-title{
+    background: transparent;
+    grid-area: vidtor1-title;
+    position: relative;
+    margin-top: 190px;
+    transition: all 0.3s;
+}
+#vidtor1-title .vidtt{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+#vidtor1-title .viddsc{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+
+#vidtor2{
+    background: transparent;
+    grid-area: vidtor2;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vidtor2-title{
+    background: transparent;
+    grid-area: vidtor2-title;
+    position: relative;
+    margin-top: 220px;
+    transition: all 0.3s;
+}
+#vidtor2-title .vidtt{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+#vidtor2-title .viddsc{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+
+#vidtor3{
+    background: transparent;
+    grid-area: vidtor3;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid-tracking{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1fr;
+    grid-template-areas: 
+        "vidtrack1 vidtrack2";
+    grid-gap: 30px;
+    text-align: left;
+}
+#vidtrack1{
+    grid-area: vidtrack1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+#vidtrack2{
+    grid-area: vidtrack2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.trc1{
+    display: block;
+    width: 580px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#vidtor3-title{
+    background: transparent;
+    grid-area: vidtor3-title;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+#vidtor3txt{
+    background: transparent;
+    grid-area: vidtor3txt;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+
+#theresult{
+    background: transparent;
+    grid-area: theresult;
+    margin-top: 220px;
+}
+.vid-resultdoc{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1fr;
+    grid-template-areas: 
+        "result1 result2"
+        "result1-txt result2-txt";
+    grid-gap: 30px;
+    text-align: left;
+}
+#result1{
+    grid-area: result1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+#result2{
+    grid-area: result2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.vcn{
+    display: block;
+    width: 580px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#result1-txt{
+    grid-area: result1-txt;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    position: relative;
+}
+#result1-txt .result-title{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+}
+
+#result1-txt .result-desc{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+#result2-txt{
+    grid-area: result2-txt;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    position: relative;
+}
+#result2-txt .result-title{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+}
+
+#result2-txt .result-desc{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1500px){
+    .contentdoc{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1f 1fr 1fr;
+        grid-template-areas: 
+            "yearcont rolecont rolecont"
+            "emptyspace projecttxt projectocc"
+            "mograph1 mograph1 mograph1"
+            "mographtitle mographtxt mographtxt"
+            "vidtor1 vidtor1 vidtor1-title"
+            "vidtor2-title vidtor2 vidtor2"
+            "vidtor3 vidtor3 vidtor3"
+            "vidtor3-title vidtor3txt vidtor3txt"
+            "theresult theresult theresult";
+        grid-gap: 15px;
+    }
+    
+    #yearcont{
+        font-size: 12px;
+    }
+    #rolecont{
+        font-size: 12px;
+    }
+    #projecttxt{
+        font-size: 12px;
+    }
+    #projectocc{
+        font-size: 12px;
+    }
+    .gmb{
+        width: 480px;
+    }
+    #mographtxt{
+        font-size: 12px;
+    }
+    .gmb2{
+        width: 700px;
+    }
+    #vidtor1-title .viddsc{
+        font-size: 12px;
+    }
+    #vidtor2-title .viddsc{
+        font-size: 12px;
+    }
+    .trc1{
+        width: 480px;
+    }
+
+    #vidtor3txt{
+        font-size: 12px;
+    }
+    .vcn{
+        width: 480px;
+    }
+    #theresult .result-desc{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .projecttype{
+        font-size: 12px;
+    }
+    #projecttxt{
+        padding-right: 0px;
+    }
+    .contentdoc{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+            "yearcont"
+            "rolecont"
+            "projecttxt"
+            "projectocc"
+            "emptyspace"
+            "mograph1"
+            "mographtitle"
+            "mographtxt"
+            "vidtor1"
+            "vidtor1-title"
+            "vidtor2"
+            "vidtor2-title"
+            "vidtor3"
+            "vidtor3-title"
+            "vidtor3txt"
+            "theresult";
+        grid-gap: 15px;
+    }
+    .img-contentdoc{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1f;
+        grid-template-areas: 
+            "mg1" 
+            "mg2";
+    }
+    .vid-tracking{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "vidtrack1"
+            "vidtrack2";
+    }
+    
+    .vid-resultdoc{
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1f;
+        grid-template-areas: 
+            "result1"
+            "result1-txt"
+            "result2"
+            "result2-txt";
+        grid-gap: 15px;
+    }
+    
+    .gmb{
+        width: 333px;
+    }
+    
+    .gmb2{
+        width: 333px;
+    }
+    
+    .trc1{
+        width: 333px;
+    }
+    
+    .vcn{
+        width: 333px;
+    }
+    
+    #vidtor1-title{
+        position: relative;
+        margin-top: 0px;
+    }
+    #vidtor1-title .vidtt{
+        padding-bottom: 15px;
+    }
+    #vidtor1-title .viddsc{
+        position: relative;
+    }
+    
+    #vidtor2-title{
+        position: relative;
+        margin-top: 0px;
+    }
+    #vidtor2-title .vidtt{
+        padding-bottom: 15px;
+        padding-top: 0;
+    }
+    #vidtor2-title .viddsc{
+        position: relative;
+    }
+    #theresult .result-title{
+        padding-bottom: 15px;
+        padding-top: 0;
+    }
+    #theresult .result-desc{
+        padding-bottom: 75px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

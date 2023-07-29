@@ -1,371 +1,465 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Ade F. Oktaviantoro's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/glassmorphism.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-</head>
-    
-<body>
-    <section class="header">
-        <nav>
-            <div class="logots" id="logotsOp"><a href="index.html"><img src="images/logo-ts.png"></a></div>
-            <div class="nav-links" id="navLinks">
-                <div class="logodlm"><a href="index.html"><img src="images/logo-ts.png"></a></div>
-                <div class="closeMenu"><i class="fa fa-times" onclick="hideMenu()"></i></div>
-                <ul>
-                <li><a href="">HOME</a></li>
-                <!---<li><a href="">ABOUT</a></li>-->
-                <li><a href="mailto:af.oktaviantoro@gmail.com">CONTACT</a></li>
-                </ul> 
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Ade F. Oktaviantoro's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+    </head>
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <body onload="move()">
+        <div id="preloader">
+            <div id="percent">1%</div>
+            <div id="perbar">
+                <div id="barconfirm"></div>
             </div>
-            <div class="openMenu"><i class="fa fa-bars" onclick="showMenu()"></i></div>
-        </nav>
-        
-        
-    <!---------- Landing ----------->
-    
-    <section class="landing" id="landingOp">
-        
-            <h1>Ade F. Oktaviantoro <br> Portfolio</h1>
-            <div class="btno">
-                <ul>
-                    <li><button class="occu">Motion Graphic Designer</button></li>
-                    <li><button class="occu2">Video Editor</button></li>
-                    <li><button class="occu3">2023</button></li>
-                </ul>
-            </div>    
-        
-            <div class="descp">
-            <p>Portfolio ini berisi semua karya terbaik Ade F. Oktaviantoro selama berkarir sebagai Motion Graphic Designer dan Video Editor.
-                <br>Untuk melihat portfolio karya 3D silahkan kunjungi link berikut: <a href="3d.html"><b>3D Documentation</b></a>.</p>
-            </div>
-        
-        
-        <br>
-        
-        <p class="btntit">
-            <span class="titleacc">Penghargaan</span>
-        </p>
-        <br>        
-        <button class="accordion">Best Motion Graphics Awards (2019)</button>
-            <div class="panelx">
-                
-                  <p>                 
-                      
-                      
-                <div class="containerZZ">
-                            
-                    <div id="barZ"></div>
-                    <div id="videoplZ">
-                        <div class="video-containerz"><iframe src="https://www.youtube.com/embed/xNWEs5qXOic?rel=0" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <main data-barba="container" data-barba-namespace="home-section">
+        <div class="inload" id="inload"></div>
+            <div class="english" id="english">
+        <section class="header">
+            <div class="animate-this">
+            <nav>
+                <div class="logots" id="logotsOp"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                <div class="nameset" id="setname"><a href="">Ade F. Oktaviantoro</a></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="logodlm"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                    <div class="closeMenu"><i class="fa fa-times" onclick="hideMenu()"></i></div>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <!---<li><a href="">ABOUT</a></li>-->
+                            <li><a href="mailto:af.oktaviantoro@gmail.com">CONTACT</a></li>
+
+                        </ul> 
+
+                </div>
+                <div class="transBTN">
+                    <div class="tbtn">
+                        <ul>
+                            <li><a title="English" class="btntrans1" onclick="appearP1()">EN</a></li>
+                            <li><a title="Bahasa Indonesia" class="btntrans2" onclick="appearP2()">ID</a></li>
+                        </ul>
                     </div>
-                    <div id="vtextZ">
-                        <div class="btnox">
-                            <ul>
-                                <li><button class="occu3" title="Tahun Karya">2019</button></li>
-                                <li><button class="prop">Karya Personal</button></li>
-                                <li><span class="cardspan1" title="Looping Animation">00:10 <span class="infinity" title="Looping Animation">&#8734;</span></span></li>
-                            </ul>
+                </div>
+                <div class="openMenu"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+
+
+        <!---------- Landing ----------->
+
+            <section class="landing" id="landingOp">
+
+
+
+                <div class="head-cont">
+                    <div id="titlepage">
+                        <h1>Ade F. Oktaviantoro's<br>Portfolio <button class="occu3">2023</button></h1>
+                    </div>
+                    <div id="titlesubs">
+                        <div class="desctitle">
+                            <p>
+                                Hello! I am a designer who focuses on Motion Graphic, Video Editor, and 3D Design. I got an opportunity to work with amazing people at great studios. <br>These experiences and projects have helped me grow as a creative in both team and individual work.
+                            </p>
                         </div>
-                        <h1 class="card-header2">Pantura Lane</h1>
-                                <p class="metatxt">
-                                    2D Motion Graphic & Animasi frame by frame<br>
-                                    1280 x 720 / H.264 (.mp4) / 24 fps
-                                </p>
-                                <p class="infotxt">
-                                    Pantura Lane merupakan sebuah visualisasi perspektif baru dalam melihat kembali sejarah kelam pembangunan Jalan Pantura.<br><br>
-                                    Pada tanggal 28 Oktober - 1 November 2019, Karya ini dipamerkan dalam gelaran acara Desain Komunikasi Visual 
-                                    <a href="https://www.instagram.com/p/B39KGHzHldX/" title="Kunjungi halaman" target="_blank">
-                                    Ultigraph ‘SARASABHANA’</a>
-                                    di Universitas Multimedia Nusantara (UMN), serta mendapatkan 
-                                    <a href="https://dkv.umn.ac.id/berita/ultigraph-sarasabhana-menuju-ranah-internasional/" title="Kunjungi halaman" target="_blank">
-                                    Penghargaan Best Motion Graphics sebagai Juara 1 pada kategori kompetisi Motion Graphics.</a>
-                                </p>
+
                     </div>
-                    
+                    <div id="getin">
+                        <div class="desctitle">
+                            <p><span class="GITtitle">Get in touch</span><br>
+                                <a href="mailto:af.oktaviantoro@gmail.com">Email</a><br>
+                                <a href="https://www.instagram.com/okttoro/" target="_blank">Instagram</a>
+                            </p>
+                        </div>
+
                     </div>
-                    
+                </div>
+
+
+
+
+
+
+                <div class="descp">
+                    <p><i class="fa fa-solid fa-circle-info"></i><span class="portdesc">This portfolio contains all of my work during my career in the digital content industry.</span></p>
+                </div>
+
+
+                <br>
+                <br>
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-book"></i>Works Documentation</span>
                 </p>
-                
-            </div>
-                   
-    <br>     
-        
-        <p class="btntit">
-            <span class="titleacc">Karya Komersial (Klien)</span>
-        </p>
-        
-        <br>
-        <button class="accordion">PT. Ruang Raya Indonesia (2022)</button>
-            <div class="panelx">
-                
-                  <p>  
-                      <div class="container">
-                            
-                    <div id="bar">
+                <br>
+                <div class="condocs">
+                    <div id="docs1">
+                        <div class="doc-btn">
+                            <a href="mograph.html" class="hero-btndoc">
+                                <div class="docs-content" title="Visit the page">
+                                    <span>Motion Graphics & Video Editor Documentation</span><i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="docs2">
+                        <div class="doc-btn">
+                            <a href="3d.html" class="hero-btndoc">
+                                <div class="docs-content" title="Visit the page">
+                                    <span>3D Design & Animation Documentation</span><i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-trophy"></i>Award</span>
+                </p>
+                <br>
+
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2019</span></li>
+                    </ul>
+
+                    <span class="yearacc">Best Motion Graphics Awards</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>                 
+
+
+                            <div class="containerZZ">
+
+                                <div id="barZ"></div>
+                                <div id="videoplZ">
+                                    <div class="video-containerz"><iframe src="https://www.youtube.com/embed/xNWEs5qXOic?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                                </div>
+                                <div id="vtextZ">
+                                    <div class="btnox">
+                                        <ul>
+                                            <li><button class="occu3" title="Year Created">2019</button></li>
+                                            <li><button class="prop">Personal Work</button></li>
+                                            <li><span class="cardspan1" title="Looping Animation">00:10 <span class="infinity" title="Looping Animation">&#8734;</span></span></li>
+                                        </ul>
+                                    </div>
+                                    <h1 class="card-header2">Pantura Lane</h1>
+                                        <p class="metatxt">
+                                            2D Motion Graphic & Frame by frame Animation<br>
+                                            1280 x 720 / H.264 (.mp4) / 24 fps
+                                        </p>
+                                        <p class="infotxt">
+                                            Pantura Lane is a new perspective visualization in looking back at the dark history of the Jalan Pantura construction in Indonesia.<br><br>
+                                            This work was displayed under the title of Visual Communication Design event 
+                                            <a href="https://www.instagram.com/p/B39KGHzHldX/" title="Kunjungi halaman" target="_blank">
+                                            Ultigraph ‘SARASABHANA’</a>
+                                            at the Universitas Multimedia Nusantara (UMN) on 28 October - 1 November 2019, as well as winning
+                                            <a href="https://dkv.umn.ac.id/berita/ultigraph-sarasabhana-menuju-ranah-internasional/" title="Kunjungi halaman" target="_blank">
+                                            The Best Motion Graphics Award as the 1st Champion in the category of Motion Graphics competition.</a>
+                                        </p>
+                                </div>
+
+                            </div>
+                        <br>
+                        </p>
+
+                    </div>
+
+            <br>     
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-id-card-clip"></i>Commercial Works (Client)</span>
+                </p>
+
+                <br>
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2022</span></li>
+                    </ul>
+                    <span class="yearacc">PT. Ruang Raya Indonesia</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>  
+                            <div class="container">
+
+                                <div id="bar">
+                                    <p>
+                                        Works for <a href="https://www.ruangguru.com" title="Visit the page" target="_blank">PT. Ruang Raya Indonesia (Ruangguru)</a>
+                                        <br>
+                                        Occupation: <span class="sebagai">(Fulltime) Animator (Motion Graphic) RB</span>
+                                    </p>
+                                </div>
+                                <div id="videopl">
+                                    <div class="video-containerz"><iframe src="https://www.youtube.com/embed/ciwyP0Hl1RE?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                                </div>
+                                <div id="vtext">
+                                    <div class="btnox">
+                                        <ul>
+                                            <li><button class="occu3" title="Year Created">2022</button></li>
+                                            <li><span class="cardspan" title="Duration">00:50</span></li>
+                                        </ul>
+                                    </div>
+                                    <h1 class="card-header2">Works Compilation<br> at Ruangguru</h1>
+                                        <p class="metatxt">
+                                            Video Learning Process with Motion Graphics<br>
+                                            1280 x 720 / H.264 (.mp4) / 25 fps
+                                        </p>
+                                        <p class="infotxt">
+                                            It is a compilation of the video learning process for high school students.
+                                        </p>
+                                </div>
+
+
+                            </div>
+                            <br><br>  
+                        </p>
+
+                    </div>
+
+                <br>        
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2020 - 2021</span></li>
+                    </ul>
+                    <span class="yearacc">Pandit Football Indonesia & Mola Sport</span>
+                </button>
+                    <div class="panelx">
+
                         <p>
-                                Karya untuk <a href="https://www.ruangguru.com" title="Kunjungi halaman" target="_blank">PT Ruang Raya Indonesia (Ruangguru)</a>
-                                <br>
-                                Sebagai: <span class="sebagai">(Fulltime) Animator (Motion Graphic) RB</span>
-                                </p>
-                    </div>
-                    <div id="videopl">
-                        <div class="video-containerz"><iframe src="https://www.youtube.com/embed/ciwyP0Hl1RE?rel=0" frameborder="0" allowfullscreen></iframe></div>
-                    </div>
-                    <div id="vtext">
-                        <div class="btnox">
-                            <ul>
-                                <li><button class="occu3" title="Tahun Karya">2022</button></li>
-                                <li><span class="cardspan" title="Durasi">00:50</span></li>
-                            </ul>
-                        </div>
-                        <h1 class="card-header2">Kompilasi Karya<br> di Ruangguru</h1>
-                                <p class="metatxt">
-                                    Video Learning Process with Motion Graphics<br>
-                                    1280 x 720 / H.264 (.mp4) / 25 fps
-                                </p>
-                                <p class="infotxt">
-                                    Merupakan kompilasi video learning process untuk murid kelas SMP - SMA/SMK.
-                                </p>
-                    </div>
-                    
-                    
-                    </div>
-                      
-                </p>
-                
-            </div>
-        
-        <br>        
-        <button class="accordion">Pandit Football Indonesia & Mola Sport (2020 - 2021)</button>
-            <div class="panelx">
-                
-                  <p>
-                        <div class="containertri">
-                            <div id="barx01">
-                                <p>
-                                Karya untuk <a href="https://www.instagram.com/panditfootball/" title="Kunjungi halaman" target="_blank">Pandit Football Indonesia</a> &
-                                <a href="https://www.instagram.com/mola.sport/" title="Kunjungi halaman" target="_blank">Mola Sport</a>
-                                <br>
-                                    Sebagai: <span class="sebagai">(Freelance) Video Editor</span>
-                                </p>
-                            </div>
-                            <div id="cardx01">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/4263a2f5e57248a3721040375b047e92/54daafec2f5370f4-ca/s540x810/bffad1edbbee3e5be799904d794a585c475c100e.png">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2021</button></li>
-                                                    <li><span class="cardspan" title="Durasi">00:59</span></li>
-                                                </ul>
+                            <div class="containertri">
+                                <div id="barx01">
+                                    <p>
+                                        Works for <a href="https://www.instagram.com/panditfootball/" title="Visit the page" target="_blank">Pandit Football Indonesia</a> &
+                                        <a href="https://www.instagram.com/mola.sport/" title="Visit the page" target="_blank">Mola Sport</a>
+                                        <br>
+                                        Occupation: <span class="sebagai">(Freelance) Video Editor</span>
+                                    </p>
+                                </div>
+                                <div id="cardx01">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/4263a2f5e57248a3721040375b047e92/54daafec2f5370f4-ca/s540x810/bffad1edbbee3e5be799904d794a585c475c100e.png">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2021</button></li>
+                                                        <li><span class="cardspan" title="Duration">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Football Player Profile: Vincenzo Grifo</h1>
+                                                <p class="metatxt">Sports Video with Motion Graphics<br>1920 x 1080 / H.264 (.mp4) / 25 fps</p>  
+                                                <p class="infotxt2">
+                                                    It is a football player profile video to expose potential players who play in the Bundesliga (First division of the Germany League) to the target audience of Mola.
+                                                </p>
                                             </div>
-                                        <h1 class="card-header2">Football Player Profile: Vincenzo Grifo</h1>
-                                        <p class="metatxt">Sports Video with Motion Graphics<br>1920 x 1080 / H.264 (.mp4) / 25 fps</p>  
-                                        <p class="infotxt2">
-                                            Merupakan video profil pemain sepakbola untuk mengenalkan pemain potensial yang bermain di Bundesliga (Kasta pertama Liga Jerman) kepada target audiens Mola.
-                                        </p>
-                                      </div>
-                                    </div>
-                                      <div class="btn-card">  
-                                        <span><a href="https://www.instagram.com/p/CKDrG1XgmYK/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">Tonton</a></span>
-
-                                    </div>
-                                  </div>
-                            </div>
-                            <div id="cardx02">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/db3dea49ce102fa2dbce053d19b2fa2f/8bb1027c54c14447-28/s540x810/6f258ffe80bfaf56de06ed3525984bfd082e36e1.png">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2021</button></li>
-                                                    <li><span class="cardspan" title="Durasi">00:59</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">Best Goals Eredivisie 2020/2021</h1>
-                                        <p class="metatxt">Sports Video with Motion Graphics<br>1080 x 1080 / H.264 (.mp4) / 25 fps</p>
-                                        <p class="infotxt2">
-                                            Merupakan video kompilasi goal terbaik dari gelaran Eredivisie (Kasta pertama Liga Belanda) selama musim 2020/2021, dengan tujuan menarik perhatian penikmat sepakbola di Indonesia untuk menonton liga terbaik di Belanda tersebut.
-                                        </p>
-                                      </div>
-                                    </div>
-                                      <div class="btn-card">  
-                                        <span><a href="https://www.instagram.com/p/CPpzfMlg6h6/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">Tonton</a></span>
-
-                                    </div>
-                                  </div>
-                            </div>
-                            <div id="cardx03">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/23ddda43055251bed36fd86c8fcaecb3/27adc1007a917cec-ba/s540x810/b72c73526f74ba9e0c7f8f5afdcc1e75f36a93c4.png">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2021</button></li>
-                                                    <li><span class="cardspan" title="Durasi">00:59</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">Football Player Feature: <br>Filip Kostic</h1>
-                                        <p class="metatxt">Sports Video with Motion Graphics<br>1920 x 1080 / H.264 (.mp4) / 25 fps</p>
-                                        <p class="infotxt2">
-                                            Merupakan video fitur pemain sepakbola untuk memberikan informasi capaian terbaru pemain potensial yang bermain di Bundesliga (Kasta pertama Liga Jerman) kepada target audiens Mola.
-                                        </p>
-                                      </div>
-                                    </div>
-                                      <div class="btn-card">  
-                                        <span><a href="https://www.instagram.com/p/CMWPHztAJFC/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">Tonton</a></span>
-
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                
-                </p>
-        <br>
-                
-            </div>
-        
-        <br>
- 
-        
-        <button class="accordion">PT. Amphibi Studio Motionema (2019 - 2020)</button>
-            <div class="panelx">
-                
-                  <p>
-                      <div class="containertri">
-                            <div id="barx01">
-                                <p>
-                                Karya untuk <a href="https://amphibistudio.com" title="Kunjungi halaman" target="_blank">PT. Amphibi Studio Motionema</a>
-                                <br>
-                                    Sebagai: <span class="sebagai">(Internship & Freelance) 2D Motion Designer dan Video Editor</span>
-                                </p>
-                            </div>
-                            <div id="cardx01">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/96b3d423a044233e90363e1fd8355595/ec4072d2d3cff786-e9/s540x810/c65a498e1ac893069e1bcd672a9eadc8fe1dd90c.png" alt="Red Shoes" class="card___img">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2020</button></li>
-                                                    <li><button class="prop">Karya Freelance</button></li>
-                                                    <li><span class="cardspan" title="Durasi">10:04</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">Serial Video Pembelajaran Pamsimas</h1>
-                                        <p class="metatxt">Client:<br>Pamsimas (Penyediaan Air Minum dan Sanitasi Berbasis Masyarakat)</p>
-                                        <p class="infotxt2">
-                                            Merupakan serial video pembelajaran bagian yang keempat, dengan isi materi tentang pembelajaran mengenai pendataan protokol kesehatan bagi para pekerja Pamsimas.
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div class="btn-card">
-                                        <a href="#popup1" class="btn">Tonton</a>
-                                    </div>
-                                  </div>
-                            </div>
-                          
-                                    <div class="popup" id="popup1">
-                                        <div class="popup___content">
-                                            <div class="popup___header">
-                                                <h1>Serial Video Pembelajaran Pamsimas</h1>
-                                                <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 30 fps</h2>
-                                            </div>
-                                            <div class="popup___img">
-                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/rfqdD_MkYok?rel=0" frameborder="0" allowfullscreen></iframe></div>
-
-                                                <a href="##" class="popup___close">&times;</a>
-                                            </div>
-
-                                            <div class="popup___text">
-                                            </div>
-
                                         </div>
-                                    </div>
-                          
-                          
-                          
-                          
-                            <div id="cardx02">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/f78996ef49928d1207ab8a50117353a2/fcbbcb8f98f26e25-e9/s540x810/db629141ca2b181fee1a688264770c2322e76ddd.png" alt="Green Shoes" class="card___img">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2018</button></li>
-                                                    <li><button class="prop">Karya Internship</button></li>
-                                                    <li><span class="cardspan" title="Durasi">03:46</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">BJB JLO Journey to a Better Future</h1>
-                                        <p class="metatxt">Client:<br>Bank BJB (Jawa Barat)<br><br></p>
-                                        <p class="infotxt2">
-                                            Merupakan video Layanan Operasional dari Bank BJB yang dipersembahkan oleh Divisi Jaringan, Layanan & Operasional Grup Pengembangan Jaringan, 2018.
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div class="btn-card">  
-                                        <a href="#popup2" class="btn">Tonton</a> 
-                                    </div>
-                                  </div>
-                            </div>
-                          
-                                    <div class="popup" id="popup2">
-                                        <div class="popup___content">
-                                            <div class="popup___header">
-                                                <h1>BJB JLO Journey to a Better Future</h1>
-                                                <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 25 fps</h2>
-                                            </div>
-                                            <div class="popup___img">
-                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/IGZJl_b_Rwo?rel=0" frameborder="0" allowfullscreen></iframe></div>
-
-                                                <a href="##" class="popup___close">&times;</a>
-                                            </div>
-
-                                            <div class="popup___text">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                          
-                          
-                            <div id="cardx03">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/1c3c5175b89af37fd97bdb7f8ca61f35/6e033fd2c910162e-1b/s540x810/81dfff2f4df0f7a7141e7389283af0c71d9617e5.png" alt="Blue Shoes" class="card___img">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2018</button></li>
-                                                    <li><button class="prop">Karya Internship</button></li>
-                                                    <li><span class="cardspan" title="Durasi">03:59</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">BJB JLO Digital Map<br><br></h1>
-                                        <p class="metatxt">Client:<br>Bank BJB (Jawa Barat)<br><br></p>
-                                        <p class="infotxt2">
-                                            Merupakan video Layanan Operasional dari Bank BJB.
-                                        </p>
-                                      </div>
-                                    </div>
                                         <div class="btn-card">  
-                                            <a href="#popup3" class="btn">Tonton</a>  
+                                            <span><a href="https://www.instagram.com/p/CKDrG1XgmYK/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">View<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
                                         </div>
-                                  </div>
+                                    </div>
+                                </div>
+                                <div id="cardx02">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/db3dea49ce102fa2dbce053d19b2fa2f/8bb1027c54c14447-28/s540x810/6f258ffe80bfaf56de06ed3525984bfd082e36e1.png">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2021</button></li>
+                                                        <li><span class="cardspan" title="Duration">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Best Goals Eredivisie 2020/2021</h1>
+                                                <p class="metatxt">Sports Video with Motion Graphics<br>1080 x 1080 / H.264 (.mp4) / 25 fps</p>
+                                                <p class="infotxt2">
+                                                    It is a video compilation of the best goal of the Eredivisie (First division of the Dutch League) during the 2020/2021 season, with the aim of attracting the attention of Indonesian football enthusiasts to watch the best league in the Netherlands.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                                <span><a href="https://www.instagram.com/p/CPpzfMlg6h6/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">View<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cardx03">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/23ddda43055251bed36fd86c8fcaecb3/27adc1007a917cec-ba/s540x810/b72c73526f74ba9e0c7f8f5afdcc1e75f36a93c4.png">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2021</button></li>
+                                                        <li><span class="cardspan" title="Duration">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Football Player Feature: <br>Filip Kostic</h1>
+                                                <p class="metatxt">Sports Video with Motion Graphics<br>1920 x 1080 / H.264 (.mp4) / 25 fps</p>
+                                                <p class="infotxt2">
+                                                    It is a video feature of a football player to provide the latest access information on potential players playing in the Bundesliga (First division of the Germany League) to the target audience of Mola.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <span><a href="https://www.instagram.com/p/CMWPHztAJFC/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">View<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        
+
+                        </p>
+                <br>
+
+                    </div>
+
+                <br>
+
+
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2019 - 2020</span></li>
+                    </ul>
+                    <span class="yearacc">PT. Amphibi Studio Motionema</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>
+                            <div class="containertri">
+                                <div id="barx01">
+                                    <p>
+                                        Works for <a href="https://amphibistudio.com" title="Visit the page" target="_blank">PT. Amphibi Studio Motionema</a>
+                                        <br>
+                                        Occupation: <span class="sebagai">(Internship & Freelance) 2D Motion Designer and Video Editor</span>
+                                    </p>
+                                </div>
+                                <div id="cardx01">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/96b3d423a044233e90363e1fd8355595/ec4072d2d3cff786-e9/s540x810/c65a498e1ac893069e1bcd672a9eadc8fe1dd90c.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2020</button></li>
+                                                        <li><button class="prop">Freelance Work</button></li>
+                                                        <li><span class="cardspan" title="Duration">10:04</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Learning Video Series of Pamsimas</h1>
+                                                <p class="metatxt">Client:<br>Pamsimas (Penyediaan Air Minum dan Sanitasi Berbasis Masyarakat)</p>
+                                                <p class="infotxt2">
+                                                    It is the fourth part of the learning video series contains information on how to implement health protocols for Pamsimas employees.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup1" class="btn">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup1">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Learning Video Series of Pamsimas</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 30 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/rfqdD_MkYok?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div id="cardx02">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/f78996ef49928d1207ab8a50117353a2/fcbbcb8f98f26e25-e9/s540x810/db629141ca2b181fee1a688264770c2322e76ddd.png" alt="Green Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2018</button></li>
+                                                        <li><button class="prop">Internship Work</button></li>
+                                                        <li><span class="cardspan" title="Duration">03:46</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">BJB JLO Journey to a Better Future</h1>
+                                                <p class="metatxt">Client:<br>Bank BJB (West Java)<br><br></p>
+                                                <p class="infotxt2">
+                                                    It is a video of Operational Services of Bank BJB presented by the Network, Services & Operations Division of the Network Development Group, 2018.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <a href="#popup2" class="btn">View</a> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup2">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>BJB JLO Journey to a Better Future</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 25 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/IGZJl_b_Rwo?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div id="cardx03">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/1c3c5175b89af37fd97bdb7f8ca61f35/6e033fd2c910162e-1b/s540x810/81dfff2f4df0f7a7141e7389283af0c71d9617e5.png" alt="Blue Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2018</button></li>
+                                                        <li><button class="prop">Internship Work</button></li>
+                                                        <li><span class="cardspan" title="Duration">03:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">BJB JLO Digital Map<br><br></h1>
+                                                <p class="metatxt">Client:<br>Bank BJB (West Java)<br><br></p>
+                                                <p class="infotxt2">
+                                                    It is an operational service from Bank BJB.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <a href="#popup3" class="btn">View</a>  
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="popup" id="popup3">
                                     <div class="popup___content">
                                         <div class="popup___header">
@@ -384,201 +478,215 @@
                                     </div>
                                 </div>
                             </div>
-                      
-                </p>
-        
-        <br>
-            </div>
-    
-        <br>
-    
-    
-        <button class="accordion">Pekopo Studio (2017 - 2019)</button>
-            <div class="panelx">
-                
-                  <p>
-                      <div class="containertri">
-                            <div id="barx01">
-                                <p>
-                                Karya untuk <a href="https://www.facebook.com/profile.php?id=100067438493477" title="Kunjungi halaman" target="_blank">Pekopo Studio</a>
-                                <br>
-                                    Sebagai: <span class="sebagai">(Freelance) 2D Motion Designer dan Video Editor</span>
-                                </p>
-                            </div>
-                            <div id="cardx01">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/1f9295e3d27c0f42bcc7374e75470162/bd15219286c2e6d9-ef/s540x810/bb5fe4de6238ab2c4cd2ee6d25a33e6fca680be9.png" alt="Red Shoes" class="card___img">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2019</button></li>
-                                                    <li><span class="cardspan" title="Durasi">02:14</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">Iklan Layanan Masyarakat Pengenalan Tas Sican<br><br></h1>
-                                        <p class="metatxt">Client:<br>BPBD Kota Semarang dan Mahasiswa</p>
-                                        <p class="infotxt2">
-                                            Merupakan video Iklan Layanan Masyarakat (ILM) tentang pengenalan Tas Sican sebagai alat untuk membantu berjaga - jaga apabila terjadi suatu bencana atau kondisi darurat yang lain, sehingga dapat memudahkan evakuasi menuju tempat yang aman.
-                                        </p>
-                                      </div>
-                                    </div>
-                                        <div class="btn-card">
-                                            <a href="#popup4" class="btn">Tonton</a>
-                                        </div>
-                                  </div>
-                            </div>
-                          
-                                    <div class="popup" id="popup4">
-                                        <div class="popup___content">
-                                            <div class="popup___header">
-                                                <h1>Iklan Layanan Masyarakat Pengenalan Tas Sican</h1>
-                                                <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
-                                            </div>
-                                            <div class="popup___img">
-                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/OL24TuRln4U?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-                                                <a href="##" class="popup___close">&times;</a>
-                                            </div>
+                        </p>
 
-                                            <div class="popup___text">
-                                            </div>
+                <br>
+                    </div>
 
-                                        </div>
-                                    </div>
-                          
-                            <div id="cardx02">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/9410e090a6982e736b873dc69a1e46b1/b7e1af052bb0cfa9-ee/s540x810/a42c895a2d1791f5b546f39caa1a81bd1401917b.png" alt="Red Shoes" class="card___img">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2019</button></li>
-                                                    <li><span class="cardspan" title="Durasi">00:52</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">Iklan Layanan Masyarakat Kampanye #SOShark<br><br></h1>
-                                        <p class="metatxt">Client:<br>Kontribusi kepada WWF Indonesia</p>
-                                        <p class="infotxt2">
-                                            Merupakan video Iklan Layanan Masyarakat (ILM) untuk mendukung kampanye #SOShark tentang kesadaran masyarakat untuk berperan serta dalam melindungi ikan hiu yang diujung kepunahan.
-                                        </p>
-                                      </div>
-                                    </div>
-                                        <div class="btn-card">
-                                            <a href="#popup5" class="btn">Tonton</a>
-                                        </div>
-                                  </div>
-                            </div>
-                          
-                                    <div class="popup" id="popup5">
-                                        <div class="popup___content">
-                                            <div class="popup___header">
-                                                <h1>Iklan Layanan Masyarakat Kampanye #SOShark</h1>
-                                                <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
-                                            </div>
-                                            <div class="popup___img">
-                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/X3eOla3fY_w?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <br>
 
-                                                <a href="##" class="popup___close">&times;</a>
-                                            </div>
 
-                                            <div class="popup___text">
-                                            </div>
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2017 - 2019</span></li>
+                    </ul>
+                    <span class="yearacc">Pekopo Studio</span>
+                </button>
+                    <div class="panelx">
 
-                                        </div>
-                                    </div>
-                          
-                            <div id="cardx03">
-                                <div class="landingstri">
-                                    <div class="circle2">
-                                      <img class="card-img" src="https://64.media.tumblr.com/c62134bcc090605d7b5ca18a60e82d92/f12af53d2b49fa92-9e/s540x810/9b629d7a2b065698997658043bffa18a17c70197.png" alt="Red Shoes" class="card___img">
-                                      <div class="card-contenttri">
-                                            <div class="btnox">
-                                                <ul>
-                                                    <li><button class="occu3" title="Tahun Karya">2017</button></li>
-                                                    <li><span class="cardspan" title="Durasi">00:59</span></li>
-                                                </ul>
-                                            </div>
-                                        <h1 class="card-header2">Layanan Operasional PT. Konsuil Perdana Indonesia, Jawa Tengah</h1>
-                                        <p class="metatxt">Client:<br>PT. Konsuil Perdana Indonesia (Jawa Tengah)</p>
-                                        <p class="infotxt2">
-                                            Merupakan video layanan operasional mengenai Company Profile PT. Konsuil Perdana Indonesia wilayah Jawa Tengah.
-                                        </p>
-                                      </div>
-                                    </div>
-                                        <div class="btn-card">
-                                            <a href="#popup6" class="btn">Tonton</a>
-                                        </div>
-                                  </div>
-                            </div>
-                          
-                                    <div class="popup" id="popup6">
-                                        <div class="popup___content">
-                                            <div class="popup___header">
-                                                <h1>Layanan Operasional PT. Konsuil Perdana Indonesia, Jawa Tengah</h1>
-                                                <h2>2D Motion Graphic / 1280 x 720 / H.264 (.mp4) / 25 fps</h2>
-                                            </div>
-                                            <div class="popup___img">
-                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/Sgr13DJQWjM?rel=0" frameborder="0" allowfullscreen></iframe></div>
-
-                                                <a href="##" class="popup___close">&times;</a>
-                                            </div>
-
-                                            <div class="popup___text">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                          
-                        </div>
-                      
-                </p>
-    <br>           
-            </div>
-            
-    <br>
-    
-    
-    
-    
-    
-    <p class="btntit">
-        <span class="titleacc">Karya Kolaborasi</span>
-    </p>
-        <br>        
-        <button class="accordion">Serial Animasi (2020)</button>
-            <div class="panelx">
-                  <p>
-                    <div class="container03">
-                        <div id="bar3"></div>
-                        <div id="videopl3">
-                            <div class="imgvid">
-                                <img src="https://64.media.tumblr.com/776a7d2a781f214eccf68150dbf912c8/733220c5ec7bcab8-37/s2048x3072/42003cd478a6525ae570d4237ad54d9871dda05f.png" class="jjimg">
-                            </div>
-                        </div>
-                        <div id="vtext3">
-                            <h1 class="card-header2">Animasi JOJO & KAKA</h1>
-                                <p class="infotxt">
-                                    Serial Animasi 2D Frame by Frame Tahun 2020.<br>
-                                    Berkolaborasi dengan Hikmawanmie Studio, sebagai <b>Video Editor</b> dalam proses produksi.<br><br>
-                                    Merupakan serial animasi dengan total 5 episode yang bercerita tentang kehidupan Jojo sebagai tokoh utama dengan peran sebagai anak - anak yang berkarakter ekspresif dan selalu berpikir secara logis.<br><br>
-                                    Mengangkat genre komedi ringan dengan konklusi disetiap akhir episode, semua episode dalam animasi ini membahas isu utama mengenai bahaya merokok, terutama bagi anak - anak dan keluarga.
-                                    Serta alasan dibalik pembuatan animasi ini adalah sebagai media pembantu untuk pembelajaran kepada anak - anak.
-                                </p>
-                        </div>
-                        <div id="ep1">
-                            <div class="btn-cardep">
-                            <a href="#popup7" class="btn01">
-                                <div class="playvideo"><i class="fa fa-play-circle" title="Tonton"></i></div>
-                                <div class="card-content">
-                                    <h1 class="card-headerep">Episode 1<span class="timedur" title="Durasi">02:48</span></h1>
-                                    <p class="card-textep">Keren</p>
+                        <p>
+                            <div class="containertri">
+                                <div id="barx01">
+                                    <p>
+                                        Works for <a href="https://www.facebook.com/profile.php?id=100067438493477" title="Visit the page" target="_blank">Pekopo Studio</a>
+                                        <br>
+                                        Occupation: <span class="sebagai">(Freelance) 2D Motion Designer and Video Editor</span>
+                                    </p>
                                 </div>
-                                
-                            </a>
-                                
-                                
+                                <div id="cardx01">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/1f9295e3d27c0f42bcc7374e75470162/bd15219286c2e6d9-ef/s540x810/bb5fe4de6238ab2c4cd2ee6d25a33e6fca680be9.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2019</button></li>
+                                                        <li><span class="cardspan" title="Duration">02:14</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Public Service Announcement The Introduction of Tas Sican</h1>
+                                                <p class="metatxt">Client:<br>BPBD Semarang City and College Student</p>
+                                                <p class="infotxt2">
+                                                    This is a Public Service Announcement (PSA) video about the introduction of the Tas Sican as a tool to help guard against a disaster or other emergency, so that it can facilitate evacuation to a safe place.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup4" class="btn">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup4">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Public Service Announcement The Introduction of Tas Sican</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/OL24TuRln4U?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="cardx02">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/9410e090a6982e736b873dc69a1e46b1/b7e1af052bb0cfa9-ee/s540x810/a42c895a2d1791f5b546f39caa1a81bd1401917b.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2019</button></li>
+                                                        <li><span class="cardspan" title="Duration">00:52</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Public Service Announcement<br> #SOShark Campaign<br></h1>
+                                                <p class="metatxt">Client:<br>Contribution to WWF Indonesia</p>
+                                                <p class="infotxt2">
+                                                    This is a Public Service Announcement (PSA) video to support the #SOShark campaign about public awareness to participate in protecting sharks that are on the verge of extinction.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup5" class="btn">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup5">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Public Service Announcement #SOShark Campaign</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/X3eOla3fY_w?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="cardx03">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/c62134bcc090605d7b5ca18a60e82d92/f12af53d2b49fa92-9e/s540x810/9b629d7a2b065698997658043bffa18a17c70197.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Year Created">2017</button></li>
+                                                        <li><span class="cardspan" title="Duration">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Operational Services PT. Konsuil Perdana Indonesia, Central Java</h1>
+                                                <p class="metatxt">Client:<br>PT. Konsuil Perdana Indonesia (Central Java)</p>
+                                                <p class="infotxt2">
+                                                    It is an operational video service regarding Company Profile PT. Konsuil Perdana Indonesia for the Central Java region.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup6" class="btn">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup6">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Operational Services PT. Konsuil Perdana Indonesia, Central Java</h1>
+                                            <h2>2D Motion Graphic / 1280 x 720 / H.264 (.mp4) / 25 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/Sgr13DJQWjM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </p>
+            <br>           
+                    </div>
+
+            <br>
+
+
+
+
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-user-group"></i>Collaboration Works</span>
+                </p>
+                <br>        
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2020</span></li>
+                    </ul>
+                    <span class="yearacc">Animation Series</span>
+                </button>
+                <div class="panelx">
+                    <p>
+                        <div class="container03">
+                            <div id="bar3"></div>
+                            <div id="videopl3">
+                                <div class="imgvid">
+                                    <img src="https://64.media.tumblr.com/776a7d2a781f214eccf68150dbf912c8/733220c5ec7bcab8-37/s2048x3072/42003cd478a6525ae570d4237ad54d9871dda05f.png" class="jjimg">
+                                </div>
+                            </div>
+                            <div id="vtext3">
+                                <h1 class="card-header2">JOJO & KAKA Animation</h1>
+                                <p class="infotxt">
+                                    2D Frame by Frame Animation Series, 2020.<br>
+                                    Collaborating with Hikmawanmie Studio, as <b>Video Editor</b> in the production process.<br><br>
+                                    An animated series with a total of 5 episodes that tells the story of Jojo's life as the main character with the role of a child who has expressive characters and always thinks logically.<br><br>
+                                    Lifting the light comedy genre with a conclusion at the end of each episode, all episodes in this animation discuss the main issue regarding the dangers of smoking, especially for children and families. As well as the reason behind the creation of this animation is as an auxiliary media for learning to children.
+                                </p>
+                            </div>
+                            <div id="ep1">
+                                <div class="btn-cardep" title="View">
+                                    <a href="#popup7" class="btn01">
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="View"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 1<span class="timedur" title="Duration">02:48</span><br><span class="eptitle">Keren</span></span></li>
+                                            </ul>
+                                        </div>
+
+                                    </a>
+
+
                                     <div class="popup" id="popup7">
                                         <div class="popup___content">
                                             <div class="popup___header">
@@ -596,20 +704,25 @@
 
                                         </div>
                                     </div>
-                                
-                                
+
+
+                                </div>
                             </div>
-                        </div>
-                        <div id="ep2">
-                            <div class="btn-cardep">
-                            <a href="#popup8" class="btn02">
-                                <div class="playvideo"><i class="fa fa-play-circle" title="Tonton"></i></div>
-                                <div class="card-content">
-                                <h1 class="card-headerep">Episode 2<span class="timedur" title="Durasi">01:33</span></h1>
-                                <p class="card-textep">Vape</p>
-                              </div>
-                            </a>
-                                
+                            <div id="ep2">
+                                <div class="btn-cardep" title="View">
+                                    <a href="#popup8" class="btn02">                    
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="View"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 2<span class="timedur" title="Duration">01:33</span><br><span class="eptitle">Vape</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
                                     <div class="popup" id="popup8">
                                         <div class="popup___content">
                                             <div class="popup___header">
@@ -627,20 +740,25 @@
 
                                         </div>
                                     </div>
-                                
-                                
+
+
+                                </div>
                             </div>
-                        </div>
-                        <div id="ep3">
-                            <div class="btn-cardep">
-                            <a href="#popup9" class="btn03">
-                                <div class="playvideo"><i class="fa fa-play-circle" title="Tonton"></i></div>
-                                <div class="card-content">
-                                <h1 class="card-headerep">Episode 3<span class="timedur" title="Durasi">01:12</span></h1>
-                                <p class="card-textep">Tak Mau Terjebak</p>
-                              </div>
-                            </a>
-                                
+                            <div id="ep3">
+                                <div class="btn-cardep" title="View">
+                                    <a href="#popup9" class="btn03">    
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="View"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 3<span class="timedur" title="Duration">01:12</span><br><span class="eptitle">Tak Mau Terjebak</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
                                     <div class="popup" id="popup9">
                                         <div class="popup___content">
                                             <div class="popup___header">
@@ -658,19 +776,24 @@
 
                                         </div>
                                     </div>
-                                
+
+                                </div>
                             </div>
-                        </div>
-                        <div id="ep4">
-                            <div class="btn-cardep">
-                            <a href="#popup10" class="btn04">
-                                <div class="playvideo"><i class="fa fa-play-circle" title="Tonton"></i></div>
-                                <div class="card-content">
-                                <h1 class="card-headerep">Episode 4<span class="timedur" title="Durasi">02:00</span></h1>
-                                <p class="card-textep">Sedikit Juga Bahaya</p>
-                              </div>
-                            </a>
-                                
+                            <div id="ep4">
+                                <div class="btn-cardep" title="View">
+                                    <a href="#popup10" class="btn04">
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="View"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 4<span class="timedur" title="Duration">02:00</span><br><span class="eptitle">Sedikit Juga Bahaya</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
                                     <div class="popup" id="popup10">
                                         <div class="popup___content">
                                             <div class="popup___header">
@@ -688,19 +811,24 @@
 
                                         </div>
                                     </div>
-                                
+
+                                </div>
                             </div>
-                        </div>
-                        <div id="ep5">
-                            <div class="btn-cardep">
-                            <a href="#popup11" class="btn05">
-                                <div class="playvideo"><i class="fa fa-play-circle" title="Tonton"></i></div>
-                                <div class="card-content">
-                                <h1 class="card-headerep">Episode 5<span class="timedur" title="Durasi">01:34</span></h1>
-                                <p class="card-textep">Sayang Bapak</p>
-                              </div>
-                            </a>
-                                
+                            <div id="ep5">
+                                <div class="btn-cardep" title="View">
+                                    <a href="#popup11" class="btn05">
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="View"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 5<span class="timedur" title="Duration">01:34</span><br><span class="eptitle">Sayang Bapak</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
                                     <div class="popup" id="popup11">
                                         <div class="popup___content">
                                             <div class="popup___header">
@@ -718,34 +846,1134 @@
 
                                         </div>
                                     </div>
-                                
+
+                                </div>
                             </div>
+
+                        </div>
+                        <br><br>
+                    </p>
+
+                </div>
+
+                <br>
+
+
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2018</span></li>
+                    </ul>
+                    <span class="yearacc">Short Animated Film</span>
+                </button>
+                <div class="panelx">
+
+                    <p>                 
+                        <div class="container02">
+                            <div id="bar2"></div>
+                            <div id="videopl2">
+                                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/bue2VTAsezc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                            </div>
+                            <div id="vtext2">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Year Created">2018</button></li>
+                                        <li><span class="cardspan" title="Duration">02:30</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">JUDGEMENT:<br>Behind My Suffering Life</h1>
+                                <p class="metatxt">
+                                    2D Motion Graphic<br>1920 x 1080 / H.264 (.mp4) / 25 fps
+                                </p>
+                                <p class="infotxt">
+                                    Collaboration with Andalan Kami Production, as <b>Director and Video Editor</b>.<br><br>
+                                    It is a short animated film that raises social issues regarding cases of bullying in the school area. Taking from the victim's point of view, this animation is expected to provide an overview of the mental and psychological condition of the victim from bullying, so that it is hoped that it can prevent other victims from occurring.
+                                </p>
+                            </div>
+                            <div id="vinfo">
+                                <p class="infotxt">
+                                    <i class="fa fa-info-circle"></i><br>
+                                    This work was included in several animation competitions, but only as a participant, some of these competitions were: 20th DigiCon6 ASIA Awards Indonesia Region 2018, and 12th Edition Hellofest Animation & Short Movie Festival 2018 in the Short Movie category.
+                                </p>
+                            </div>
+                            <div id="vempty"></div>
+                        </div>
+                        <br><br>
+                    </p>
+
+                </div>
+
+                <br>
+
+
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2018</span></li>
+                    </ul>
+                    <span class="yearacc">Official Lyric Video</span>
+                </button>
+                <div class="panelx">
+
+                    <p>  
+                        <div class="containerZZ">
+
+                            <div id="barZ"></div>
+                            <div id="videoplZ">
+                                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/J6ZfZCHDaOM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                            </div>
+                            <div id="vtextZ">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Year Created">2018</button></li>
+                                        <li><span class="cardspan" title="Duration">03:57</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">Earth Balance:<br>Saat Semua Hilang</h1>
+                                <p class="metatxt">
+                                    2D Motion Graphic<br>1920 x 1080 / H.264 (.mp4) / 24 fps
+                                </p>
+                                <p class="infotxt">
+                                    Collaborating with Earth Balance Band which is an indie music group from Semarang, as Producer and Video Editor.<br><br>
+                                    This work was produced as one of the lyric videos Saat Semua Hilang song which was released in May 2018. It tells about the visualization of a person's deep pain when he loses a loved and most valuable person in his life.
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <br>  
+                    </p>
+
+                </div>
+
+
+
+
+
+
+
+
+            <br>
+
+
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-user"></i>Personal Works</span>
+                </p>
+                <br>
+
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2023</span></li>
+                    </ul>
+                    <span class="yearacc">Interactive Animation with Rive.app</span>
+                </button>
+                <div class="panelx">
+
+                    <p>  
+                        <div class="containerZZ">
+
+                            <div id="barZ"></div>
+                            <div id="videoplZ">
+                                <div class="video-containerz"><iframe style="border: none" width="500" height="500" src="https://rive.app/s/LpBYVtxZkkqPktNO7BJn0w/embed" allowfullscreen></iframe></div>
+                            </div>
+                            <div id="vtextZ">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Year Created">2023</button></li>
+                                        <li><span class="cardspan" title="Rive.app">Interactive</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">Interactive<br>Character Animation</h1>
+                                <p class="infotxt">
+                                    This work was created to develop self-ability by using <a href="https://rive.app" title="Visit the page" target="_blank">
+                                    Rive.app</a> which is a web application for producing animation and interactive media.<br><br>
+
+                                    <u>Guide</u><br>
+                                    To interact with these characters, please point the cursor to the area around the character object and move the cursor randomly then press the character object.
+
+                                    <br><br>
+                                    <i class="fa fa-info-circle"></i><br>
+                                    To find out how Rive.app works and its prospects in the digital content industry, you can visit the following page: <a href="https://medium.com/@okttoro/membelah-dominasi-dengan-rive-8345ff39be15" title="Visit the page" target="_blank">"Membelah dominasi dengan Rive"</a>.
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <br><br>  
+                    </p>
+
+                </div>
+
+                <br>
+
+
+
+                <button class="accordion" title="View" cursor-type="button">
+                    <ul>
+                        <li><span>2020</span></li>
+                    </ul>
+                    <span class="yearacc">Giphy GIF Stickers</span>
+                </button>
+                <div class="panelx">
+
+                    <p>
+                        <div class="container04">
+                            <div id="bar04"></div>
+                            <div id="gif1">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/lmk3lNFaUwFCZtFZly" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif2">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/kaZVIJUQC8VmwCn8Ak" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif3">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/j58qM8k5gGD9HhdUO9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif4">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/gLza723dmwG9vo673b" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif5">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/SUWYk9oWyAhoTU1kif" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif6">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/MZA7qLaxFCTkodCus9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gifinfo">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Year Created">2020</button></li>
+                                        <li><span class="cardspan" title="GIF">Animated GIF</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">Instagram and Snapchat Stickers</h1>
+                                <p class="infotxt">
+                                    This work was created with the aim of introducing a new medium for the publication of IP character works through Giphy media in the GIF Stickers format.<br><br>
+                                    <i class="fa fa-info-circle"></i><br>
+                                    To use stickers on Instagram and Snapchat, you can use the following keywords: <b>cakmat</b>.
+                                </p>
+                            </div>
+                            <div id="more">
+
+                                <div class="btn-cardv">  
+                                    <span><a href="https://giphy.com/okttoro" target="_blank" class="hero-btnvv">View more  <i class="fa fa-arrow-circle-right"></i></a></span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </p>
+
+                </div>
+
+                <br>
+
+
+
+
+
+
+
+                <div class="row-second">
+                    <div class="landing-row">
+                        <h1></h1>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="footer" id="footerOp">
+                <div class="row-footer">
+                    <div class="col-footer2">
+                        <h5>Get in touch</h5>
+                        <div class="iconsx">
+                            <a href="https://www.instagram.com/okttoro/" target="_blank" title="adetoro° Instagram"><i class="fa fa-brands fa-instagram"></i></a>
+                            <a href="https://dribbble.com/okttoro" target="_blank" title="adetoro° Dribbble"><i class="fa fa-brands fa-dribbble"></i></a>
+                            <a href="https://giphy.com/okttoro" target="_blank" title="adetoro° GIPHY Page"><i class="fa fa-regular fa-note-sticky"></i></a>
+                            <a href="https://medium.com/@okttoro" target="_blank" title="adetoro° Medium Page"><i class="fa fa-brands fa-medium"></i></a>
+                            <a href="mailto:af.oktaviantoro@gmail.com" target="_blank" title="adetoro° Email"><i class="fa fa-regular fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-footer">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Disclaimer</a></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="row-footer">
+                    <div class="col-footer">
+                        <h6><i class="fa fa-copyright"></i> 2023 Ade F. Oktaviantoro</h6>
+                    </div>
+                </div>    
+            </section>    
+
+        </div>   
+        </section>
+        </div>
+
+
+<!----PAGE BREAK--------------------------------------------------------------------------------------->
+
+
+        <div class="bahasa" id="bahasa">
+        <section class="header">
+            <div class="animate-this">
+            <nav>
+                <div class="logots" id="logotsOp"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                <div class="nameset" id="setname"><a href="">Ade F. Oktaviantoro</a></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="logodlm"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                    <div class="closeMenu"><i class="fa fa-times" onclick="hideMenu()"></i></div>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <!---<li><a href="">ABOUT</a></li>-->
+                            <li><a href="mailto:af.oktaviantoro@gmail.com">CONTACT</a></li>
+
+                        </ul> 
+
+                </div>
+                <div class="transBTN">
+                    <div class="tbtn">
+                        <ul>
+                            <li><a title="English" class="btntrans1" onclick="appearP1()">EN</a></li>
+                            <li><a title="Bahasa Indonesia" class="btntrans2" onclick="appearP2()">ID</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="openMenu"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+
+
+        <!---------- Landing ----------->
+
+            <section class="landing" id="landingOp">
+
+
+
+                <div class="head-cont">
+                    <div id="titlepage">
+                        <h1>Ade F. Oktaviantoro<br>Portfolio <button class="occu3">2023</button></h1>
+                    </div>
+                    <div id="titlesubs">
+                        <div class="desctitle">
+                            <p>
+                                Halo! Saya merupakan seorang desainer yang berfokus pada Motion Graphic, Video Editor, dan 3D Design. Saya mempunyai pengalaman dalam bekerja bersama dengan orang-orang yang hebat dari beberapa studio. <br>Pengalaman dan proyek ini telah membantu saya tumbuh sebagai orang yang kreatif baik dalam bekerja secara tim maupun individu.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div id="getin">
+                        <div class="desctitle">
+                            <p><span class="GITtitle">Get in touch</span><br>
+                                <a href="mailto:af.oktaviantoro@gmail.com">Email</a><br>
+                                <a href="https://www.instagram.com/okttoro/" target="_blank">Instagram</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="descp">
+                    <p><i class="fa fa-solid fa-circle-info"></i><span class="portdesc">Portfolio ini berisi semua karya terbaik Ade F. Oktaviantoro selama berkarir di industri konten digital.</span></p>
+                </div>
+
+
+                <br>
+                <br>
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-book"></i>Dokumentasi Karya</span>
+                </p>
+                <br>
+                <div class="condocs">
+                    <div id="docs1">
+                        <div class="doc-btn">
+                            <a href="mograph.html" class="hero-btndoc">
+                                <div class="docs-content" title="Kunjungi halaman">
+                                    <span>Dokumentasi Motion Graphics & Video Editor</span><i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </p>
-                
-            </div>
-        
-        <br>
- 
-        
-        <button class="accordion">Film Animasi Pendek (2018)</button>
-            <div class="panelx">
-                
-                  <p>                 
-                    <div class="container02">
-                        <div id="bar2"></div>
-                        <div id="videopl2">
-                            <div class="video-containerz"><iframe src="https://www.youtube.com/embed/bue2VTAsezc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                    <div id="docs2">
+                        <div class="doc-btn">
+                            <a href="3d.html" class="hero-btndoc">
+                                <div class="docs-content" title="Kunjungi halaman">
+                                    <span>Dokumentasi 3D Design & Animation</span><i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
                         </div>
-                        <div id="vtext2">
-                            <div class="btnox">
-                                <ul>
-                                    <li><button class="occu3" title="Tahun Karya">2018</button></li>
-                                    <li><span class="cardspan" title="Durasi">02:30</span></li>
-                                </ul>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-trophy"></i>Penghargaan</span>
+                </p>
+                <br>
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2019</span></li>
+                    </ul>
+
+                    <span class="yearacc">Best Motion Graphics Awards</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>                 
+
+
+                            <div class="containerZZ">
+
+                                <div id="barZ"></div>
+                                <div id="videoplZ">
+                                    <div class="video-containerz"><iframe src="https://www.youtube.com/embed/xNWEs5qXOic?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                                </div>
+                                <div id="vtextZ">
+                                    <div class="btnox">
+                                        <ul>
+                                            <li><button class="occu3" title="Tahun Karya">2019</button></li>
+                                            <li><button class="prop">Karya Personal</button></li>
+                                            <li><span class="cardspan1" title="Looping Animation">00:10 <span class="infinity" title="Looping Animation">&#8734;</span></span></li>
+                                        </ul>
+                                    </div>
+                                    <h1 class="card-header2">Pantura Lane</h1>
+                                        <p class="metatxt">
+                                            2D Motion Graphic & Animasi frame by frame<br>
+                                            1280 x 720 / H.264 (.mp4) / 24 fps
+                                        </p>
+                                        <p class="infotxt">
+                                            Pantura Lane merupakan sebuah visualisasi perspektif baru dalam melihat kembali sejarah kelam pembangunan Jalan Pantura di Indonesia.<br><br>
+                                            Pada tanggal 28 Oktober - 1 November 2019, Karya ini dipamerkan dalam gelaran acara Desain Komunikasi Visual 
+                                            <a href="https://www.instagram.com/p/B39KGHzHldX/" title="Kunjungi halaman" target="_blank">
+                                            Ultigraph ‘SARASABHANA’</a>
+                                            di Universitas Multimedia Nusantara (UMN), serta mendapatkan 
+                                            <a href="https://dkv.umn.ac.id/berita/ultigraph-sarasabhana-menuju-ranah-internasional/" title="Kunjungi halaman" target="_blank">
+                                            Penghargaan Best Motion Graphics sebagai Juara 1 pada kategori kompetisi Motion Graphics.</a>
+                                        </p>
+                                </div>
+
                             </div>
-                            <h1 class="card-header2">JUDGEMENT:<br>Behind My Suffering Life</h1>
+                        <br>
+                        </p>
+
+                    </div>
+
+            <br>     
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-id-card-clip"></i>Karya Komersial (Klien)</span>
+                </p>
+
+                <br>
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2022</span></li>
+                    </ul>
+                    <span class="yearacc">PT. Ruang Raya Indonesia</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>  
+                            <div class="container">
+
+                                <div id="bar">
+                                    <p>
+                                        Karya untuk <a href="https://www.ruangguru.com" title="Kunjungi halaman" target="_blank">PT. Ruang Raya Indonesia (Ruangguru)</a>
+                                        <br>
+                                        Sebagai: <span class="sebagai">(Fulltime) Animator (Motion Graphic) RB</span>
+                                    </p>
+                                </div>
+                                <div id="videopl">
+                                    <div class="video-containerz"><iframe src="https://www.youtube.com/embed/ciwyP0Hl1RE?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                                </div>
+                                <div id="vtext">
+                                    <div class="btnox">
+                                        <ul>
+                                            <li><button class="occu3" title="Tahun Karya">2022</button></li>
+                                            <li><span class="cardspan" title="Durasi">00:50</span></li>
+                                        </ul>
+                                    </div>
+                                    <h1 class="card-header2">Kompilasi Karya<br> di Ruangguru</h1>
+                                        <p class="metatxt">
+                                            Video Learning Process with Motion Graphics<br>
+                                            1280 x 720 / H.264 (.mp4) / 25 fps
+                                        </p>
+                                        <p class="infotxt">
+                                            Merupakan kompilasi video learning process untuk murid kelas SMP - SMA/SMK.
+                                        </p>
+                                </div>
+
+
+                            </div>
+                            <br><br>  
+                        </p>
+
+                    </div>
+
+                <br>        
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2020 - 2021</span></li>
+                    </ul>
+                    <span class="yearacc">Pandit Football Indonesia & Mola Sport</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>
+                            <div class="containertri">
+                                <div id="barx01">
+                                    <p>
+                                        Karya untuk <a href="https://www.instagram.com/panditfootball/" title="Kunjungi halaman" target="_blank">Pandit Football Indonesia</a> &
+                                        <a href="https://www.instagram.com/mola.sport/" title="Kunjungi halaman" target="_blank">Mola Sport</a>
+                                        <br>
+                                        Sebagai: <span class="sebagai">(Freelance) Video Editor</span>
+                                    </p>
+                                </div>
+                                <div id="cardx01">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/4263a2f5e57248a3721040375b047e92/54daafec2f5370f4-ca/s540x810/bffad1edbbee3e5be799904d794a585c475c100e.png">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2021</button></li>
+                                                        <li><span class="cardspan" title="Durasi">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Football Player Profile: Vincenzo Grifo</h1>
+                                                <p class="metatxt">Sports Video with Motion Graphics<br>1920 x 1080 / H.264 (.mp4) / 25 fps</p>  
+                                                <p class="infotxt2">
+                                                    Merupakan video profil pemain sepakbola untuk mengenalkan pemain potensial yang bermain di Bundesliga (Kasta pertama Liga Jerman) kepada target audiens Mola.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <span><a href="https://www.instagram.com/p/CKDrG1XgmYK/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">Tonton<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cardx02">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/db3dea49ce102fa2dbce053d19b2fa2f/8bb1027c54c14447-28/s540x810/6f258ffe80bfaf56de06ed3525984bfd082e36e1.png">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2021</button></li>
+                                                        <li><span class="cardspan" title="Durasi">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Best Goals Eredivisie 2020/2021</h1>
+                                                <p class="metatxt">Sports Video with Motion Graphics<br>1080 x 1080 / H.264 (.mp4) / 25 fps</p>
+                                                <p class="infotxt2">
+                                                    Merupakan video kompilasi goal terbaik dari gelaran Eredivisie (Kasta pertama Liga Belanda) selama musim 2020/2021, dengan tujuan menarik perhatian penikmat sepakbola di Indonesia untuk menonton liga terbaik di Belanda tersebut.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                                <span><a href="https://www.instagram.com/p/CPpzfMlg6h6/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">Tonton<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cardx03">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/23ddda43055251bed36fd86c8fcaecb3/27adc1007a917cec-ba/s540x810/b72c73526f74ba9e0c7f8f5afdcc1e75f36a93c4.png">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2021</button></li>
+                                                        <li><span class="cardspan" title="Durasi">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Football Player Feature: <br>Filip Kostic</h1>
+                                                <p class="metatxt">Sports Video with Motion Graphics<br>1920 x 1080 / H.264 (.mp4) / 25 fps</p>
+                                                <p class="infotxt2">
+                                                    Merupakan video fitur pemain sepakbola untuk memberikan informasi capaian terbaru pemain potensial yang bermain di Bundesliga (Kasta pertama Liga Jerman) kepada target audiens Mola.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <span><a href="https://www.instagram.com/p/CMWPHztAJFC/?utm_source=ig_web_copy_link" target="_blank" class="hero-btn5">Tonton<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </p>
+                <br>
+
+                    </div>
+
+                <br>
+
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2019 - 2020</span></li>
+                    </ul>
+                    <span class="yearacc">PT. Amphibi Studio Motionema</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>
+                            <div class="containertri">
+                                <div id="barx01">
+                                    <p>
+                                        Karya untuk <a href="https://amphibistudio.com" title="Kunjungi halaman" target="_blank">PT. Amphibi Studio Motionema</a>
+                                        <br>
+                                        Sebagai: <span class="sebagai">(Internship & Freelance) 2D Motion Designer dan Video Editor</span>
+                                    </p>
+                                </div>
+                                <div id="cardx01">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/96b3d423a044233e90363e1fd8355595/ec4072d2d3cff786-e9/s540x810/c65a498e1ac893069e1bcd672a9eadc8fe1dd90c.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2020</button></li>
+                                                        <li><button class="prop">Karya Freelance</button></li>
+                                                        <li><span class="cardspan" title="Durasi">10:04</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Serial Video Pembelajaran Pamsimas</h1>
+                                                <p class="metatxt">Client:<br>Pamsimas (Penyediaan Air Minum dan Sanitasi Berbasis Masyarakat)</p>
+                                                <p class="infotxt2">
+                                                    Merupakan serial video pembelajaran bagian yang keempat, dengan isi materi tentang pembelajaran mengenai pendataan protokol kesehatan bagi para pekerja Pamsimas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup12" class="btn">Tonton</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup12">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Serial Video Pembelajaran Pamsimas</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 30 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/rfqdD_MkYok?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div id="cardx02">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/f78996ef49928d1207ab8a50117353a2/fcbbcb8f98f26e25-e9/s540x810/db629141ca2b181fee1a688264770c2322e76ddd.png" alt="Green Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2018</button></li>
+                                                        <li><button class="prop">Karya Internship</button></li>
+                                                        <li><span class="cardspan" title="Durasi">03:46</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">BJB JLO Journey to a Better Future</h1>
+                                                <p class="metatxt">Client:<br>Bank BJB (Jawa Barat)<br><br></p>
+                                                <p class="infotxt2">
+                                                    Merupakan video Layanan Operasional dari Bank BJB yang dipersembahkan oleh Divisi Jaringan, Layanan & Operasional Grup Pengembangan Jaringan, 2018.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <a href="#popup13" class="btn">Tonton</a> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup13">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>BJB JLO Journey to a Better Future</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 25 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/IGZJl_b_Rwo?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div id="cardx03">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/1c3c5175b89af37fd97bdb7f8ca61f35/6e033fd2c910162e-1b/s540x810/81dfff2f4df0f7a7141e7389283af0c71d9617e5.png" alt="Blue Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2018</button></li>
+                                                        <li><button class="prop">Internship Work</button></li>
+                                                        <li><span class="cardspan" title="Durasi">03:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">BJB JLO Digital Map<br><br></h1>
+                                                <p class="metatxt">Client:<br>Bank BJB (Jawa Barat)<br><br></p>
+                                                <p class="infotxt2">
+                                                    Merupakan video Layanan Operasional dari Bank BJB.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">  
+                                            <a href="#popup14" class="btn">Tonton</a>  
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup14">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>BJB JLO Digital Map</h1>
+                                            <h2>2D Motion Graphic / 1280 x 720 / H.264 (.mp4) / 25 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/oQU9Z-fAn9E?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </p>
+
+                <br>
+                    </div>
+
+                <br>
+
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2017 - 2019</span></li>
+                    </ul>
+                    <span class="yearacc">Pekopo Studio</span>
+                </button>
+                    <div class="panelx">
+
+                        <p>
+                            <div class="containertri">
+                                <div id="barx01">
+                                    <p>
+                                        Karya untuk <a href="https://www.facebook.com/profile.php?id=100067438493477" title="Kunjungi halaman" target="_blank">Pekopo Studio</a>
+                                        <br>
+                                        Sebagai: <span class="sebagai">(Freelance) 2D Motion Designer dan Video Editor</span>
+                                    </p>
+                                </div>
+                                <div id="cardx01">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/1f9295e3d27c0f42bcc7374e75470162/bd15219286c2e6d9-ef/s540x810/bb5fe4de6238ab2c4cd2ee6d25a33e6fca680be9.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2019</button></li>
+                                                        <li><span class="cardspan" title="Durasi">02:14</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Iklan Layanan Masyarakat Pengenalan Tas Sican<br><br></h1>
+                                                <p class="metatxt">Client:<br>BPBD Kota Semarang dan Mahasiswa</p>
+                                                <p class="infotxt2">
+                                                    Merupakan video Iklan Layanan Masyarakat (ILM) tentang pengenalan Tas Sican sebagai alat untuk membantu berjaga - jaga apabila terjadi suatu bencana atau kondisi darurat yang lain, sehingga dapat memudahkan evakuasi menuju tempat yang aman.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup15" class="btn">Tonton</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup15">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Iklan Layanan Masyarakat Pengenalan Tas Sican</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/OL24TuRln4U?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="cardx02">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/9410e090a6982e736b873dc69a1e46b1/b7e1af052bb0cfa9-ee/s540x810/a42c895a2d1791f5b546f39caa1a81bd1401917b.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2019</button></li>
+                                                        <li><span class="cardspan" title="Durasi">00:52</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Iklan Layanan Masyarakat Kampanye #SOShark<br><br></h1>
+                                                <p class="metatxt">Client:<br>Kontribusi kepada WWF Indonesia</p>
+                                                <p class="infotxt2">
+                                                    Merupakan video Iklan Layanan Masyarakat (ILM) untuk mendukung kampanye #SOShark tentang kesadaran masyarakat untuk berperan serta dalam melindungi ikan hiu yang diujung kepunahan.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup16" class="btn">Tonton</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup16">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Iklan Layanan Masyarakat Kampanye #SOShark</h1>
+                                            <h2>2D Motion Graphic / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/X3eOla3fY_w?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="cardx03">
+                                    <div class="landingstri">
+                                        <div class="circle2">
+                                            <img class="card-img" src="https://64.media.tumblr.com/c62134bcc090605d7b5ca18a60e82d92/f12af53d2b49fa92-9e/s540x810/9b629d7a2b065698997658043bffa18a17c70197.png" alt="Red Shoes" class="card___img">
+                                            <div class="card-contenttri">
+                                                <div class="btnox">
+                                                    <ul>
+                                                        <li><button class="occu3" title="Tahun Karya">2017</button></li>
+                                                        <li><span class="cardspan" title="Durasi">00:59</span></li>
+                                                    </ul>
+                                                </div>
+                                                <h1 class="card-header2">Layanan Operasional PT. Konsuil Perdana Indonesia, Jawa Tengah</h1>
+                                                <p class="metatxt">Client:<br>PT. Konsuil Perdana Indonesia (Jawa Tengah)</p>
+                                                <p class="infotxt2">
+                                                    Merupakan video layanan operasional mengenai Company Profile PT. Konsuil Perdana Indonesia wilayah Jawa Tengah.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="btn-card">
+                                            <a href="#popup17" class="btn">Tonton</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popup" id="popup17">
+                                    <div class="popup___content">
+                                        <div class="popup___header">
+                                            <h1>Layanan Operasional PT. Konsuil Perdana Indonesia, Jawa Tengah</h1>
+                                            <h2>2D Motion Graphic / 1280 x 720 / H.264 (.mp4) / 25 fps</h2>
+                                        </div>
+                                        <div class="popup___img">
+                                            <div class="video-container"><iframe src="https://www.youtube.com/embed/Sgr13DJQWjM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                            <a href="##" class="popup___close">&times;</a>
+                                        </div>
+
+                                        <div class="popup___text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </p>
+            <br>           
+                    </div>
+
+            <br>
+
+
+
+
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-user-group"></i>Karya Kolaborasi</span>
+                </p>
+                <br>        
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2020</span></li>
+                    </ul>
+                    <span class="yearacc">Animation Series</span>
+                </button>
+                <div class="panelx">
+                    <p>
+                        <div class="container03">
+                            <div id="bar3"></div>
+                            <div id="videopl3">
+                                <div class="imgvid">
+                                    <img src="https://64.media.tumblr.com/776a7d2a781f214eccf68150dbf912c8/733220c5ec7bcab8-37/s2048x3072/42003cd478a6525ae570d4237ad54d9871dda05f.png" class="jjimg">
+                                </div>
+                            </div>
+                            <div id="vtext3">
+                                <h1 class="card-header2">Animasi JOJO & KAKA</h1>
+                                <p class="infotxt">
+                                    Serial Animasi 2D Frame by Frame Tahun 2020.<br>
+                                    Berkolaborasi dengan Hikmawanmie Studio, sebagai <b>Video Editor</b> dalam proses produksi.<br><br>
+                                    Merupakan serial animasi dengan total 5 episode yang bercerita tentang kehidupan Jojo sebagai tokoh utama dengan peran sebagai anak - anak yang berkarakter ekspresif dan selalu berpikir secara logis.<br><br>
+                                    Mengangkat genre komedi ringan dengan konklusi disetiap akhir episode, semua episode dalam animasi ini membahas isu utama mengenai bahaya merokok, terutama bagi anak - anak dan keluarga. Serta alasan dibalik pembuatan animasi ini adalah sebagai media pembantu untuk pembelajaran kepada anak - anak.
+                                </p>
+                            </div>
+                            <div id="ep1">
+                                <div class="btn-cardep" title="Tonton">
+                                    <a href="#popup18" class="btn01">
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="Tonton"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 1<span class="timedur" title="Durasi">02:48</span><br><span class="eptitle">Keren</span></span></li>
+                                            </ul>
+                                        </div>
+
+                                    </a>
+
+
+                                    <div class="popup" id="popup18">
+                                        <div class="popup___content">
+                                            <div class="popup___header">
+                                                <h1>JOJO & KAKA Episode 1: Keren</h1>
+                                                <h2>2D Animation / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                            </div>
+                                            <div class="popup___img">
+                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/vId8I8iZbt4?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                                <a href="##" class="popup___close">&times;</a>
+                                            </div>
+
+                                            <div class="popup___text">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div id="ep2">
+                                <div class="btn-cardep" title="Tonton">
+                                    <a href="#popup19" class="btn02">                    
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="Tonton"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 2<span class="timedur" title="Durasi">01:33</span><br><span class="eptitle">Vape</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
+                                    <div class="popup" id="popup19">
+                                        <div class="popup___content">
+                                            <div class="popup___header">
+                                                <h1>JOJO & KAKA Episode 2: Vape</h1>
+                                                <h2>2D Animation / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                            </div>
+                                            <div class="popup___img">
+                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/uko_gUyXZqc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                                <a href="##" class="popup___close">&times;</a>
+                                            </div>
+
+                                            <div class="popup___text">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div id="ep3">
+                                <div class="btn-cardep" title="Tonton">
+                                    <a href="#popup20" class="btn03">    
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="Tonton"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 3<span class="timedur" title="Durasi">01:12</span><br><span class="eptitle">Tak Mau Terjebak</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
+                                    <div class="popup" id="popup20">
+                                        <div class="popup___content">
+                                            <div class="popup___header">
+                                                <h1>JOJO & KAKA Episode 3: Tak Mau Terjebak</h1>
+                                                <h2>2D Animation / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                            </div>
+                                            <div class="popup___img">
+                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/cq-pN3H1InY?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                                <a href="##" class="popup___close">&times;</a>
+                                            </div>
+
+                                            <div class="popup___text">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="ep4">
+                                <div class="btn-cardep" title="Tonton">
+                                    <a href="#popup21" class="btn04">
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="Tonton"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 4<span class="timedur" title="Durasi">02:00</span><br><span class="eptitle">Sedikit Juga Bahaya</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
+                                    <div class="popup" id="popup21">
+                                        <div class="popup___content">
+                                            <div class="popup___header">
+                                                <h1>JOJO & KAKA Episode 4: Sedikit Juga Bahaya</h1>
+                                                <h2>2D Animation / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                            </div>
+                                            <div class="popup___img">
+                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/86tC_DmL6n8?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                                <a href="##" class="popup___close">&times;</a>
+                                            </div>
+
+                                            <div class="popup___text">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="ep5">
+                                <div class="btn-cardep" title="Tonton">
+                                    <a href="#popup22" class="btn05">
+                                        <div class="seriescard">
+                                            <ul>
+                                                <li><div class="faplay"><i class="fa fa-play-circle" title="Tonton"></i></div></li>
+
+                                            </ul>
+                                            <ul>
+
+                                                <li><span class="episodic">Episode 5<span class="timedur" title="Durasi">01:34</span><br><span class="eptitle">Sayang Bapak</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
+                                    <div class="popup" id="popup22">
+                                        <div class="popup___content">
+                                            <div class="popup___header">
+                                                <h1>JOJO & KAKA Episode 5: Sayang Bapak</h1>
+                                                <h2>2D Animation / 1920 x 1080 / H.264 (.mp4) / 24 fps</h2>
+                                            </div>
+                                            <div class="popup___img">
+                                                <div class="video-container"><iframe src="https://www.youtube.com/embed/fqQaqvs9Nzo?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+                                                <a href="##" class="popup___close">&times;</a>
+                                            </div>
+
+                                            <div class="popup___text">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <br><br>
+                    </p>
+
+                </div>
+
+                <br>
+
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2018</span></li>
+                    </ul>
+                    <span class="yearacc">Film Pendek Animasi</span>
+                </button>
+                <div class="panelx">
+
+                    <p>                 
+                        <div class="container02">
+                            <div id="bar2"></div>
+                            <div id="videopl2">
+                                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/bue2VTAsezc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                            </div>
+                            <div id="vtext2">
+                                <div class="btnox">
+                                    <ul>
+                                        <<li><button class="occu3" title="Tahun Karya">2018</button></li>
+                                        <li><span class="cardspan" title="Durasi">02:30</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">JUDGEMENT:<br>Behind My Suffering Life</h1>
                                 <p class="metatxt">
                                     2D Motion Graphic<br>1920 x 1080 / H.264 (.mp4) / 25 fps
                                 </p>
@@ -753,41 +1981,46 @@
                                     Bersama dengan AndalanKami Production, sebagai <b>Director dan Video Editor</b>.<br><br>
                                     Merupakan karya Film Animasi Pendek yang mengangkat tentang isu sosial mengenai kasus bullying (perundungan) di kawasan sekolah. Mengambil dari sudut pandang korban, animasi ini diharapkan dapat memberikan gambaran mengenai bagaimana kondisi mental dan psikologis korban dari aksi bullying, sehingga diharapkan dapat mencegah timbulnya korban yang lainnya.
                                 </p>
-                        </div>
-                        <div id="vinfo">
-                            <p class="infotxt">
+                            </div>
+                            <div id="vinfo">
+                                <p class="infotxt">
                                     <i class="fa fa-info-circle"></i><br>
-                                    Karya ini sempat diikutsertakan pada beberapa kompetisi animasi, namun hanya berstatus sebagai peserta, beberapa kompetisi tersebut adalah:
-                                    20th DigiCon6 ASIA Awards Wilayah Indonesia Tahun 2018, dan 12th Edition Hellofest Animation & Short Movie Festival Tahun 2018 pada kategori Short Movie.
-                            </p>
+                                    Karya ini sempat diikutsertakan pada beberapa kompetisi animasi, namun hanya berstatus sebagai peserta, beberapa kompetisi tersebut adalah: 20th DigiCon6 ASIA Awards Wilayah Indonesia Tahun 2018, dan 12th Edition Hellofest Animation & Short Movie Festival Tahun 2018 pada kategori Short Movie.
+                                </p>
+                            </div>
+                            <div id="vempty"></div>
                         </div>
-                        <div id="vempty"></div>
-                    </div>
-                </p>
-                
-            </div>
-    
-        <br>
-    
-    
-        <button class="accordion">Official Video Lirik (2018)</button>
-            <div class="panelx">
-                
-                  <p>  
-                      <div class="containerZZ">
-                            
-                    <div id="barZ"></div>
-                    <div id="videoplZ">
-                        <div class="video-containerz"><iframe src="https://www.youtube.com/embed/J6ZfZCHDaOM?rel=0" frameborder="0" allowfullscreen></iframe></div>
-                    </div>
-                    <div id="vtextZ">
-                        <div class="btnox">
-                                <ul>
-                                    <li><button class="occu3" title="Tahun Karya">2018</button></li>
-                                    <li><span class="cardspan" title="Durasi">03:57</span></li>
-                                </ul>
-                        </div>
-                        <h1 class="card-header2">Earth Balance:<br>Saat Semua Hilang</h1>
+                        <br><br>
+                    </p>
+
+                </div>
+
+                <br>
+
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2018</span></li>
+                    </ul>
+                    <span class="yearacc">Official Video Lirik</span>
+                </button>
+                <div class="panelx">
+
+                    <p>  
+                        <div class="containerZZ">
+
+                            <div id="barZ"></div>
+                            <div id="videoplZ">
+                                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/J6ZfZCHDaOM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                            </div>
+                            <div id="vtextZ">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Year Created">2018</button></li>
+                                        <li><span class="cardspan" title="Duration">03:57</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">Earth Balance:<br>Saat Semua Hilang</h1>
                                 <p class="metatxt">
                                     2D Motion Graphic<br>1920 x 1080 / H.264 (.mp4) / 24 fps
                                 </p>
@@ -795,172 +2028,198 @@
                                     Berkolaborasi bersama dengan Earth Balance Band yang merupakan grup musik indie dari Semarang, dengan berperan sebagai <b>Produser dan Video Editor</b>.<br><br>
                                     Karya ini diproduksi sebagai salah satu video lirik dari lagu Saat Semua Hilang yang dirilis pada bulan Mei 2018. Bercerita tentang visualisasi kepedihan yang mendalam seseorang saat kehilangan sosok yang dicintai dan paling berharga dalam kehidupannya.
                                 </p>
-                    </div>
-                    
-                    
-                    </div>
-                      
-                </p>
-                
-            </div>
-    
-
-
-
-
-
-
-
-<br>
-
-    
-
-    <p class="btntit">
-        <span class="titleacc">Karya Personal</span>
-        </p>
-        <br>        
-        <button class="accordion">Giphy GIF Stickers</button>
-            <div class="panelx">
-                
-                <p>
-                    <div class="container04">
-                        <div id="bar04"></div>
-                        <div id="gif1">
-                            <div class="video-containerg"><iframe src="https://giphy.com/embed/lmk3lNFaUwFCZtFZly" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                        </div>
-                        <div id="gif2">
-                            <div class="video-containerg"><iframe src="https://giphy.com/embed/kaZVIJUQC8VmwCn8Ak" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                        </div>
-                        <div id="gif3">
-                            <div class="video-containerg"><iframe src="https://giphy.com/embed/j58qM8k5gGD9HhdUO9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                        </div>
-                        <div id="gif4">
-                            <div class="video-containerg"><iframe src="https://giphy.com/embed/gLza723dmwG9vo673b" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                        </div>
-                        <div id="gif5">
-                            <div class="video-containerg"><iframe src="https://giphy.com/embed/SUWYk9oWyAhoTU1kif" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                        </div>
-                        <div id="gif6">
-                            <div class="video-containerg"><iframe src="https://giphy.com/embed/MZA7qLaxFCTkodCus9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                        </div>
-                        <div id="gifinfo">
-                            <div class="btnox">
-                                <ul>
-                                    <li><button class="occu3" title="Tahun Karya">2020</button></li>
-                                    <li><span class="cardspan" title="GIF">Animated GIF</span></li>
-                                </ul>
                             </div>
-                            <h1 class="card-header2">Instagram dan Snapchat Stickers</h1>
+
+
+                        </div>
+                        <br>  
+                    </p>
+
+                </div>
+
+
+
+
+
+
+
+
+            <br>
+
+
+
+                <p class="btntit">
+                    <span class="titleacc"><i class="fa fa-solid fa-user"></i>Karya Personal</span>
+                </p>
+                <br>
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2023</span></li>
+                    </ul>
+                    <span class="yearacc">Animasi Interaktif dengan Rive.app</span>
+                </button>
+                <div class="panelx">
+
+                    <p>  
+                        <div class="containerZZ">
+
+                            <div id="barZ"></div>
+                            <div id="videoplZ">
+                                <div class="video-containerz"><iframe style="border: none" width="500" height="500" src="https://rive.app/s/LpBYVtxZkkqPktNO7BJn0w/embed" allowfullscreen></iframe></div>
+                            </div>
+                            <div id="vtextZ">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Tahun Karya">2023</button></li>
+                                        <li><span class="cardspan" title="Rive.app">Interaktif</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">Animasi<br>Karakter Interaktif</h1>
+                                <p class="infotxt">
+                                    Karya ini dibuat untuk mengembangkan kemampuan diri dengan menggunakan <a href="https://rive.app" title="Kunjungi halaman" target="_blank">
+                                    Rive.app</a> yang merupakan aplikasi web untuk memproduksi animasi dan media interaktif.<br><br>
+                                    
+                                    <u>Panduan</u><br>
+                                    Untuk berinteraksi dengan karakter tersebut, silahkan arahkan kursor ke area sekitar objek karakter dan gerakkan kursor secara acak lalu tekan objek karakter tersebut.
+
+                                    <br><br>
+                                    <i class="fa fa-info-circle"></i><br>
+                                    Untuk mengetahui bagaimana Rive.app ini bekerja dan prospeknya di industri konten digital, bisa mengunjungi halaman berikut: <a href="https://medium.com/@okttoro/membelah-dominasi-dengan-rive-8345ff39be15" title="Kunjungi halaman" target="_blank">"Membelah dominasi dengan Rive"</a>
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <br><br>  
+                    </p>
+
+                </div>
+
+                <br>
+
+
+
+                <button class="accordion" title="Tampilkan" cursor-type="button">
+                    <ul>
+                        <li><span>2020</span></li>
+                    </ul>
+                    <span class="yearacc">Giphy GIF Stickers</span>
+                </button>
+                <div class="panelx">
+
+                    <p>
+                        <div class="container04">
+                            <div id="bar04"></div>
+                            <div id="gif1">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/lmk3lNFaUwFCZtFZly" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif2">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/kaZVIJUQC8VmwCn8Ak" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif3">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/j58qM8k5gGD9HhdUO9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif4">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/gLza723dmwG9vo673b" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif5">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/SUWYk9oWyAhoTU1kif" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gif6">
+                                <div class="video-containerg"><iframe src="https://giphy.com/embed/MZA7qLaxFCTkodCus9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                            </div>
+                            <div id="gifinfo">
+                                <div class="btnox">
+                                    <ul>
+                                        <li><button class="occu3" title="Tahun Karya">2020</button></li>
+                                        <li><span class="cardspan" title="GIF">Animated GIF</span></li>
+                                    </ul>
+                                </div>
+                                <h1 class="card-header2">Instagram dan Snapchat Stickers</h1>
                                 <p class="infotxt">
                                     Karya ini dibuat dengan tujuan untuk mengenalkan medium baru untuk publikasi karya IP karakter melalui media Giphy dalam format GIF Stickers.<br><br>
                                     <i class="fa fa-info-circle"></i><br>
                                     Untuk menggunakan stickers di Instagram dan Snapchat bisa menggunakan keyword: <b>cakmat</b>.
                                 </p>
-                        </div>
-                        <div id="more">
-                            
-                            <div class="btn-cardv">  
-                                <span><a href="https://giphy.com/okttoro" target="_blank" class="hero-btnvv">Selengkapnya  <i class="fa fa-arrow-circle-right"></i></a></span>
-                                  
                             </div>
-                            
+                            <div id="more">
+
+                                <div class="btn-cardv">  
+                                    <span><a href="https://giphy.com/okttoro" target="_blank" class="hero-btnvv">Selengkapnya  <i class="fa fa-arrow-circle-right"></i></a></span>
+
+                                </div>
+
+                            </div>
                         </div>
+                    </p>
+
+                </div>
+
+                <br>
+
+
+
+
+
+
+
+                <div class="row-second">
+                    <div class="landing-row">
+                        <h1></h1>
                     </div>
-                </p>
-                
-            </div>
-        
-        <br>
-    
-    
-        
-        
-        
-        <div class="row-second">
-            <div class="landing-row">
-                <h1></h1>
-            </div>
+                </div>
+
+            </section>
+
+            <section class="footer" id="footerOp">
+                <div class="row-footer">
+                    <div class="col-footer2">
+                        <h5>Get in touch</h5>
+                        <div class="iconsx">
+                            <a href="https://www.instagram.com/okttoro/" target="_blank" title="adetoro° Instagram"><i class="fa fa-brands fa-instagram"></i></a>
+                            <a href="https://dribbble.com/okttoro" target="_blank" title="adetoro° Dribbble"><i class="fa fa-brands fa-dribbble"></i></a>
+                            <a href="https://giphy.com/okttoro" target="_blank" title="adetoro° GIPHY Page"><i class="fa fa-regular fa-note-sticky"></i></a>
+                            <a href="https://medium.com/@okttoro" target="_blank" title="adetoro° Medium Page"><i class="fa fa-brands fa-medium"></i></a>
+                            <a href="mailto:af.oktaviantoro@gmail.com" target="_blank" title="adetoro° Email"><i class="fa fa-regular fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-footer">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Disclaimer</a></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="row-footer">
+                    <div class="col-footer">
+                        <h6><i class="fa fa-copyright"></i> 2023 Ade F. Oktaviantoro</h6>
+                    </div>
+                </div>    
+            </section>    
+
+        </div>   
+        </section>
         </div>
-        
-    </section>
-        
-        <section class="footer" id="footerOp">
-            <div class="row-footer">
-                <div class="col-footer2">
-                    <h5>Get in touch</h5>
-                    <div class="iconsx">
-                        <a href="https://www.instagram.com/okttoro/" target="_blank" title="adetoro° Instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://dribbble.com/okttoro" target="_blank" title="adetoro° Dribbble"><i class="fa fa-dribbble"></i></a>
-                        <a href="https://giphy.com/okttoro" target="_blank" title="adetoro° GIPHY Page"><i class="fa fa-sticky-note-o"></i></a>
-                        <a href="mailto:af.oktaviantoro@gmail.com" target="_blank" title="adetoro° Email"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                
-                </div>
-                <div class="col-footer">
-                    <ul>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms of Service</a></li>
-                        <li><a href="">Disclaimer</a></li>
-                    </ul>    
-                </div>
-            </div>
-            
-            <div class="row-footer">
-                <div class="col-footer">
-                    <h6><i class="fa fa-copyright"></i> 2023 Ade F. Oktaviantoro</h6>
-                </div>
-            </div>    
-        </section>    
-    
-    
-    </section>
-    
-    
-    
-    
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        //var landingOp = document.getElementById("landingOp");
-        //var footerOp = document.getElementById("footerOp");
-        var logotsOp = document.getElementById("logotsOp");
-        
-        function showMenu(){
-            navLinks.style.right = "0";
-            navLinks.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0.3)";
-            //landingOp.style.opacity = "0";
-            //footerOp.style.opacity = "0";
-            //logotsOp.style.opacity = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-100%";
-            navLinks.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0)";
-            //landingOp.style.opacity = "1";
-            //footerOp.style.opacity = "1";
-            //logotsOp.style.opacity = "1";
-        }
-    </script>
-    
-    <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+    </main>
+    
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="index.js"></script>
+<script src="preloader.js"></script>
+<script src="other.js"></script>
+
+  
+    
 
 
-
-
-    
-    
+    </body>
 </body>
 </html>

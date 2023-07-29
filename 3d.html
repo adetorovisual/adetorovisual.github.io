@@ -1,219 +1,511 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>3D Documentation</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/glassmorphism.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-</head>
-    
-<body>
-    <section class="header">
-        <nav>
-            <div class="logots" id="logotsOp"><a href="index.html"><img src="images/logo-ts.png"></a></div>
-            <div class="nav-links" id="navLinks">
-                <div class="logodlm"><a href="index.html"><img src="images/logo-ts.png"></a></div>
-                <div class="closeMenu"><i class="fa fa-times" onclick="hideMenu()"></i></div>
-                <ul>
-                <li><a href="index.html">HOME</a></li>
-                <!---<li><a href="">ABOUT</a></li>-->
-                <li><a href="mailto:af.oktaviantoro@gmail.com">CONTACT</a></li>
-                </ul> 
-            </div>
-            <div class="openMenu"><i class="fa fa-bars" onclick="showMenu()"></i></div>
-        </nav>
-        
-        
-    <!---------- Landing ----------->
-    
-    <section class="landing" id="landingOp">
-        
-            <h1>3D Documentation</h1>
-            <div class="btno">
-                <ul>
-                    <li><button class="occu4">3D Generalist</button></li>
-                    <li><button class="occu3">2023</button></li>
-                </ul>
-            </div>    
-        
-            <div class="descp">
-            <p>Dokumentasi portfolio karya 3D oleh Ade F. Oktaviantoro.</p>
-            </div>
-        
-        
-        <br>
-        
-        <p class="desco"><span class="descover">Organic 3D Modeling (Karakter Manusia)</span></p>
-            <div class="ramp1">
-                <img src="https://64.media.tumblr.com/d3dacea6bc13378929b72c43cfb2b6c4/8749906ca67c106e-02/s2048x3072/78b5c266b29d7c3261ec020e0a89347858f790ba.pnj" class="rampz">
-            </div>
-        <br>
-        <br>
-        
-        <p class="desco"><span class="descover">Hard Surface 3D Modeling (Objek Ayunan)</span></p>
-            <div class="ramp1">
-                <img src="https://64.media.tumblr.com/8b9a9f4badd8f2282ce9e54e61c065a9/7cc14aeca01f5373-3c/s2048x3072/0de930c15cd6d839b1951970d5f4dcfb9464b636.pnj" class="rampz">
-            </div>
-        <br>
-        <br>
-        
-        <p class="desco"><span class="descover">Material & Texturing (Blender Shader)</span></p>
-            <div class="ramp1">
-                <img src="https://64.media.tumblr.com/dd7575f8290111c511a2f592c5adff49/705d0a4c0170144b-54/s2048x3072/fa4c52a10cfa1b49113c3a6eeafc8666ea4028ab.pnj" class="rampz">
-            </div>
-        <br>
-        <br>
-        
-        <p class="desco"><span class="descover">Blender Rigging</span></p>
-            <div class="ramp1">
-                <img src="https://64.media.tumblr.com/9568454c1f59db16a5f23f4744e8b36d/a0a9c2ce95aba76d-03/s2048x3072/25df81fd5d9c9f163917f67bcaeb7be0dea59916.pnj" class="rampz">
-            </div>
-        <br>
-        <br>
-        
-        <p class="desco"><span class="descover">Blender Compositing</span></p>
-            <div class="ramp1">
-                <img src="https://64.media.tumblr.com/d1cc035c10fcb66b5b128c8b8eca429f/765ca4f351e2197e-94/s2048x3072/ea14073c084ede58b0ee742a445cc655f509e9db.pnj" class="rampz">
-            </div>
-        <br>
-        <br>
-        
-        <p class="desco"><span class="descover">Blender Cycles Render</span></p>
-            <div class="ramp2">
-                <p class="desco2"><span class="descover2" title="Looping Animation">00:08 <span class="infinity" title="Looping Animation">&#8734;</span></span></p>
-                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/IP_yU8rV08s?rel=0" frameborder="0" allowfullscreen></iframe></div>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>3D Documentation</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+    </head>
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>    
+    <body>
+    <main data-barba="container" data-barba-namespace="3d-section">
+    <div class="inload" id="inload"></div>
+            <div class="english" id="english">    
+        <section class="header">
+        <div class="animate-this">
+            <nav>
+                <div class="logots" id="logotsOp"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                <div class="nameset" id="setname"><a href="index.html">Ade F. Oktaviantoro</a></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="logodlm"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                    <div class="closeMenu"><i class="fa fa-times" onclick="hideMenu()"></i></div>
+                    <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <!---<li><a href="">ABOUT</a></li>-->
+                    <li><a href="mailto:af.oktaviantoro@gmail.com">CONTACT</a></li>
+                    </ul> 
+                </div>
+
+                <div class="transBTN">
+                    <div class="tbtn">
+                    <ul>
+                        <li><a title="English" class="btntrans1" onclick="appearP1()">EN</a></li>
+                        <li><a title="Bahasa Indonesia" class="btntrans2" onclick="appearP2()">ID</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="openMenu"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+
+
+        <!---------- Landing ----------->
+
+            <section class="landing" id="landingOp">
+
+                    <div class="head-cont">
+                    <div id="titlepage">
+                        <h1>3D Design and<br>Animation <button class="occu2">Documentation</button></h1>
+                    </div>
+                    <div id="titlesubs">
+                        <div class="desctitle">
+                            <p>
+                                This documentation contains the pipeline of the 3D animation production process using Blender software, starting from design and modeling, materials and texturing, rigging, compositing (setting layout and lighting), animate and rendering.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div id="getin">
+                        <div class="desctitle">
+                            <p><span class="GITtitle">Get in touch</span><br>
+                                <a href="mailto:af.oktaviantoro@gmail.com">Email</a><br>
+                                <a href="https://www.instagram.com/okttoro/" target="_blank">Instagram</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="descp">
+                    <p><i class="fa fa-solid fa-circle-info"></i><span class="portdesc">Documentation by Ade F. Oktaviantoro</span></p>
+                </div>
+                
+                
                 <br>
+                <br><br>
+                
+                <p class="btntit">
+                    <span class="titleacc">3D Animation Pipeline<span class="projecttype">Personal Project</span></span>
+                    
+                </p>
                 <br>
+                
+                <div class="contentdoctrid">
+                    <div id="yearconttrid">2023</div>
+                    <div id="roleconttrid">Role - 3D Generalist</div>
+                    <div id="emptyspacetrid"></div>
+                    <div id="projecttxttrid">
+                        I studied this 3D animation production process to expand my interest in animation content and adapt its capabilities to current developments in the digital content industry.
+                    </div>
+                    <div id="projectocctrid">
+                        Taking the theme of children's games, the production flow includes several important processes in 3D animation production.
+                    </div>
+                    <div id="trid1">
+                        <div class="img3d-contentdoc">
+                            <div id="mod1">
+                                <img src="https://64.media.tumblr.com/eec1f3592e49168145db8cc4d1e6042b/c5e217895ca5d831-00/s1280x1920/2298cb84b976e102e141a3d927c9ebc997e0a290.gifv" class="gmb3d">
+                            </div>
+                            <div id="mod2">
+                                <img src="https://64.media.tumblr.com/948d24f843553c3790f23a1eeb540b06/6067b430327954bd-50/s1280x1920/158f8933e1f4de31a8ebaa9dea723d7bff2166dc.gifv" class="gmb3d">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid">Modeling</div>
+                    <div id="mographtxttrid">
+                        In keeping with the children's game theme, this project focuses on two objects. The first object is a character design of a child wearing casual clothes with a hat and shoes, and the second object is a swing game model. The reason for choosing these two objects is to learn how to make an organic 3D model (a human character object) and a hard surface object (a swing object).
+
+                    </div>
+                    <div id="trid2">
+                        <div class="img3d-contentdoc2">
+                            <div id="mod3">
+                                <img src="https://64.media.tumblr.com/c2c5da08899de078d410c810b9d82c93/26cc74925535231b-e0/s1280x1920/01dc145656fc14b07a51015013e334ef5a6afff2.gifv" class="gmb3d">
+                            </div>
+                            <div id="mod4">
+                                <img src="https://64.media.tumblr.com/3b5e44f4a55491df8715bfcb841ac574/7a8dd6bf459a6be8-a1/s1280x1920/af92e03bfb53edcbc191ac388c3a845094268bef.gifv" class="gmb3d">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid2">Material & Texturing</div>
+                    <div id="mographtxttrid2">
+                        In giving material and texture to these two objects, using the shading process and UV map in Blender to adjust the color and texture of the character object and swing object.
+
+                    </div>
+                    <div id="trid3">
+                        <div class="img3d-contentdoc3">
+                            <div id="mod5">
+                                <img src="https://64.media.tumblr.com/eb1acba85e70be34c70c68665a26b5c5/78eb611ffd66ef59-05/s1280x1920/ae0e3b8608155aba5167f3789772937008fddaf2.gifv" class="gmb3d">
+                            </div>
+                            <div id="mod6">
+                                <img src="https://64.media.tumblr.com/5eb985093e3d7e08bd15b077d6d243ae/d64773f8706f9f21-11/s1280x1920/e8cecb36a7c23982671631e0719ebb8244a81c6b.gifv" class="gmb3d">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid3">Rigging</div>
+                    <div id="mographtxttrid3">
+                        The process of rigging the character object is done with the help of the Basic Human (Meta-Rig) feature in Blender, and the swing object is done using manual method by grouping the parts of the swing that I want to animate with an empty plain axes object in Blender. This is also another reason for choosing these two objects to practice rigging human characters and hard surface objects.
+
+                    </div>
+                    <div id="compose1">
+                        <img src="https://64.media.tumblr.com/201098470facc8f17a5b51f1b8f93255/98877ffd1cd4240d-ea/s1280x1920/7a9e46294662dba979cf7aa8ab8d3469b135d3cd.gifv" class="gmb3d2">
+                    </div>
+                    <div id="compose1-title">
+                        <div class="vidtt">Compositing</div>
+                        <div class="viddsc">
+                            This process has several stages. The first stage is to set the layout for the placement of the two objects and the camera's point of view. The second stage is to adjust the lighting so that the colors and shadows of the objects displayed can match the mood of the scene composition I want to display.
+                        </div>
+                    </div>
+                    <div id="render1">
+                        <div class="img3d-contentdoc4">
+                            <div id="mod7">
+                                <iframe src="https://www.youtube.com/embed/IP_yU8rV08s?rel=0" class="gmb3dX1" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div id="mod8">
+                                <iframe src="https://youtube.com/embed/toiWwZEG2UU?rel=0" class="gmb3dX2" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid4">Animate & Render</div>
+                    <div id="mographtxttrid4">
+                        In this project, the result of combining the animation of a character object and a swing object is a looping animation of a child character playing on a swing, and the result of the basic animation of the natural movement of a character is a looping animation of a child character's walking cycle. Both of these animations are rendered using the Cycles Render Engine in Blender.
+
+                    </div>
+                    <div id="render2">
+                        <div class="img3d-contentdoc5">
+                            <div id="mod9">
+                                <iframe src="https://www.youtube.com/embed/jA4nmvqksxs?rel=0" class="gmb3dX3" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div id="mod10">
+                                <iframe src="https://www.youtube.com/embed/RV7G6qF9CIo?rel=0" frameborder="0" class="gmb3dX4" allowfullscreen></iframe>
+                            </div>
+                            <div id="render-title">
+                                <div class="vidtt2">Other works</div>
+                                <div class="viddsc">
+                                    Some of these other works were created to deepen my understanding of 3D animation by studying the basics and techniques that are useful in the industry.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+
+                
+
                 <br>
+
+
+
+
+
+
+
+
+
+
                 <br>
-                <p class="desco2"><span class="descover2" title="Looping Animation">00:07 <span class="infinity" title="Looping Animation">&#8734;</span></span></p>
-                <div class="video-containerz"><iframe src="https://youtube.com/embed/toiWwZEG2UU?rel=0" frameborder="0" allowfullscreen></iframe></div>
-            </div>
-            
-        <br>
-        <br>
-        
-        
-        
-        <p class="desco"><span class="descover">Karya lainnya</span></p>
-            <div class="ramp2">
-                <p class="desco2"><span class="descover2" title="Durasi">00:25</span></p>
-                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/RV7G6qF9CIo?rel=0" frameborder="0" allowfullscreen></iframe></div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <p class="desco2"><span class="descover2" title="Looping Animation">00:10 <span class="infinity" title="Looping Animation">&#8734;</span></span></p>
-                <div class="video-containerz"><iframe src="https://www.youtube.com/embed/jA4nmvqksxs?rel=0" frameborder="0" allowfullscreen></iframe></div>
-            </div>
-        
-        <br>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <br>
-    
-    
-        
-        
-        
-        <div class="row-second">
-            <div class="landing-row">
-                <h1></h1>
-            </div>
+
+
+
+
+
+                <div class="row-second">
+                    <div class="landing-row">
+                        <h1></h1>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="footer" id="footerOp">
+                <div class="row-footer">
+                    <div class="col-footer2">
+                        <h5>Get in touch</h5>
+                        <div class="iconsx">
+                            <a href="https://www.instagram.com/okttoro/" target="_blank" title="adetoro° Instagram"><i class="fa fa-brands fa-instagram"></i></a>
+                            <a href="https://dribbble.com/okttoro" target="_blank" title="adetoro° Dribbble"><i class="fa fa-brands fa-dribbble"></i></a>
+                            <a href="https://giphy.com/okttoro" target="_blank" title="adetoro° GIPHY Page"><i class="fa fa-regular fa-note-sticky"></i></a>
+                            <a href="https://medium.com/@okttoro" target="_blank" title="adetoro° Medium Page"><i class="fa fa-brands fa-medium"></i></a>
+                            <a href="mailto:af.oktaviantoro@gmail.com" target="_blank" title="adetoro° Email"><i class="fa fa-regular fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-footer">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Disclaimer</a></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="row-footer">
+                    <div class="col-footer">
+                        <h6><i class="fa fa-copyright"></i> 2023 Ade F. Oktaviantoro</h6>
+                    </div>
+                </div>    
+            </section>    
+
+        </div>
+        </section>
         </div>
         
-    </section>
         
-        <section class="footer" id="footerOp">
-            <div class="row-footer">
-                <div class="col-footer2">
-                    <h5>Get in touch</h5>
-                    <div class="iconsx">
-                        <a href="https://www.instagram.com/okttoro/" target="_blank" title="adetoro° Instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://dribbble.com/okttoro" target="_blank" title="adetoro° Dribbble"><i class="fa fa-dribbble"></i></a>
-                        <a href="https://giphy.com/okttoro" target="_blank" title="adetoro° GIPHY Page"><i class="fa fa-sticky-note-o"></i></a>
-                        <a href="mailto:af.oktaviantoro@gmail.com" target="_blank" title="adetoro° Email"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                
-                </div>
-                <div class="col-footer">
+        
+<!------PAGE BREAK--------------------------------------------------------------------------->
+        
+        
+        
+        
+        <div class="bahasa" id="bahasa">    
+        <section class="header">
+        <div class="animate-this">
+            <nav>
+                <div class="logots" id="logotsOp"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                <div class="nameset" id="setname"><a href="index.html">Ade F. Oktaviantoro</a></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="logodlm"><a href="index.html"><img src="images/logo-ts.png"></a></div>
+                    <div class="closeMenu"><i class="fa fa-times" onclick="hideMenu()"></i></div>
                     <ul>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms of Service</a></li>
-                        <li><a href="">Disclaimer</a></li>
-                    </ul>    
+                    <li><a href="index.html">HOME</a></li>
+                    <!---<li><a href="">ABOUT</a></li>-->
+                    <li><a href="mailto:af.oktaviantoro@gmail.com">CONTACT</a></li>
+                    </ul> 
                 </div>
-            </div>
-            
-            <div class="row-footer">
-                <div class="col-footer">
-                    <h6><i class="fa fa-copyright"></i> 2023 Ade F. Oktaviantoro</h6>
+
+                <div class="transBTN">
+                    <div class="tbtn">
+                    <ul>
+                        <li><a title="English" class="btntrans1" onclick="appearP1()">EN</a></li>
+                        <li><a title="Bahasa Indonesia" class="btntrans2" onclick="appearP2()">ID</a></li>
+                    </ul>
+                    </div>
                 </div>
-            </div>    
-        </section>    
-    
-    
-    </section>
-    
-    
-    
-    
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        //var landingOp = document.getElementById("landingOp");
-        //var footerOp = document.getElementById("footerOp");
-        var logotsOp = document.getElementById("logotsOp");
+                <div class="openMenu"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+
+
+        <!---------- Landing ----------->
+
+            <section class="landing" id="landingOp">
+
+                    <div class="head-cont">
+                    <div id="titlepage">
+                        <h1>Desain 3D dan<br>Animasi <button class="occu3">Dokumentasi</button></h1>
+                    </div>
+                    <div id="titlesubs">
+                        <div class="desctitle">
+                            <p>
+                                Dokumentasi ini berisi tentang alur proses produksi animasi 3D menggunakan software Blender, mulai dari desain dan modeling, material dan texturing, rigging, compositing (pengaturan layout dan lighting), dan rendering.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div id="getin">
+                        <div class="desctitle">
+                            <p><span class="GITtitle">Get in touch</span><br>
+                                <a href="mailto:af.oktaviantoro@gmail.com">Email</a><br>
+                                <a href="https://www.instagram.com/okttoro/" target="_blank">Instagram</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="descp">
+                    <p><i class="fa fa-solid fa-circle-info"></i><span class="portdesc">Documentation by Ade F. Oktaviantoro</span></p>
+                </div>
+                
+                
+                <br>
+                <br><br>
+                
+                <p class="btntit">
+                    <span class="titleacc">3D Animation Pipeline<span class="projecttype">Personal Project</span></span>
+                    
+                </p>
+                <br>
+                
+                <div class="contentdoctrid">
+                    <div id="yearconttrid">2023</div>
+                    <div id="roleconttrid">Role - 3D Generalist</div>
+                    <div id="emptyspacetrid"></div>
+                    <div id="projecttxttrid">
+                        Saya mempelajari proses produksi animasi 3D ini untuk memperluas minat saya pada konten animasi dan untuk menyesuaikan kemampuan dengan perkembangan industri konten digital saat ini.
+                    </div>
+                    <div id="projectocctrid">
+                        Mengambil tema permainan anak, alur pembuatannya sudah memuat beberapa proses penting dalam produksi animasi 3D.
+                    </div>
+                    <div id="trid1">
+                        <div class="img3d-contentdoc">
+                            <div id="mod1">
+                                <img src="https://64.media.tumblr.com/eec1f3592e49168145db8cc4d1e6042b/c5e217895ca5d831-00/s1280x1920/2298cb84b976e102e141a3d927c9ebc997e0a290.gifv" class="gmb3d">
+                            </div>
+                            <div id="mod2">
+                                <img src="https://64.media.tumblr.com/948d24f843553c3790f23a1eeb540b06/6067b430327954bd-50/s1280x1920/158f8933e1f4de31a8ebaa9dea723d7bff2166dc.gifv" class="gmb3d">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid">Modeling</div>
+                    <div id="mographtxttrid">
+                        Sesuai dengan tema permainan anak, project ini berfokus pada dua objek. Objek pertama berupa desain karakter seorang anak memakai pakaian kasual dengan properti topi dan sepatu, lalu objek kedua berupa model permainan ayunan. Alasan dipilihnya kedua objek ini adalah untuk mempelajari pembuatan 3D model organic (objek karakter manusia) dan hard surface (objek ayunan).
+
+                    </div>
+                    <div id="trid2">
+                        <div class="img3d-contentdoc2">
+                            <div id="mod3">
+                                <img src="https://64.media.tumblr.com/c2c5da08899de078d410c810b9d82c93/26cc74925535231b-e0/s1280x1920/01dc145656fc14b07a51015013e334ef5a6afff2.gifv" class="gmb3d">
+                            </div>
+                            <div id="mod4">
+                                <img src="https://64.media.tumblr.com/3b5e44f4a55491df8715bfcb841ac574/7a8dd6bf459a6be8-a1/s1280x1920/af92e03bfb53edcbc191ac388c3a845094268bef.gifv" class="gmb3d">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid2">Material & Texturing</div>
+                    <div id="mographtxttrid2">
+                        Dalam pemberian material dan texture pada kedua objek ini menggunakan proses shading dan UV map di Blender untuk mengatur pemberian warna dan tekstur pada objek karakter dan objek ayunan.
+
+                    </div>
+                    <div id="trid3">
+                        <div class="img3d-contentdoc3">
+                            <div id="mod5">
+                                <img src="https://64.media.tumblr.com/eb1acba85e70be34c70c68665a26b5c5/78eb611ffd66ef59-05/s1280x1920/ae0e3b8608155aba5167f3789772937008fddaf2.gifv" class="gmb3d">
+                            </div>
+                            <div id="mod6">
+                                <img src="https://64.media.tumblr.com/5eb985093e3d7e08bd15b077d6d243ae/d64773f8706f9f21-11/s1280x1920/e8cecb36a7c23982671631e0719ebb8244a81c6b.gifv" class="gmb3d">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid3">Rigging</div>
+                    <div id="mographtxttrid3">
+                        Dalam proses rigging pada objek karakter menggunakan bantuan dari fitur Basic Human (Meta-Rig) di Blender dan untuk objek ayunan menggunakan cara manual dengan cara grouping bagian ayunan yang ingin dianimasikan dengan empty plain axes object di Blender. Hal ini juga merupakan alasan lain dipilihnya kedua objek ini, yaitu untuk mempelajari cara rigging objek karakter manusia dan rigging objek benda mati.
+
+                    </div>
+                    <div id="compose1">
+                        <img src="https://64.media.tumblr.com/201098470facc8f17a5b51f1b8f93255/98877ffd1cd4240d-ea/s1280x1920/7a9e46294662dba979cf7aa8ab8d3469b135d3cd.gifv" class="gmb3d2">
+                    </div>
+                    <div id="compose1-title">
+                        <div class="vidtt">Compositing</div>
+                        <div class="viddsc">
+                            Dalam proses ini ada beberapa tahap, tahap yang pertama mengatur layout penempatan kedua objek dan mengatur sudut pandang kamera, lalu tahap yang kedua mengatur pencahayaan agar warna dan bayangan objek yang ditampilkan bisa sesuai dengan suasana komposisi scene yang ingin ditampilkan.
+                        </div>
+                    </div>
+                    <div id="render1">
+                        <div class="img3d-contentdoc4">
+                            <div id="mod7">
+                                <iframe src="https://www.youtube.com/embed/IP_yU8rV08s?rel=0" class="gmb3dX1" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div id="mod8">
+                                <iframe src="https://youtube.com/embed/toiWwZEG2UU?rel=0" class="gmb3dX2" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mographtitletrid4">Animate & Render</div>
+                    <div id="mographtxttrid4">
+                        Dalam project ini dilakukan pembuatan animasi gabungan dari objek karakter dan objek benda mati dengan hasil berupa animasi looping karakter anak yang sedang bermain ayunan, serta dilakukan pembuatan animasi dasar gerakan alami sebuah karakter dengan hasil berupa animasi looping siklus berjalan karakter anak. Kedua hasil animasi ini di-render menggunkan Cycles Render Engine di Blender.
+
+                    </div>
+                    <div id="render2">
+                        <div class="img3d-contentdoc5">
+                            <div id="mod9">
+                                <iframe src="https://www.youtube.com/embed/jA4nmvqksxs?rel=0" class="gmb3dX3" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div id="mod10">
+                                <iframe src="https://www.youtube.com/embed/RV7G6qF9CIo?rel=0" frameborder="0" class="gmb3dX4" allowfullscreen></iframe>
+                            </div>
+                            <div id="render-title">
+                                <div class="vidtt">Karya lainnya</div>
+                                <div class="viddsc">
+                                    Beberapa karya lainnya ini dibuat untuk memperdalam pemahaman pembuatan animasi 3D dengan mempelajari dasar dan teknik-teknik yang berguna untuk diterapkan di industri.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+
+                
+
+                <br>
+
+
+
+
+
+
+
+
+
+
+                <br>
+
+
+
+
+
+                <div class="row-second">
+                    <div class="landing-row">
+                        <h1></h1>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="footer" id="footerOp">
+                <div class="row-footer">
+                    <div class="col-footer2">
+                        <h5>Get in touch</h5>
+                        <div class="iconsx">
+                            <a href="https://www.instagram.com/okttoro/" target="_blank" title="adetoro° Instagram"><i class="fa fa-brands fa-instagram"></i></a>
+                            <a href="https://dribbble.com/okttoro" target="_blank" title="adetoro° Dribbble"><i class="fa fa-brands fa-dribbble"></i></a>
+                            <a href="https://giphy.com/okttoro" target="_blank" title="adetoro° GIPHY Page"><i class="fa fa-regular fa-note-sticky"></i></a>
+                            <a href="https://medium.com/@okttoro" target="_blank" title="adetoro° Medium Page"><i class="fa fa-brands fa-medium"></i></a>
+                            <a href="mailto:af.oktaviantoro@gmail.com" target="_blank" title="adetoro° Email"><i class="fa fa-regular fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-footer">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Disclaimer</a></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="row-footer">
+                    <div class="col-footer">
+                        <h6><i class="fa fa-copyright"></i> 2023 Ade F. Oktaviantoro</h6>
+                    </div>
+                </div>    
+            </section>    
+
+        </div>
+        </section>
+        </div>
         
-        function showMenu(){
-            navLinks.style.right = "0";
-            navLinks.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0.3)";
-            //landingOp.style.opacity = "0";
-            //footerOp.style.opacity = "0";
-            //logotsOp.style.opacity = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-100%";
-            navLinks.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0)";
-            //landingOp.style.opacity = "1";
-            //footerOp.style.opacity = "1";
-            //logotsOp.style.opacity = "1";
-        }
-    </script>
-    
-    <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+        
+        
+        
+    </main>
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
-
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="index.js"></script>
+<script src="other.js"></script>
 
     
-    
+
+
+
+    </body>
 </body>
 </html>
