@@ -843,6 +843,17 @@ nav .hero-btn3:hover{
         line-height: 22px;
         transition: all 0.3s;
     }
+@media only screen and (max-width: 1800px){
+    .gmb{
+        width: 600px;
+    }
+    .trc1{
+        width: 600px;
+    }
+    .vcn{
+        width: 600px;
+    }
+}
 @media only screen and (max-width: 1700px){
     .gmb3d2{
         width: 730px;
@@ -4597,7 +4608,7 @@ nav .nameset a{
 .head-cont{
     display: grid;
     height: auto;
-    grid-template-columns: 1fr 1fr 0.63fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
     grid-template-rows: 0.1fr;
     grid-template-areas:
         "titlepage titlesubs getin";
@@ -4631,9 +4642,9 @@ nav .nameset a{
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 25px;
-    padding-right: 10px;
     text-align:left;
     cursor: default;
+    float: right;
 }
 
 
