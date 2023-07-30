@@ -15,6 +15,7 @@
 
 
         var navLinks = document.getElementById("navLinks");
+        var navLinks2 = document.getElementById("navLinks2");
         //var landingOp = document.getElementById("landingOp");
         //var footerOp = document.getElementById("footerOp");
         var logotsOp = document.getElementById("logotsOp");
@@ -29,6 +30,20 @@
         function hideMenu(){
             navLinks.style.right = "-100%";
             navLinks.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0)";
+            //landingOp.style.opacity = "1";
+            //footerOp.style.opacity = "1";
+            //logotsOp.style.opacity = "1";
+        }
+        function showMenu2(){
+            navLinks2.style.right = "0";
+            navLinks2.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0.3)";
+            //landingOp.style.opacity = "0";
+            //footerOp.style.opacity = "0";
+            //logotsOp.style.opacity = "0";
+        }
+        function hideMenu2(){
+            navLinks2.style.right = "-100%";
+            navLinks2.style.boxShadow = "0 0 20px 0px rgba(77,77,77,0)";
             //landingOp.style.opacity = "1";
             //footerOp.style.opacity = "1";
             //logotsOp.style.opacity = "1";
