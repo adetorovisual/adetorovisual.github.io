@@ -4699,6 +4699,7 @@ p:hover .portdesc{
         padding-left: 0px;
         padding-right: 10px;
         
+        
     }
 }
 
@@ -4706,6 +4707,7 @@ p:hover .portdesc{
     .desctitle p{
         font-size: 12px;
         text-align: left;
+        float: left;
     }
     
     #titlepage h1{
