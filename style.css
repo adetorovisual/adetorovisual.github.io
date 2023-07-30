@@ -4698,7 +4698,7 @@ p:hover .portdesc{
         padding-bottom: 6px;
         padding-left: 0px;
         padding-right: 10px;
-        
+        float: left;
         
     }
 }
