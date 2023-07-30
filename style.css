@@ -204,6 +204,39 @@
 
 /*PAGE BREAK*/
 
+/*BACK TO TOP*/
+html{
+    scroll-behavior: smooth;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(190, 190, 190, 0.3);
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span{
+    color: #FAFAFA;
+    font-size: 20px;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top:hover{
+    background-color: rgba(127, 127, 127, 0.3);
+}
+
+.back-to-top:hover span{
+    transform: translateY(-4px);
+}
+/*BACK TO TOP*/
+
 
 ::selection{
     background-color: #4D4D4D;
@@ -843,15 +876,12 @@ nav .hero-btn3:hover{
         line-height: 22px;
         transition: all 0.3s;
     }
-@media only screen and (max-width: 1800px){
-    .gmb{
-        width: 600px;
+@media only screen and (max-width: 1900px){
+    .gmb3d2{
+        width: 870px;
     }
-    .trc1{
-        width: 600px;
-    }
-    .vcn{
-        width: 600px;
+    .gmb3dX3{
+        width: 390px;
     }
 }
 @media only screen and (max-width: 1700px){
@@ -5038,6 +5068,18 @@ p:hover .portdesc{
     font-weight: 500;
     line-height: 22px;
     transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1900px){
+    .gmb{
+        width: 600px;
+    }
+    .trc1{
+        width: 600px;
+    }
+    .vcn{
+        width: 600px;
+    }
 }
 
 @media only screen and (max-width: 1500px){
