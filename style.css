@@ -67,6 +67,7 @@
 #bottom{
     grid-area: bottom;
     background: #FAFAFA;
+	background: transparent;
 }
 
 .contentLeft{
@@ -4168,6 +4169,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+	padding-bottom: 0px;
 }
 
 .pFoot-content ul li{
@@ -4242,17 +4244,34 @@
 /*FOOTER*/
 .footer{
     background: transparent;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    align-items: center;
-    position: fixed;
+	position: fixed;
     bottom: 0;
-    max-width: 1800px;
+	left: 0;
     width: 100%;
     margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjustFooter{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	max-width: 1800px;
+	min-width: 1024px;
+    width: 100%;
+}
+
+.footerContent{
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+	padding: 20px 0px;
+	position: relative;
+	width: 100%;
 }
 
 .socmed{
@@ -4288,6 +4307,7 @@
 .copyrights{
     font-size: 12px;
     color: #808080;
+	padding-right: 0px
 }
 
 .strip{
@@ -4328,95 +4348,48 @@
 
 /*RESPONSIVE*/
 
-/*TABLET*/
-@media screen and (min-width:768px) and (max-width:1023px){
+/*Laptop L*/
+@media screen and (min-width:1024px) and (max-width:1440px){
+	/*BODY*/
+		.container{
+			max-width: 1340px;
+			min-width: 1024px;
+		}
+	/*BODY*/
+	
 	/*LANDING GRID*/
-		.tabel{
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
-			grid-template-areas:
-				"lefted"
-				"righted"
-				"midd"
-				"bottom";
-			grid-gap: 0px;
-		}
-
-		.contentLeft{
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: auto;
-			grid-template-areas:
-				"title"
-				"empty1"
-				"documentation"
-				"doc1"
-				"doc2"
-				"works"
-				"works1"
-				"works2"
-				"works3"
-				"works4";
-			grid-gap: 0px;
-			padding: 0px 50px;
-		}
-
 		#empty1{
+			padding-top: 75px;
+		}
+	
+		#contact{
 			padding-top: 100px;
 		}
-
-		.contentRight{
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: auto;
-			grid-template-areas:
-				"empty2"
-				"award"
-				"award1"
-				"collaboration"
-				"collab1"
-				"collab2"
-				"collab3"
-				"explorations"
-				"explore1"
-				"explore2"
-				"contact";
-			grid-gap: 0px;
-			padding: 0px 50px;
-		}
-	
-		#empty2{
-			display: none;
-		}
 	/*LANDING GRID*/
 	
-	/*FOOTER*/
-		.footer{
-			background: #FAFAFA;
-			display: flex;
-			justify-content: space-between;
-			padding-bottom: 20px;
+	/*JUDUL*/
+		.name{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 52px;
 			padding-top: 20px;
-			align-items: center;
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			margin: auto;
-			text-align: center;
+			font-weight: 500;
 		}
+	/*JUDUL*/
 	
-		.socmed ul li{
-			list-style: none;
-			display: inline-block;
+	/*KONTAK*/
+		.txtContact{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 52px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			padding: 0px;
 			position: relative;
-			padding-left: 50px;
 		}
+	/*KONTAK*/
 	
-		.copyrights{
-			font-size: 12px;
-			color: #808080;
-			padding-right: 50px;
+	/*FOOTER*/
+		.footerContent{
+			padding: 20px 50px;
 		}
 	/*FOOTER*/
 	
@@ -4828,10 +4801,508 @@
 	/*WORKS SERIES*/
 	
 }
-/*TABLET*/
+/*Laptop L*/
 
-/*PHONE*/
-@media screen and (max-width:767px){
+/*Laptop*/
+@media screen and (min-width:768px) and (max-width:1024px){
+	/*LANDING GRID*/
+		.tabel{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+			grid-template-areas:
+				"lefted"
+				"righted"
+				"midd"
+				"bottom";
+			grid-gap: 0px;
+		}
+
+		.contentLeft{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"title"
+				"empty1"
+				"documentation"
+				"doc1"
+				"doc2"
+				"works"
+				"works1"
+				"works2"
+				"works3"
+				"works4";
+			grid-gap: 0px;
+			padding: 0px 50px;
+		}
+
+		#empty1{
+			padding-top: 100px;
+		}
+
+		.contentRight{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"empty2"
+				"award"
+				"award1"
+				"collaboration"
+				"collab1"
+				"collab2"
+				"collab3"
+				"explorations"
+				"explore1"
+				"explore2"
+				"contact";
+			grid-gap: 0px;
+			padding: 0px 50px;
+		}
+	
+		#empty2{
+			display: none;
+		}
+	/*LANDING GRID*/
+	
+	/*FOOTER*/
+		.adjustFooter{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1024px;
+			min-width: 768px;
+			width: 100%;
+		}
+		.footerContent{
+			padding: 20px 50px;
+		}
+	
+		.socmed ul li{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+		}
+	
+		.copyrights{
+			font-size: 12px;
+			color: #808080;
+		}
+	/*FOOTER*/
+	
+	/*POPUP MODAL*/
+		.popup___content{
+			width: 950px;
+		}
+	/*POPUP MODAL*/
+	
+	/*DOC MOGRAPH*/
+		#pTextDocTitle1{
+			height: 130px;
+		}
+	
+		.containerScroll{
+			height: 530px;
+		}
+	
+		.mographIMG1:hover .hovIMG1{
+			height: 245px;
+		}
+	
+		.hovIMG1{
+			height: 245px;
+		}
+	
+		.mographIMG2:hover .hovIMG2{
+			height: 245px;
+		}
+	
+		.hovIMG2{
+			height: 245px;
+		}
+	
+		.mographIMG3:hover .hovIMG3{
+			height: 245px;
+		}
+	
+		.hovIMG3{
+			height: 245px;
+		}
+	
+		.mographIMG4:hover .hovIMG4{
+			height: 245px;
+		}
+	
+		.hovIMG4{
+			height: 245px;
+		}
+	
+		.mographIMG5:hover .hovIMG5{
+			height: 245px;
+		}
+	
+		.hovIMG5{
+			height: 245px;
+		}
+	
+		.mographIMG6:hover .hovIMG6{
+			height: 245px;
+		}
+	
+		.hovIMG6{
+			height: 245px;
+		}
+	
+		.mographIMG7:hover .hovIMG7{
+			height: 245px;
+		}
+	
+		.hovIMG7{
+			height: 245px;
+		}
+	
+		.mographIMG8:hover .hovIMG8{
+			height: 245px;
+		}
+	
+		.hovIMG8{
+			height: 245px;
+		}
+	/*DOC MOGRAPH*/
+	
+	/*DOC 3D*/
+		.containerScroll2{
+			height: 530px;
+		}
+	
+		.hovmodel3DIMG1{
+			height: 300px;
+		}
+	
+		.hovmodel3DIMG2{
+			height: 300px;
+		}
+	
+		.hovmodel3DIMG3{
+			height: 300px;
+		}
+	
+		.hovmodel3DIMG4{
+			height: 300px;
+		}
+	
+		.hovmodel3DIMG5{
+			height: 300px;
+		}
+	
+		.hovmodel3DIMG6{
+			height: 300px;
+		}
+	
+		.hovmodel3DIMG7{
+			height: 245px;
+		}
+	
+		.hov-modelIMG iframe{
+			height: 245px;
+			width: 100%;
+			border: 1px solid #FAFAFA
+		}
+	/*DOC 3D*/
+	
+	/*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+		.mediaContainer iframe{
+			height: 530px;
+		}
+	
+		.pText-Title span{
+			font-size: 40px;
+		}
+	
+		.pText-info .undertxt{
+			font-size: 15px;
+			line-height: 22px;
+		}
+	
+		.pFoot-content{
+			font-family: 'Inter', sans-serif;
+			font-size: 15px;
+		}
+	
+		.pFoot-content ul li{
+			padding: 10px 20px;
+		}
+	
+		.pText-Title .resizeTitle{
+			font-size: 30px;
+		}
+	
+		.pText-Head span{
+			font-size: 15px;
+		}
+	
+		.mediaContainerIN{
+			height: 530px;
+		}
+	
+		.mediaContainerIN iframe{
+			width: 500px;
+			height: 500px;
+		}
+	
+		.playlistContainer .main-video .video{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+			grid-template-areas:
+				"identityContent empt"
+				"vidFoot vidFoot"
+				"contFrame contFrame"
+				"titlevideo titlevideo";
+			gap: 0px;
+		}
+	
+		.playlistContainer .main-video #empt{
+			height: 83px;
+		}
+	
+		.playlistContainer .main-video iframe{
+			height: 500px;
+			margin-top: 10px;
+		}
+	
+		.playlistContainer .main-video #titlevideo #info{
+			height: 270px;
+		}
+	
+		.contentScrollMobile{
+			height: 750px;
+		}
+	
+		.playlistContainer .main-video #titlevideo{
+			border-left: 0px solid #222222;
+			border-top: 1px solid #222222;
+			border-bottom: 1px solid #222222;
+			margin-bottom: 0px;
+		}
+	
+		#identity{
+			height: 123px;
+		}
+	
+		.pText-info{
+			padding: 20px 20px 30px 20px;
+		}
+	
+		.pText-Head{
+			padding: 10px 20px 10px 20px;
+		}
+	
+		.pText-Title{
+			padding: 10px 20px 10px 20px;
+		}
+	
+		.pText-info .undertxt span{
+			padding-top: 30px;
+			display: block;
+		}
+	
+		.playlistContainer2 .main-video2 .video2{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+			grid-template-areas:
+				"identityContent2 empt2"
+				"vidFoot2 vidFoot2"
+				"contFrame2 contFrame2"
+				"titlevideo2 titlevideo2";
+			gap: 0px;
+		}
+	
+		.playlistContainer2 .main-video2 #empt2{
+			height: 83px;
+		}
+	
+		.playlistContainer2 .main-video2 iframe{
+			height: 500px;
+			margin-top: 10px;
+		}
+	
+		.playlistContainer2 .main-video2 #titlevideo2 #info2{
+			height: 270px;
+		}
+	
+		.contentScrollMobile{
+			height: 750px;
+		}
+	
+		.playlistContainer2 .main-video2 #titlevideo2{
+			border-left: 0px solid #222222;
+			border-top: 1px solid #222222;
+			border-bottom: 1px solid #222222;
+			margin-bottom: 0px;
+		}
+	
+		#identity2{
+			height: 123px;
+		}
+	
+		.pText-info2{
+			padding: 20px 20px 30px 20px;
+		}
+	
+		.pText-Head2{
+			padding: 10px 20px 10px 20px;
+		}
+	
+		.pText-Title2{
+			padding: 10px 20px 10px 20px;
+		}
+	
+		.pText-info2 .undertxt2 span{
+			padding-top: 30px;
+			display: block;
+		}
+	
+		.container04{
+			height: 600px;
+		}
+	
+	/*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+	
+	/*WORKS AMPHIBI, PEKOPO*/
+		#contentNone{
+			height: 30px;
+			background: transparent;
+			display: block;
+		}
+	
+		#contentNone2{
+			height: 30px;
+			background: transparent;
+			display: block;
+		}
+	/*WORKS AMPHIBI, PEKOPO*/
+	
+	/*WORKS PANDIT*/
+		.pText-contentTri{
+			height: 600px;
+		}
+	
+		.triImage{
+			width: 100%;
+			height: 140px;
+		}
+	
+		.pTexttri-Head span{
+			font-size: 15px;
+		}
+	
+		.pTexttri-Title span{
+			font-size: 40px;
+		}
+	
+		.pTexttri-info .undertxttri{
+			font-size: 15px;
+		}
+	/*WORKS PANDIT*/
+	
+	/*WORKS SERIES*/
+		.playlistContainerS{
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: flex-end;
+			grid-template-areas: 
+				"menuContainerS"
+				"vidmainS"
+				"contentNoneS";
+			position: relative;
+			gap: 0px;
+		}
+	
+		.playlistContainerS .main-videoS .videoS{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: 1fr;
+			grid-template-areas:
+				"identityContentS emptS"
+				"vidFootS emptS"
+				"contFrameS contFrameS"
+				"titlevideoS titlevideoS";
+			gap: 0px;
+		}
+	
+		.contentScrollMobileS{
+			height: 750px;
+		}
+	
+		#menuContainerS{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	
+		.playlistContainerS .main-videoS #emptS{
+			grid-area: emptS;
+			background: red;
+			height: 205px;
+		}
+	
+		.playlistContainerS .main-videoS iframe{
+			width: 100%;
+			height: 480px;
+			border-radius: 0px;
+			border: 1px solid #222222;
+			margin: 10px;
+		}
+	
+		.playlistContainerS .main-videoS #titlevideoS{
+			border-left: 0px solid #222222;
+			border-top: 1px solid #222222;
+		}
+	
+		.playlistContainerS .video-listS .vidS.active #titlevideoS .judulS{
+			border-top: 0px solid #222222;
+			border-bottom: 1px solid #222222;
+		}
+	
+		.playlistContainerS .video-listS .vidS:hover #titlevideoS .judulS{
+			border-top: 0px solid #222222;
+			border-bottom: 1px solid #222222;
+		}
+	
+		.judulS{
+			border-top: 0px solid #FAFAFA;
+			border-bottom: 1px solid #FAFAFA;
+		}
+	
+		.playlistContainerS .main-videoS #titlevideoS #infoS{
+			height: 300px;
+			border-bottom: 1px solid #222222;
+			margin-bottom: 0px;
+		}
+	
+		.pText-infoS .undertxtS{
+			font-size: 15px;
+		}
+		
+		.playlistContainerS .video-listS .vidS #titlevideoS{
+			font-size: 15px;
+		}
+	
+		#contentNoneS{
+			height: 30px;
+			background: transparent;
+			display: block;
+		}
+	/*WORKS SERIES*/
+	
+}
+/*Laptop*/
+
+/*Tablet*/
+@media screen and (min-width:425px) and (max-width:768px){
 	/*BODY*/
 		.container{
 			max-width: 767px;
@@ -5047,22 +5518,16 @@
 	/*KONTAK*/
 	
 	/*FOOTER*/
-		.footer{
-			background: #FAFAFA;
+		.adjustFooter{
 			display: flex;
 			justify-content: space-between;
-			padding-bottom: 20px;
-			padding-top: 20px;
 			align-items: center;
-			position: fixed;
-			bottom: 0;
+			max-width: 768px;
+			min-width: 425px;
 			width: 100%;
-			margin: auto;
-			text-align: center;
 		}
-	
-		.socmed{
-			padding-left: 50px;
+		.footerContent{
+			padding: 20px 50px;
 		}
 	
 		.socmed ul li{
@@ -5075,7 +5540,6 @@
 		.copyrights{
 			font-size: 11px;
 			color: #808080;
-			padding-right: 50px;
 		}
 	
 		.strip{
@@ -6127,6 +6591,7 @@
 		height: 50px;
 		display: grid;
 		background: transparent;
+		padding-bottom: 0px;
 	}
 	
 	.pFoot-content2 ul li{
@@ -6284,7 +6749,2205 @@
 		}
 	/*WORKS SERIES*/
 	
+	/*SCROLL*/
+		::-webkit-scrollbar{
+			width: 5px;
+		}
+	/*SCROLL*/
 }
-/*PHONE*/
+/*Tablet*/
+
+/*Mobile L*/
+@media screen and (min-width:375px) and (max-width:425px){
+	/*BODY*/
+		.container{
+			max-width: 425px;
+			min-width: 375px;
+		}
+	/*BODY*/
+	
+	/*LANDING GRID*/
+		.contentLeft{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"title"
+				"empty1"
+				"documentation"
+				"doc1"
+				"doc2"
+				"works"
+				"works1"
+				"works2"
+				"works3"
+				"works4";
+			grid-gap: 0px;
+			padding: 0px 25px;
+		}
+	
+		#empty1{
+			padding-top: 10px;
+		}
+	
+		.contentRight{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"empty2"
+				"award"
+				"award1"
+				"collaboration"
+				"collab1"
+				"collab2"
+				"collab3"
+				"explorations"
+				"explore1"
+				"explore2"
+				"contact";
+			grid-gap: 0px;
+			padding: 0px 25px;
+		}
+	
+		#empty2{
+			display: none;
+		}
+	
+		#contact{
+			padding-top: 100px;
+		}
+	/*LANDING GRID*/
+	
+	/*FOOTER*/
+		.adjustFooter{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 425px;
+			min-width: 375px;
+			width: 100%;
+		}
+		.footerContent{
+			padding: 20px 25px;
+		}
+	
+		.socmed ul li{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			padding-left: 0px;
+		}
+	
+		.socmed .fa{
+			font-size: 15px;
+			color: #808080;
+			padding-right: 15px;
+		}
+	
+		.copyrights{
+			font-size: 11px;
+			color: #808080;
+		}
+	
+		.strip{
+			background-color: #808080;
+			height: 3px;
+			width: 15px;
+			transform: translateY(-100%);
+			margin-right: 15px;
+		}
+	
+		.iam a{
+			text-decoration: none;
+			color: #808080;
+			font-size: 13px;
+			font-weight: 500; 
+		}
+	/*FOOTER*/
+	
+	/*POPUP MODAL*/
+		.popup___content{
+			width: 370px;
+		}
+	/*POPUP MODAL*/
+	
+	/*POPUP MEDIA BOTTOM*/
+		.pFoot-content{
+			background: transparent;
+			display: inline-block;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding-bottom: 15px;
+		}
+	
+		.pFoot-content ul li{
+			list-style: none;
+			display: grid;
+			position: relative;
+			padding: 5px 20px;
+		}
+	
+		.pFoot-content span{
+			padding-right: 0px;
+		}
+
+		
+	/*POPUP MEDIA BOTTOM*/
+	
+	/*DOCUMENTATION*/
+		.popup-location ul li span{
+			color: #222222;
+			font-size: 13px;
+			font-family: 'Inter', sans-serif;
+			font-weight: 400;
+		}
+	
+		.containerScroll{
+			height: 430px;
+		}
+	
+		#pTextDocDesc1{
+			grid-area: pTextDocDesc1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+			height: 250px;
+		}
+	
+		#pTextDocMographDesc{
+			grid-area: pTextDocMographDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 200px;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocKeyingDesc{
+			grid-area: pTextDocKeyingDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+			height: 200px;
+		}
+	
+		#pTextDocRotoDesc{
+			grid-area: pTextDocRotoDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+			height: 200px;
+		}
+	
+		#pTextDocTrackingDesc{
+			grid-area: pTextDocTrackingDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 200px;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocShowDesc3{
+			height: 150px;
+		}
+
+		#pTextDocShowDesc4{
+			height: 150px;
+		}
+	
+		.mographIMG1:hover .hovIMG1{
+			height: 177px;
+		}
+	
+		.hovIMG1{
+			height: 177px;
+		}
+	
+		.mographIMG2:hover .hovIMG2{
+			height: 177px;
+		}
+	
+		.hovIMG2{
+			height: 177px;
+		}
+	
+		.mographIMG3:hover .hovIMG3{
+			height: 177px;
+		}
+	
+		.hovIMG3{
+			height: 177px;
+		}
+	
+		.mographIMG4:hover .hovIMG4{
+			height: 177px;
+		}
+	
+		.hovIMG4{
+			height: 177px;
+		}
+	
+		.mographIMG5:hover .hovIMG5{
+			height: 177px;
+		}
+	
+		.hovIMG5{
+			height: 177px;
+		}
+	
+		.mographIMG6:hover .hovIMG6{
+			height: 177px;
+		}
+	
+		.hovIMG6{
+			height: 177px;
+		}
+	
+		.mographIMG7:hover .hovIMG7{
+			height: 177px;
+		}
+	
+		.hovIMG7{
+			height: 177px;
+		}
+	
+		.mographIMG8:hover .hovIMG8{
+			height: 177px;
+		}
+	
+		.hovIMG8{
+			height: 177px;
+		}
+	
+	
+		.containerScroll2{
+			height: 430px;
+		}
+	
+		#pTextDocDesc2{
+			height: 250px;
+		}
+	
+		#pTextDocModelDesc{
+			height: 250px;
+		}
+	
+		#pTextDocMatDesc{
+			height: 200px;
+		}
+	
+		#pTextDocRigDesc{
+			height: 250px;
+		}
+	
+		#pTextDocCompDesc{
+			height: 200px;
+		}
+	
+		#pTextDocARDesc{
+			height: 250px;
+		}
+	
+		#pTextDocCaseDesc{
+			height: 200px;
+		}
+	
+		#pHeadDoc{
+			padding-top: 10px;
+		}
+	
+		#pFootDoc{
+			padding-top: 10px;
+		}
+	
+		#pHeadDoc2{
+			padding-top: 10px;
+		}
+	
+		#pFootDoc2{
+			padding-top: 10px;
+		}
+	/*DOCUMENTATION*/
+	
+	/*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+		.contentScrollMobile1P{
+			height: 550px;
+		}
+	
+		#pHead{
+			padding-top: 10px;
+		}
+	
+		#pFoot{
+			padding-top: 10px;
+		}
+	
+		.mediaContainer iframe{
+			height: 250px;
+		}
+	
+		.pText-container{
+			background-color: transparent;
+			height: 500px;
+			display: flex;
+		}
+	/*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+	
+	/*WORKS PANDIT*/
+		.contentScrollMobileTri{
+			height: 450px;
+		}
+	
+		#pHeadTri{
+			padding-top: 10px;
+		}
+
+		#pFootTri{
+			padding-top: 10px;
+		}
+	/*WORKS PANDIT*/
+	
+	/*WORKS AMPHIBI, PEKOPO*/
+		.contentScrollMobile{
+			height: 600px;
+		}
+	
+		#identity{
+			height: 150px;
+		}
+	
+		.playlistContainer .main-video iframe{
+			width: 100%;
+			height: 250px;
+		}
+	
+		#identity2{
+			height: 150px;
+		}
+	
+		.playlistContainer2 .main-video2 iframe{
+			width: 100%;
+			height: 250px;
+		}
+	/*WORKS AMPHIBI, PEKOPO*/
+	
+	/*WORKS SERIES*/
+	
+		.contentScrollMobileS{
+			height: 650px;
+		}
+	
+		#identityS{
+			height: 158px;
+		}
+	
+		.playlistContainerS .main-videoS iframe{
+			height: 250px;
+		}
+	
+		.playlistContainerS .main-videoS #titlevideoS #infoS{
+			height: 430px;
+		}
+	/*WORKS SERIES*/
+	
+	/*SCROLL*/
+		::-webkit-scrollbar{
+			width: 5px;
+		}
+	/*SCROLL*/
+}
+/*Mobile L*/
+
+/*Mobile M*/
+@media screen and (min-width:320px) and (max-width:375px){
+	/*BODY*/
+		.container{
+			max-width: 375px;
+			min-width: 320px;
+		}
+	/*BODY*/
+	
+	/*LANDING GRID*/
+		.tabel{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+			grid-template-areas:
+				"lefted"
+				"righted"
+				"midd"
+				"bottom";
+			grid-gap: 0px;
+		}
+		
+		.contentLeft{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"title"
+				"empty1"
+				"documentation"
+				"doc1"
+				"doc2"
+				"works"
+				"works1"
+				"works2"
+				"works3"
+				"works4";
+			grid-gap: 0px;
+			padding: 0px 25px;
+		}
+	
+		#empty1{
+			padding-top: 10px;
+		}
+	
+		.contentRight{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"empty2"
+				"award"
+				"award1"
+				"collaboration"
+				"collab1"
+				"collab2"
+				"collab3"
+				"explorations"
+				"explore1"
+				"explore2"
+				"contact";
+			grid-gap: 0px;
+			padding: 0px 25px;
+		}
+	
+		#empty2{
+			display: none;
+		}
+	
+		#contact{
+			padding-top: 100px;
+		}
+	
+		.name{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 32px;
+			padding-top: 20px;
+			font-weight: 500;
+		}
+	
+		.upper{
+			font-family: 'Inter', sans-serif;
+			vertical-align: top;
+			font-size: 13px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			cursor: default;
+		}
+	/*LANDING GRID*/
+	
+	/*GLOBAL SETTING MENU*/
+		.doc0{
+			font-family: 'Inter', sans-serif;
+			letter-spacing: 1px;
+			font-size: 13px;
+			font-weight: 300;
+			cursor: default;
+		}
+	/*GLOBAL SETTING MENU*/
+	
+	/*MENU BUTTON SETTING*/
+		#doc1 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+	
+		#doc2 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+	
+		#works1 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#works2 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#works3 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#works4 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#award1 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#collab1 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#collab2 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#collab3 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#explore1 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+		#explore2 .doc-btn .docs-content span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 0px;    
+		}
+
+	/*MENU BUTTON SETTING*/
+	
+	/*FOOTER*/
+		.adjustFooter{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 375px;
+			min-width: 320px;
+			width: 100%;
+		}
+		.footerContent{
+			padding: 20px 20px;
+		}
+	
+		.socmed ul li{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			padding-left: 0px;
+		}
+	
+		.socmed .fa{
+			font-size: 15px;
+			color: #808080;
+			padding-right: 10px;
+		}
+	
+		.copyrights{
+			font-size: 11px;
+			color: #808080;
+		}
+	
+		.strip{
+			background-color: #808080;
+			height: 3px;
+			width: 10px;
+			transform: translateY(-100%);
+			margin-right: 10px;
+		}
+	
+		.iam a{
+			text-decoration: none;
+			color: #808080;
+			font-size: 13px;
+			font-weight: 500; 
+		}
+	/*FOOTER*/
+	
+	/*KONTAK*/
+		.txtContact{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			padding: 0px;
+			position: relative;
+		}
+	
+		.upperContact{
+			font-family: 'Inter', sans-serif;
+			vertical-align: top;
+			font-size: 13px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			color: #222222;
+			cursor: default;
+		}
+	/*KONTAK*/
+	
+	/*POPUP MODAL*/
+		.popup___content{
+			width: 320px;
+		}
+	
+		.pFoot-content{
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			letter-spacing: 1px;
+		}
+	/*POPUP MODAL*/
+	
+	/*DOCUMENTATION*/
+		.popup-location ul li span{
+			color: #222222;
+			font-size: 13px;
+			font-family: 'Inter', sans-serif;
+			font-weight: 400;
+		}
+	
+		.containerScroll{
+			height: 530px;
+		}
+	
+		.contentTextDoc{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas:
+				"pTextDocTitle1 pTextDocTitle1 pTextDocTitle1 pTextDocTitle1"
+				"pTextDocRole1 pTextDocRole1 pTextDocRole1 pTextDocRole1"
+				"pTextDocSW1 pTextDocSW1 pTextDocSW1 pTextDocSW1"
+				"pTextDocDesc1 pTextDocDesc1 pTextDocDesc1 pTextDocDesc1"
+				
+				"pTextDocNone1 pTextDocNone1 pTextDocNone1 pTextDocNone1"
+				
+				"pTextDocMographTitle pTextDocMographTitle pTextDocMographTitle pTextDocMographTitle"
+				"pTextDocMographIMG1 pTextDocMographIMG1 pTextDocMographIMG1 pTextDocMographIMG1"
+				"pTextDocMographIMG2 pTextDocMographIMG2 pTextDocMographIMG2 pTextDocMographIMG2"
+				"pTextDocMographDesc pTextDocMographDesc pTextDocMographDesc pTextDocMographDesc"
+				
+				"pTextDocNone2 pTextDocNone2 pTextDocNone2 pTextDocNone2"
+				
+				"pTextDocKeyingTitle pTextDocKeyingTitle pTextDocKeyingTitle pTextDocKeyingTitle"
+				"pTextDocKeyingIMG1 pTextDocKeyingIMG1 pTextDocKeyingIMG1 pTextDocKeyingIMG1"
+				"pTextDocKeyingDesc pTextDocKeyingDesc pTextDocKeyingDesc pTextDocKeyingDesc"
+				
+				"pTextDocNone3 pTextDocNone3 pTextDocNone3 pTextDocNone3"
+				
+				"pTextDocRotoTitle pTextDocRotoTitle pTextDocRotoTitle pTextDocRotoTitle"
+				"pTextDocRotoIMG1 pTextDocRotoIMG1 pTextDocRotoIMG1 pTextDocRotoIMG1"
+				"pTextDocRotoDesc pTextDocRotoDesc pTextDocRotoDesc pTextDocRotoDesc"
+				
+				"pTextDocNone4 pTextDocNone4 pTextDocNone4 pTextDocNone4"
+				
+				"pTextDocTrackingTitle pTextDocTrackingTitle pTextDocTrackingTitle pTextDocTrackingTitle"
+				"pTextDocTrackingIMG1 pTextDocTrackingIMG1 pTextDocTrackingIMG1 pTextDocTrackingIMG1"
+				"pTextDocTrackingIMG2 pTextDocTrackingIMG2 pTextDocTrackingIMG2 pTextDocTrackingIMG2"
+				"pTextDocTrackingDesc pTextDocTrackingDesc pTextDocTrackingDesc pTextDocTrackingDesc"
+				
+				"pTextDocNone5 pTextDocNone5 pTextDocNone5 pTextDocNone5"
+				
+				"pTextDocShowTitle pTextDocShowTitle pTextDocShowTitle pTextDocShowTitle"
+				"pTextDocShowIMG1 pTextDocShowIMG1 pTextDocShowIMG1 pTextDocShowIMG1"
+				"pTextDocShowDesc1 pTextDocShowDesc1 pTextDocShowDesc1 pTextDocShowDesc1"
+				"pTextDocShowDesc3 pTextDocShowDesc3 pTextDocShowDesc3 pTextDocShowDesc3"
+				"pTextDocShowIMG2 pTextDocShowIMG2 pTextDocShowIMG2 pTextDocShowIMG2"
+				"pTextDocShowDesc2 pTextDocShowDesc2 pTextDocShowDesc2 pTextDocShowDesc2"
+				"pTextDocShowDesc4 pTextDocShowDesc4 pTextDocShowDesc4 pTextDocShowDesc4"
+				
+				"pTextDocNone6 pTextDocNone6 pTextDocNone6 pTextDocNone6";
+			grid-column-gap: 0px;
+			padding: 0px;
+			margin: 0px;
+			border-radius: 0px;
+		}
+	
+		.DocTitle{
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 10px;
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			color: #222222;
+			height: 100%;
+		}
+	
+		#pTextDocTitle1{
+			grid-area: pTextDocTitle1;
+			background: transparent;
+			position: relative;
+			height: 100px;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		.identityTitle{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 20px;
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			color: #222222;
+			gap: 10px;
+			z-index: 9999;
+		}
+	
+		#pTextDocRole1{
+			grid-area: pTextDocRole1;
+			background: transparent;
+			position: relative;
+			height: 50px;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		.DocRole{
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 0px;
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			letter-spacing: 1px;
+			height: 100%;
+		}
+	
+		#pTextDocSW1{
+			grid-area: pTextDocSW1;
+			background: transparent;
+			position: relative;
+			height: 50px;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		.DocSW{
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 0px;
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			letter-spacing: 1px;
+			height: 100%;
+		}
+	
+		#pTextDocDesc1{
+			grid-area: pTextDocDesc1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+			height: 300px;
+		}
+	
+		.DocDesc{
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 20px;
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			height: 100%;
+			line-height: 25px;
+		}
+	
+		#pTextDocMographIMG1{
+			grid-area: pTextDocMographIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #FAFAFA;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocMographIMG2{
+			grid-area: pTextDocMographIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocMographDesc{
+			grid-area: pTextDocMographDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 300px;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocKeyingIMG1{
+			grid-area: pTextDocKeyingIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocKeyingDesc{
+			grid-area: pTextDocKeyingDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+			height: 200px;
+		}
+	
+		.mographDesc{
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 10px;
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			height: 100%;
+			line-height: 25px;
+		}
+	
+		#pTextDocRotoIMG1{
+			grid-area: pTextDocRotoIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocRotoDesc{
+			grid-area: pTextDocRotoDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+			height: 200px;
+		}
+	
+		#pTextDocTrackingIMG1{
+			grid-area: pTextDocTrackingIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #FAFAFA;
+			border-right: 1px solid #222222;
+		}
+
+		#pTextDocTrackingIMG2{
+			grid-area: pTextDocTrackingIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocTrackingDesc{
+			grid-area: pTextDocTrackingDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 200px;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocShowIMG1{
+			grid-area: pTextDocShowIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocShowDesc1{
+			grid-area: pTextDocShowDesc1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 50px;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocShowDesc3{
+			grid-area: pTextDocShowDesc3;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 200px;
+			border-right: 1px solid #222222;
+		}
+
+		#pTextDocShowIMG2{
+			grid-area: pTextDocShowIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocShowDesc2{
+			grid-area: pTextDocShowDesc2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 50px;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+		}
+	
+		#pTextDocShowDesc4{
+			grid-area: pTextDocShowDesc4;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			height: 200px;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+		}
+	
+		.mographIMG1:hover .hovIMG1{
+			height: 150px;
+		}
+	
+		.hovIMG1{
+			height: 150px;
+		}
+	
+		.mographIMG2:hover .hovIMG2{
+			height: 150px;
+		}
+	
+		.hovIMG2{
+			height: 150px;
+		}
+	
+		.mographIMG3:hover .hovIMG3{
+			height: 150px;
+		}
+	
+		.hovIMG3{
+			height: 150px;
+		}
+	
+		.mographIMG4:hover .hovIMG4{
+			height: 150px;
+		}
+	
+		.hovIMG4{
+			height: 150px;
+		}
+	
+		.mographIMG5:hover .hovIMG5{
+			height: 150px;
+		}
+	
+		.hovIMG5{
+			height: 150px;
+		}
+	
+		.mographIMG6:hover .hovIMG6{
+			height: 150px;
+		}
+	
+		.hovIMG6{
+			height: 150px;
+		}
+	
+		.mographIMG7:hover .hovIMG7{
+			height: 150px;
+		}
+	
+		.hovIMG7{
+			height: 150px;
+		}
+	
+		.mographIMG8:hover .hovIMG8{
+			height: 150px;
+		}
+	
+		.hovIMG8{
+			height: 150px;
+		}
+	
+	
+		.containerScroll2{
+			height: 530px;
+		}
+	
+		.contentTextDoc2{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas:
+				"pTextDocTitle2 pTextDocTitle2 pTextDocTitle2 pTextDocTitle2"
+				"pTextDocRole2 pTextDocRole2 pTextDocRole2 pTextDocRole2"
+				"pTextDocSW2 pTextDocSW2 pTextDocSW2 pTextDocSW2"
+				"pTextDocDesc2 pTextDocDesc2 pTextDocDesc2 pTextDocDesc2"
+				
+				"pTextDocNone1D pTextDocNone1D pTextDocNone1D pTextDocNone1D"
+				
+				"pTextDocModelTitle pTextDocModelTitle pTextDocModelTitle pTextDocModelTitle"
+				"pTextDocModelIMG1 pTextDocModelIMG1 pTextDocModelIMG1 pTextDocModelIMG1"
+				"pTextDocModelIMG2 pTextDocModelIMG2 pTextDocModelIMG2 pTextDocModelIMG2"
+				"pTextDocModelDesc pTextDocModelDesc pTextDocModelDesc pTextDocModelDesc"
+				
+				"pTextDocNone2D pTextDocNone2D pTextDocNone2D pTextDocNone2D"
+				
+				"pTextDocMatTitle pTextDocMatTitle pTextDocMatTitle pTextDocMatTitle"
+				"pTextDocMatIMG1 pTextDocMatIMG1 pTextDocMatIMG1 pTextDocMatIMG1"
+				"pTextDocMatIMG2 pTextDocMatIMG2 pTextDocMatIMG2 pTextDocMatIMG2"
+				"pTextDocMatDesc pTextDocMatDesc pTextDocMatDesc pTextDocMatDesc"
+				
+				"pTextDocNone3D pTextDocNone3D pTextDocNone3D pTextDocNone3D"
+				
+				"pTextDocRigTitle pTextDocRigTitle pTextDocRigTitle pTextDocRigTitle"
+				"pTextDocRigIMG1 pTextDocRigIMG1 pTextDocRigIMG1 pTextDocRigIMG1"
+				"pTextDocRigIMG2 pTextDocRigIMG2 pTextDocRigIMG2 pTextDocRigIMG2"
+				"pTextDocRigDesc pTextDocRigDesc pTextDocRigDesc pTextDocRigDesc"
+				
+				"pTextDocNone4D pTextDocNone4D pTextDocNone4D pTextDocNone4D"
+				
+				"pTextDocCompTitle pTextDocCompTitle pTextDocCompTitle pTextDocCompTitle"
+				"pTextDocCompIMG1 pTextDocCompIMG1 pTextDocCompIMG1 pTextDocCompIMG1"
+				"pTextDocCompDesc pTextDocCompDesc pTextDocCompDesc pTextDocCompDesc"
+				
+				"pTextDocNone5D pTextDocNone5D pTextDocNone5D pTextDocNone5D"
+				
+				"pTextDocARTitle pTextDocARTitle pTextDocARTitle pTextDocARTitle"
+				"pTextDocARIMG1 pTextDocARIMG1 pTextDocARIMG1 pTextDocARIMG1"
+				"pTextDocARIMG2 pTextDocARIMG2 pTextDocARIMG2 pTextDocARIMG2"
+				"pTextDocARDesc pTextDocARDesc pTextDocARDesc pTextDocARDesc"
+				
+				"pTextDocNone6D pTextDocNone6D pTextDocNone6D pTextDocNone6D"
+				
+				"pTextDocCaseTitle pTextDocCaseTitle pTextDocCaseTitle pTextDocCaseTitle"
+				"pTextDocCaseIMG1 pTextDocCaseIMG1 pTextDocCaseIMG1 pTextDocCaseIMG1"
+				"pTextDocCaseIMG2 pTextDocCaseIMG2 pTextDocCaseIMG2 pTextDocCaseIMG2"
+				"pTextDocCaseDesc pTextDocCaseDesc pTextDocCaseDesc pTextDocCaseDesc"
+				
+				"pTextDocNone7D pTextDocNone7D pTextDocNone7D pTextDocNone7D";
+			grid-column-gap: 0px;
+			padding: 0px;
+			margin: 0px;
+			border-radius: 0px;
+		}
+	
+		#pTextDocTitle2{
+			grid-area: pTextDocTitle2;
+			background: transparent;
+			position: relative;
+			height: 100px;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocRole2{
+			grid-area: pTextDocRole2;
+			background: transparent;
+			position: relative;
+			height: 50px;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocSW2{
+			grid-area: pTextDocSW2;
+			background: transparent;
+			position: relative;
+			height: 50px;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocDesc2{
+			grid-area: pTextDocDesc2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+			height: 300px;
+		}
+	
+		#pTextDocModelIMG1{
+			grid-area: pTextDocModelIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocModelIMG2{
+			grid-area: pTextDocModelIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocModelDesc{
+			height: 300px;
+		}
+	
+		#pTextDocMatIMG1{
+			grid-area: pTextDocMatIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+
+		#pTextDocMatIMG2{
+			grid-area: pTextDocMatIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocMatDesc{
+			height: 200px;
+		}
+	
+		#pTextDocRigIMG1{
+			grid-area: pTextDocRigIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+
+		#pTextDocRigIMG2{
+			grid-area: pTextDocRigIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocRigDesc{
+			height: 300px;
+		}
+	
+		#pTextDocCompIMG1{
+			grid-area: pTextDocCompIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocCompDesc{
+			grid-area: pTextDocCompDesc;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+			border-left: 0px solid #222222;
+			height: 300px;
+		}
+	
+		#pTextDocARIMG1{
+			grid-area: pTextDocARIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+
+		#pTextDocARIMG2{
+			grid-area: pTextDocARIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocARDesc{
+			height: 300px;
+		}
+	
+		#pTextDocCaseIMG1{
+			grid-area: pTextDocCaseIMG1;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-right: 1px solid #222222;
+		}
+
+		#pTextDocCaseIMG2{
+			grid-area: pTextDocCaseIMG2;
+			background: transparent;
+			position: relative;
+			border-bottom: 1px solid #222222;
+			border-left: 0px solid #222222;
+			border-right: 1px solid #222222;
+		}
+	
+		#pTextDocCaseDesc{
+			height: 200px;
+		}
+	
+		.hovmodel3DIMG1{
+			height: 150px;
+		}
+	
+		.hovmodel3DIMG2{
+			height: 150px;
+		}
+	
+		.hovmodel3DIMG3{
+			height: 150px;
+		}
+	
+		.hovmodel3DIMG4{
+			height: 150px;
+		}
+	
+		.hovmodel3DIMG5{
+			height: 150px;
+		}
+	
+		.hovmodel3DIMG6{
+			height: 150px;
+		}
+	
+		.hovmodel3DIMG7{
+			height: 150px;
+		}
+	
+		.hov-modelIMG iframe{
+			height: 150px;
+			width: 100%;
+			border: 1px solid #FAFAFA
+		}
+
+	/*DOCUMENTATION*/
+	
+	/*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+		.contentScrollMobile1P{
+			overflow: hidden;
+			overflow-y: scroll;
+			height: 550px;
+		}
+	
+		.popupTabel{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas:
+				"pHead pHead pHead"
+				"pFoot pFoot pFoot"
+				"pMedia pMedia pMedia"
+				"pText pText pText"
+				"pNone1 pNone1 pNone1";
+			grid-gap: 0px;
+			padding: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			border: 0px solid #FAFAFA;
+			border-radius: 0px;
+		}
+	
+		#pHead{
+			padding-top: 10px;
+		}
+	
+		#pFoot{
+			padding-top: 10px;
+		}
+	
+		#pNone1{
+			grid-area: pNone1;
+			position: relative;
+			background: transparent;
+			height: 30px;
+			border-top: 1px solid #222222;
+			display: block;
+		}
+	
+		.pText-container{
+			background-color: transparent;
+			height: 550px;
+			display: flex;
+		}
+	
+		.mediaContainer iframe{
+			width: 100%;
+			height: 200px;
+			border-radius: 0px;
+			border: 1px solid #222222;
+			margin: 10px;
+		}
+	
+		.pText-Head span{
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			letter-spacing: 1px;
+		}
+	
+		.pText-Title span{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			color: #222222;
+		}
+	
+		.pText-info .undertxt{
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			line-height: 25px;
+		}
+	
+		.pText-Head{
+			padding: 10px 20px 10px 20px;
+		}
+	
+		.pText-Title{
+			padding: 10px 20px 10px 20px;
+		}
+	
+		.pText-info{
+			background: transparent;
+			display: flex;
+			justify-content: space-between;
+			align-items:flex-end;
+			padding: 0px 20px 25px 20px;
+			position:relative;
+			bottom: 0;
+		}
+	
+		.pText-info .undertxt span{
+			padding-top: 20px;
+			display: block;
+		}
+	
+		.pText-content{
+			height: 200px;;
+			width: 100%;
+			background-color: transparent;
+			border-radius: 0px;
+			border-left: 0px solid #222222;
+			border-top: 1px solid #222222;
+			position: relative;
+		}
+	
+		.titleLinked a{
+			position: relative;
+			text-decoration: none;
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			color: #222222;
+		}
+	
+		.pText-Title .resizeTitle{
+			font-size: 20px;
+		}
+	
+		.mediaContainerIN{
+			height: 350px;
+		}
+	
+		.mediaContainerIN iframe{
+			width: 300px;
+			height: 300px;
+		}
+	
+		.container04{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"gif1"
+				"gif2" 
+				"gif3"
+				"gif4" 
+				"gif5" 
+				"gif6"
+				"more";
+			grid-gap: 10px;
+			margin: 0px;
+			background: transparent;
+			height: 2000px;
+			margin: 10px;
+		}
+	
+		.video-containerg{
+			width: 0px;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	
+		.giphy-embed{
+			display: block;
+			width: 150px;
+			height: 150px;
+			border-radius: 0px;
+		}
+	/*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+	
+	/*WORKS PANDIT*/
+		.contentTextTri{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas:
+				"pTextTri1 pTextTri1 pTextTri1"
+				"pTextTriNone1 pTextTriNone1 pTextTriNone1"
+				"pTextTri2 pTextTri2 pTextTri2"
+				"pTextTriNone2 pTextTriNone2 pTextTriNone2"
+				"pTextTri3 pTextTri3 pTextTri3"
+				"pTextTriNone3 pTextTriNone3 pTextTriNone3"
+				"pTextTriNone4 pTextTriNone4 pTextTriNone4";
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			padding: 0px;
+			margin: 10px;
+			border: 0px solid #FAFAFA;
+			border-radius: 0px;
+		}
+
+		#pHeadTri{
+			padding-top: 10px;
+		}
+
+		#pFootTri{
+			padding-top: 10px;
+		}
+
+		#pTextTriNone1{
+			height: 30px;
+			border-top: 0px solid #222222;
+			border-bottom: 0px solid #222222;
+			border-left: 1px solid #222222;
+			border-right: 1px solid #222222;
+			background: transparent;
+		}
+
+		#pTextTriNone2{
+			height: 30px;
+			border-top: 0px solid #222222;
+			border-bottom: 0px solid #222222;
+			border-left: 1px solid #222222;
+			border-right: 1px solid #222222;
+			background: transparent;
+		}
+
+		#pTextTriNone3{
+			height: 30px;
+			border-top: 0px solid #222222;
+			border-bottom: 1px solid #222222;
+			border-left: 1px solid #222222;
+			border-right: 1px solid #222222;
+			background: transparent;
+		}
+
+		#pTextTriNone4{
+			height: 30px;
+			border-top: 0px solid #222222;
+			border-bottom: 1px solid #222222;
+			border-left: 1px solid #222222;
+			border-right: 1px solid #222222;
+			background: red;
+		}
+
+		.pText-contentTri{
+			height: 500px;
+			background-color: #FAFAFA;
+			border-radius: 0px;
+			border: 1px solid #222222;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			overflow: hidden;
+		}
+
+		.gotoIcon{
+			height: 50px;
+		}
+
+		.gotoIcon a{
+			font-size: 13px;
+		}
+
+		.contentScrollMobileTri{
+			overflow: hidden;
+			overflow-y: scroll;
+			height: 450px;
+		}
+
+		.pTexttri-Head span{
+			font-size: 13px;
+		}
+
+		.pTexttri-Title span{
+			font-size: 20px;
+		}
+
+		.pTexttri-info .undertxttri{
+			font-size: 13px;
+		}
+
+		.triImage{
+			width: 100%;
+			height: 140px;
+		}
+	/*WORKS PANDIT*/
+	
+	/*WORKS AMPHIBI, PEKOPO*/
+	.contentScrollMobile{
+		overflow: hidden;
+		overflow-y: scroll;
+		height: 550px;
+	}
+	
+	#contentNone{
+		height: 30px;
+		background: transparent;
+		display: block;
+	}
+	
+	.menuContainer{
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		grid-template-areas: 
+			"identity"
+			"video-list";
+		gap: 0px;
+		border-bottom: 1px solid #FAFAFA;
+	}
+	
+	.playlistContainer .main-video .video{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"identityContent"
+			"vidFoot"
+			"empt"
+			"contFrame"
+			"titlevideo";
+		gap: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.playlistContainer .main-video #empt{
+		grid-area: empt;
+		background: transparent;
+		height: 150px;
+		border-bottom: 1px solid #222222;
+	}
+	
+	#identity{
+		height: 150px;
+	}
+	
+	.identityContent{
+		height: 50px;
+		display: grid;
+		background: transparent;
+	}
+	
+	.playlistContainer .main-video iframe{
+		width: 100%;
+		height: 250px;
+	}
+	
+	.playlistContainer .video-list .vid #titlevideo{
+		font-size: 13px;
+	}
+	
+	.playlistContainer .video-list{
+		border-left: 0px solid #222222;
+	}
+	
+	.playlistContainer .main-video #titlevideo{
+		border-left: 0px solid #222222;
+		border-top: 1px solid #222222;
+	}
+	
+	.playlistContainer .main-video #titlevideo #info{
+		color: #222222;
+		font-size: 15px;
+		height: 350px;
+		position:relative;
+		border-bottom: 1px solid #222222;
+	}
+	
+	
+	#contentNone2{
+		height: 30px;
+		background: transparent;
+		display: block;
+	}
+	
+	.menuContainer2{
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		grid-template-areas: 
+			"identity2"
+			"video-list2";
+		gap: 0px;
+		border-bottom: 1px solid #FAFAFA;
+	}
+	
+	.playlistContainer2 .main-video2 .video2{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"identityContent2"
+			"vidFoot2"
+			"empt2"
+			"contFrame2"
+			"titlevideo2";
+		gap: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.playlistContainer2 .main-video2 #empt2{
+		background: transparent;
+		height: 150px;
+		border-bottom: 1px solid #222222;
+	}
+	
+	#identity2{
+		height: 150px;
+	}
+	
+	.identityContent2{
+		height: 50px;
+		display: grid;
+		background: transparent;
+		padding-bottom: 0px;
+	}
+
+	.playlistContainer2 .main-video2 iframe{
+		width: 100%;
+		height: 250px;
+	}
+	
+	.playlistContainer2 .video-list2 .vid2 #titlevideo2{
+		font-size: 13px;
+	}
+	
+	.playlistContainer2 .video-list2{
+		border-left: 0px solid #222222;
+	}
+	
+	.playlistContainer2 .main-video2 #titlevideo2{
+		border-left: 0px solid #222222;
+		border-top: 1px solid #222222;
+	}
+	
+	.playlistContainer2 .main-video2 #titlevideo2 #info2{
+		color: #222222;
+		font-size: 15px;
+		height: 350px;
+		position:relative;
+		border-bottom: 1px solid #222222;
+	}
+
+	/*WORKS AMPHIBI, PEKOPO*/
+	
+	/*WORKS SERIES*/
+		.playlistContainerS{
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: flex-end;
+			grid-template-areas: 
+				"menuContainerS"
+				"vidmainS"
+				"contentNoneS";
+			position: relative;
+			gap: 0px;
+		}
+	
+		#contentNoneS{
+			height: 30px;
+			background: transparent;
+			display: block;
+		}
+	
+		.playlistContainerS .main-videoS .videoS{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			grid-template-areas:
+				"identityContentS"
+				"vidFootS"
+				"emptS"
+				"contFrameS"
+				"titlevideoS";
+			gap: 0px;
+		}
+	
+		.menuContainerS{
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: flex-end;
+			grid-template-areas: 
+				"identityS"
+				"vidlistS";
+			gap: 0px;
+			z-index: 1;
+		}
+	
+		#identityS{
+			height: 158px;
+		}
+	
+		.contentScrollMobileS{
+			height: 550px;
+		}
+	
+		#menuContainerS{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	
+		.playlistContainerS .main-videoS #emptS{
+			background: transparent;
+			height: 230px;
+			border-bottom: 1px solid #222222;
+		}
+	
+		.playlistContainerS .main-videoS iframe{
+			width: 100%;
+			height: 250px;
+			border-radius: 0px;
+			border: 1px solid #222222;
+			margin: 10px;
+		}
+	
+		.playlistContainerS .main-videoS #titlevideoS{
+			border-left: 0px solid #222222;
+			border-top: 1px solid #222222;
+		}
+	
+		.playlistContainerS .video-listS{
+			border-left: 0px solid #222222;
+		}
+	
+		.playlistContainerS .video-listS .vidS.active #titlevideoS .judulS{
+			border-top: 0px solid #222222;
+			border-bottom: 1px solid #222222;
+		}
+	
+		.playlistContainerS .video-listS .vidS:hover #titlevideoS .judulS{
+			border-top: 0px solid #222222;
+			border-bottom: 1px solid #222222;
+		}
+	
+		.judulS{
+			border-top: 0px solid #FAFAFA;
+			border-bottom: 1px solid #FAFAFA;
+		}
+	
+		.playlistContainerS .main-videoS #titlevideoS #infoS{
+			height: 450px;
+			border-bottom: 1px solid #222222;
+			margin-bottom: 0px;
+		}
+	
+		.playlistContainerS .video-listS .vidS #titlevideoS{
+			font-size: 13px;
+		}
+	
+		.pText-infoS .undertxtS{
+			font-size: 13px;
+		}
+		
+		.identityTitleS{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 0px 20px;
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			color: #222222;
+			padding-top: 20px;
+		}
+	/*WORKS SERIES*/
+	
+	/*SCROLL*/
+		::-webkit-scrollbar{
+			width: 5px;
+		}
+	/*SCROLL*/
+}
+/*Mobile M*/
+
+/*Mobile S*/
+@media screen and (max-width:320px){
+	/*BODY*/
+		.container{
+			max-width: 320px;
+		}
+	/*BODY*/
+	
+	/*FOOTER*/
+		.adjustFooter{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 320px;
+			min-width: 270px;
+			width: 100%;
+		}
+		.footerContent{
+			padding: 20px 20px;
+		}
+	
+		.socmed ul li{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			padding-left: 0px;
+		}
+	
+		.socmed .fa{
+			font-size: 13px;
+			color: #808080;
+			padding-right: 7px;
+		}
+	
+		.copyrights{
+			font-size: 10px;
+			color: #808080;
+		}
+	
+		.strip{
+			background-color: #808080;
+			height: 3px;
+			width: 7px;
+			transform: translateY(-100%);
+			margin-right: 7px;
+		}
+	
+		.iam a{
+			text-decoration: none;
+			color: #808080;
+			font-size: 11px;
+			font-weight: 500; 
+		}
+	/*FOOTER*/
+	
+	/*POPUP MODAL*/
+		.popup___content{
+			width: 270px;
+		}
+	
+		.pFoot-content{
+			font-family: 'Inter', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			color: #222222;
+			letter-spacing: 1px;
+		}
+	/*POPUP MODAL*/
+	
+	/*POPUP MEDIA BOTTOM*/
+		.pFoot-content{
+			background: transparent;
+			display: inline-block;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding-bottom: 15px;
+		}
+	
+		.pFoot-content ul li{
+			list-style: none;
+			display: grid;
+			position: relative;
+			padding: 5px 20px;
+		}
+	
+		.pFoot-content span{
+			padding-right: 0px;
+		}
+
+		
+	/*POPUP MEDIA BOTTOM*/
+	
+	/*DOCUMENTATION*/
+		.containerScroll{
+			height: 430px;
+		}
+	
+		.mographIMG1:hover .hovIMG1{
+			height: 120px;
+		}
+	
+		.hovIMG1{
+			height: 120px;
+		}
+	
+		.mographIMG2:hover .hovIMG2{
+			height: 120px;
+		}
+	
+		.hovIMG2{
+			height: 120px;
+		}
+	
+		.mographIMG3:hover .hovIMG3{
+			height: 120px;
+		}
+	
+		.hovIMG3{
+			height: 120px;
+		}
+	
+		.mographIMG4:hover .hovIMG4{
+			height: 120px;
+		}
+	
+		.hovIMG4{
+			height: 120px;
+		}
+	
+		.mographIMG5:hover .hovIMG5{
+			height: 120px;
+		}
+	
+		.hovIMG5{
+			height: 120px;
+		}
+	
+		.mographIMG6:hover .hovIMG6{
+			height: 120px;
+		}
+	
+		.hovIMG6{
+			height: 120px;
+		}
+	
+		.mographIMG7:hover .hovIMG7{
+			height: 120px;
+		}
+	
+		.hovIMG7{
+			height: 120px;
+		}
+	
+		.mographIMG8:hover .hovIMG8{
+			height: 120px;
+		}
+	
+		.hovIMG8{
+			height: 120px;
+		}
+	
+		.containerScroll2{
+			height: 430px;
+		}
+	
+		.hovmodel3DIMG1{
+			height: 120px;
+		}
+	
+		.hovmodel3DIMG2{
+			height: 120px;
+		}
+	
+		.hovmodel3DIMG3{
+			height: 120px;
+		}
+	
+		.hovmodel3DIMG4{
+			height: 120px;
+		}
+	
+		.hovmodel3DIMG5{
+			height: 120px;
+		}
+	
+		.hovmodel3DIMG6{
+			height: 120px;
+		}
+	
+		.hovmodel3DIMG7{
+			height: 120px;
+		}
+	
+		.hov-modelIMG iframe{
+			height: 120px;
+			width: 100%;
+			border: 1px solid #FAFAFA
+		}
+	
+		#pTextDocDesc2{
+			height: 350px;
+		}
+	
+		#pTextDocModelDesc{
+			height: 350px;
+		}
+	
+		#pTextDocMatDesc{
+			height: 250px;
+		}
+	
+		#pTextDocRigDesc{
+			height: 350px;
+		}
+	
+		#pTextDocCompDesc{
+			height: 350px;
+		}
+	
+		#pTextDocARDesc{
+			height: 350px;
+		}
+	
+		#pTextDocCaseDesc{
+			height: 250px;
+		}
+	
+		#pHeadDoc{
+			padding-top: 10px;
+		}
+	
+		#pFootDoc{
+			padding-top: 10px;
+		}
+	
+		#pHeadDoc2{
+			padding-top: 10px;
+		}
+	
+		#pFootDoc2{
+			padding-top: 10px;
+		}
+	
+		
+	/*DOCUMENTATION*/
+	
+	/*WORKS AMPHIBI, PEKOPO*/
+		.pText-container{
+			background-color: transparent;
+			height: 650px;
+			display: flex;
+		}	
+	
+	/*WORKS AMPHIBI, PEKOPO*/
+	
+	/*WORKS SERIES*/
+	
+		.contentScrollMobileS{
+			height: 550px;
+		}
+	
+		#identityS{
+			height: 158px;
+		}
+	
+		.playlistContainerS .main-videoS iframe{
+			height: 150px;
+		}
+	
+		.playlistContainerS .main-videoS #titlevideoS #infoS{
+			height: 480px;
+		}
+	/*WORKS SERIES*/
+	
+	/*SCROLL*/
+		::-webkit-scrollbar{
+			width: 5px;
+		}
+	/*SCROLL*/
+	
+}
+/*Mobile S*/
 
 /*RESPONSIVE*/
