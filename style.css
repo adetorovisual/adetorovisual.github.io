@@ -743,6 +743,16 @@
     transform: translateY(0%) rotate(0deg);
 }
 
+#popup0:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup0:target .popup___content{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
 .popup-footer{
     background: transparent;
     display: none;
@@ -1111,6 +1121,285 @@
 }
 
 /*WORKS RUANGGURU, AWARD, JUDGEMENT, LYRIC, INTERACTIVE, GIPHY*/
+
+/*ABOUT*/
+.contentScroll0{
+	height: 770px;
+	background: #FAFAFA;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin: 0px;
+}
+
+.contentScroll0::-webkit-scrollbar{
+	display: none;
+}
+
+.tabelAbout{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+	grid-template-areas: 
+		"tabName tabName tabName tabName"
+		"tabEmail tabSocmed tabIntro tabIntro"
+		"tabEmpty tabEmpty tabEmpty tabEmpty"
+		"tabExp tabExp tabExp tabExp"
+		"tabExp1 tabExp1 tabExp1 tabExp1"
+		"tabExp2 tabExp2 tabExp2 tabExp2"
+		"tabExp3 tabExp3 tabExp3 tabExp3"
+		"tabExp4 tabExp4 tabExp4 tabExp4"
+		"tabExp5 tabExp5 tabExp5 tabExp5"
+		"tabEmpty2 tabEmpty2 tabEmpty2 tabEmpty2";
+	margin-top: 20px;
+	text-align: left;
+}
+
+.tabelAbout a{
+	color: #222222;
+    text-decoration: none;
+	transition: 0.5s;
+}
+
+.tabelAbout a:hover{
+	color: #c7417b;
+}
+
+#tabName{
+	grid-area: tabName;
+	background: transparent;
+}
+
+#tabEmail{
+	grid-area: tabEmail;
+	background: transparent;
+}
+
+#tabSocmed{
+	grid-area: tabSocmed;
+	background: transparent;
+}
+
+#tabIntro{
+	grid-area: tabIntro;
+	background: transparent;
+}
+
+#tabEmpty{
+	grid-area: tabEmpty;
+	background: transparent;
+	height: 50px;
+}
+
+#tabEmpty2{
+	grid-area: tabEmpty2;
+	background: transparent;
+	height: 50px;
+}
+
+#tabExp{
+	grid-area: tabExp;
+	background: transparent;
+}
+
+#tabExp1{
+	grid-area: tabExp1;
+	background: transparent;
+}
+
+#tabExp2{
+	grid-area: tabExp2;
+	background: transparent;
+}
+
+#tabExp3{
+	grid-area: tabExp3;
+	background: transparent;
+}
+
+#tabExp4{
+	grid-area: tabExp4;
+	background: transparent;
+}
+
+#tabExp5{
+	grid-area: tabExp5;
+	background: transparent;
+}
+
+.abName{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 0px;
+	margin: 0px 20px;
+	font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+.abEmail{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	line-height: 25px;
+}
+
+.abList{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px 10px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	line-height: 25px;
+}
+
+#tabExp1{
+	position: relative;
+	padding: 10px 0px 20px 0px;
+	margin: 0px 20px 0px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+#tabExp2{
+	position: relative;
+	padding: 10px 0px 20px 0px;
+	margin: 0px 20px 0px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+#tabExp3{
+	position: relative;
+	padding: 10px 0px 20px 0px;
+	margin: 0px 20px 0px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+#tabExp4{
+	position: relative;
+	padding: 10px 0px 20px 0px;
+	margin: 0px 20px 0px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+#tabExp5{
+	position: relative;
+	padding: 10px 0px 20px 0px;
+	margin: 0px 20px 0px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+.conExp1{
+	position: absolute;
+	left: 365px;
+}
+
+.conExp2{
+	position: absolute;
+	left: 740px;
+}
+
+#tabSocmed ul li{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.abIntro{
+	position: relative;
+	padding: 10px 20px 10px 10px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	line-height: 25px;
+	text-align: justify;
+}
+
+.abIntro a{
+	color: #222222;
+	transition: 0.5s;
+}
+
+.abIntro a:hover{
+	color: #c7417b;
+}
+
+
+.desExp{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px 0px 20px 0px;
+	margin: 0px 0px 0px 20px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+.desExp2{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px 10px 20px 10px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+.desExp3{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px 10px 20px 10px;;
+	margin: 0px 20px 0px 0px;
+	font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+	border-bottom: 1px solid #222222;
+}
+
+/*ABOUT*/
 
 /*DOCUMENTATION*/
 .popupTabelDoc{
@@ -4800,6 +5089,23 @@
 		}
 	/*WORKS SERIES*/
 	
+	/*ABOUT*/
+	.tabelAbout{
+		display: grid;
+		grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
+	}
+	
+	.conExp1{
+		position: absolute;
+		left: 165px;
+	}
+
+	.conExp2{
+		position: absolute;
+		left: 470px;
+	}
+	/*ABOUT*/
+	
 }
 /*Laptop L*/
 
@@ -6754,6 +7060,24 @@
 			width: 5px;
 		}
 	/*SCROLL*/
+	
+	/*ABOUT*/
+	.tabelAbout{
+		display: grid;
+		grid-template-columns: 0.7fr 1fr 1fr 1fr;
+	}
+	
+	.conExp1{
+		position: absolute;
+		left: 290px;
+	}
+
+	.conExp2{
+		position: absolute;
+		left: 470px;
+		display: none;
+	}
+	/*ABOUT*/
 }
 /*Tablet*/
 
@@ -7164,6 +7488,72 @@
 			width: 5px;
 		}
 	/*SCROLL*/
+	
+	/*ABOUT*/
+		.tabelAbout{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas: 
+				"tabName tabName tabName tabName"
+				"tabEmail tabEmail tabEmail tabEmail"
+				"tabSocmed tabSocmed tabSocmed tabSocmed"
+				"tabIntro tabIntro tabIntro tabIntro"
+				"tabEmpty tabEmpty tabEmpty tabEmpty"
+				"tabExp tabExp tabExp tabExp"
+				"tabExp1 tabExp1 tabExp1 tabExp1"
+				"tabExp2 tabExp2 tabExp2 tabExp2"
+				"tabExp3 tabExp3 tabExp3 tabExp3"
+				"tabExp4 tabExp4 tabExp4 tabExp4"
+				"tabExp5 tabExp5 tabExp5 tabExp5"
+				"tabEmpty2 tabEmpty2 tabEmpty2 tabEmpty2";
+			margin-top: 20px;
+			text-align: left;
+		}
+	
+		.abName{
+			font-size: 20px;
+		}
+	
+		.abEmail{
+			font-size: 13px;
+		}
+	
+		.abList{
+			padding: 10px 20px;
+			font-size: 13px;
+		}
+	
+		.abIntro{
+			padding: 10px 20px 10px 20px;
+			font-size: 13px;
+		}
+	
+		#tabExp1{
+			font-size: 13px;
+		}
+	
+		#tabExp2{
+			font-size: 13px;
+		}
+	
+		#tabExp3{
+			font-size: 13px;
+		}
+	
+		#tabExp4{
+			font-size: 13px;
+		}
+	
+		#tabExp5{
+			font-size: 13px;
+		}
+	
+		.conExp1{
+			position: absolute;
+			left: 100px;
+		}
+	/*ABOUT*/
 }
 /*Mobile L*/
 
@@ -8947,6 +9337,71 @@
 		}
 	/*SCROLL*/
 	
+	/*ABOUT*/
+		.tabelAbout{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas: 
+				"tabName tabName tabName tabName"
+				"tabEmail tabEmail tabEmail tabEmail"
+				"tabSocmed tabSocmed tabSocmed tabSocmed"
+				"tabIntro tabIntro tabIntro tabIntro"
+				"tabEmpty tabEmpty tabEmpty tabEmpty"
+				"tabExp tabExp tabExp tabExp"
+				"tabExp1 tabExp1 tabExp1 tabExp1"
+				"tabExp2 tabExp2 tabExp2 tabExp2"
+				"tabExp3 tabExp3 tabExp3 tabExp3"
+				"tabExp4 tabExp4 tabExp4 tabExp4"
+				"tabExp5 tabExp5 tabExp5 tabExp5"
+				"tabEmpty2 tabEmpty2 tabEmpty2 tabEmpty2";
+			margin-top: 20px;
+			text-align: left;
+		}
+	
+		.abName{
+			font-size: 20px;
+		}
+	
+		.abEmail{
+			font-size: 13px;
+		}
+	
+		.abList{
+			padding: 10px 20px;
+			font-size: 13px;
+		}
+	
+		.abIntro{
+			padding: 10px 20px 10px 20px;
+			font-size: 13px;
+		}
+	
+		#tabExp1{
+			font-size: 13px;
+		}
+	
+		#tabExp2{
+			font-size: 13px;
+		}
+	
+		#tabExp3{
+			font-size: 13px;
+		}
+	
+		#tabExp4{
+			font-size: 13px;
+		}
+	
+		#tabExp5{
+			font-size: 13px;
+		}
+	
+		.conExp1{
+			position: absolute;
+			left: 100px;
+		}
+	/*ABOUT*/
 }
 /*Mobile S*/
 
